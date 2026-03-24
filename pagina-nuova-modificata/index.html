@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formazione Trading Professionale | Metodo E=MC² | Zenit Coaching</title>
+  <meta name="description" content="Trading room live ogni giorno, mental coaching ICF e metodo operativo reale. Zenit non è un corso: è il contesto che allena il trader che sei davvero.">
+  <link rel="canonical" href="https://trading.zenitcoach.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Formazione Trading Professionale | Metodo E=MC² | Zenit Coaching">
+  <meta property="og:description" content="Trading room live ogni giorno, mental coaching ICF e metodo operativo reale. Zenit non è un corso: è il contesto che allena il trader che sei davvero.">
+  <meta property="og:url" content="https://trading.zenitcoach.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Schema: EducationalOrganization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Zenit Coaching",
+    "url": "https://trading.zenitcoach.com",
+    "logo": "https://trading.zenitcoach.com/logo.png",
+    "description": "Formazione trading professionale con metodo E=MC². Trading room live quotidiane, mental coaching ICF certificato e community attiva di oltre 800 trader.",
+    "sameAs": ["https://t.me/zenitcoaching","https://www.instagram.com/zenitcoaching"],
+    "founder": [
+      {"@type":"Person","name":"Iacopo"},
+      {"@type":"Person","name":"Simone"},
+      {"@type":"Person","name":"Edoardo"}
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Zenit è un corso di trading?","acceptedAnswer":{"@type":"Answer","text":"No, e la differenza è sostanziale. Un corso ti consegna contenuti che studi da solo. Zenit è un contesto operativo quotidiano: trading room live ogni giorno, coaching sul mindset, community attiva e affiancamento continuo. Il modello è più vicino a una palestra che a un corso universitario."}},
+      {"@type":"Question","name":"Devo già sapere fare trading per entrare in Zenit?","acceptedAnswer":{"@type":"Answer","text":"No. Puoi partire da zero — anzi, spesso è meglio così. Chi arriva senza abitudini sbagliate da correggere progredisce più velocemente. Il percorso Professione Trader parte dalle fondamenta e accompagna ogni passaggio. E la community è il posto più sicuro dove fare le prime domande senza sentirti fuori luogo."}},
+      {"@type":"Question","name":"Cosa sono le trading room live?","acceptedAnswer":{"@type":"Answer","text":"Sono sessioni operative in tempo reale, non webinar pre-registrati. Ogni giorno i coach di Zenit si collegano a mercato aperto, ragionano sui setup, entrano in posizione e commentano ogni decisione mentre accade. Puoi seguire, fare domande e portare i tuoi trade."}},
+      {"@type":"Question","name":"Cosa significa certificazione ICF per un coach di trading?","acceptedAnswer":{"@type":"Answer","text":"ICF è l'International Coaching Federation, l'ente di certificazione del coaching più riconosciuto al mondo. Una certificazione ICF garantisce che il lavoro sul mindset segua un protocollo metodologico verificabile — non consigli motivazionali, ma un percorso strutturato con standard etici e di qualità internazionali. I fondatori di Zenit sono gli unici formatori di trading in Italia con questa certificazione."}},
+      {"@type":"Question","name":"Come funziona lo Zeta Club?","acceptedAnswer":{"@type":"Answer","text":"È una membership che ti dà accesso a tutto l'ecosistema Zenit: trading room live quotidiane, classroom mensili, community privata Telegram, eventi Tradingfulness, registrazioni di tutte le sessioni."}},
+      {"@type":"Question","name":"Posso provare prima di impegnarmi?","acceptedAnswer":{"@type":"Answer","text":"Sì. Il Telegram gratuito ti permette di capire il livello delle conversazioni, lo stile operativo e il tono del team prima di entrare nello Zeta Club. Non ti chiediamo nessun dato, nessun pagamento, nessuna prova gratuita con scadenza nascosta."}}
+    ]
+  }
+  </script>
+
+  <style>
+    /* ═══════════════════════════════════════════
+       GHL CONTAINER OVERRIDES (obbligatorio)
+    ═══════════════════════════════════════════ */
+    body { margin: 0 !important; padding: 0 !important; }
+    .fullSection { padding: 0 !important; }
+    .fullSection > .inner,
+    .c-row > .inner,
+    .c-column > .vertical.inner {
+      max-width: 100% !important;
+      width: 100% !important;
+      padding: 0 !important;
+    }
+    .c-custom-code,
+    .custom-code-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 !important;
+      overflow: visible !important;
+    }
+
+    /* ═══════════════════════════════════════════
+       CUSTOM PROPERTIES
+    ═══════════════════════════════════════════ */
+    :root {
+      --bg:           #0A0A0A;
+      --bg-card:      #121212;
+      --gold:         #CA9D5D;
+      --gold-light:   #E0BE82;
+      --gold-dark:    #9A7540;
+      --text:         #E8E6E4;
+      --text-muted:   #8D8885;
+      --border:       #2B2925;
+      --border-gold:  rgba(202,157,93,0.30);
+      --font-body:    'DM Sans', system-ui, sans-serif;
+      --font-serif:   'Instrument Serif', Georgia, serif;
+    }
+
+    /* ═══════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    section, footer { position: relative; z-index: 1; }
+
+    /* ═══════════════════════════════════════════
+       CONTAINER
+    ═══════════════════════════════════════════ */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ═══════════════════════════════════════════
+       TYPOGRAPHY UTILITIES
+    ═══════════════════════════════════════════ */
+    .text-gradient-gold {
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    /* Gold italic em within headings */
+    h1 em, h2 em {
+      font-style: italic;
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Section wrapper */
+    .section {
+      padding: 96px 0;
+    }
+
+    /* Section header (centered, used across sections) */
+    .section-header {
+      text-align: center;
+      max-width: 672px;
+      margin: 0 auto 64px;
+    }
+    .section-header h2 {
+      font-size: clamp(1.875rem, 4vw, 3rem);
+      margin-bottom: 24px;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1.125rem;
+      line-height: 1.75;
+    }
+    .section-header p strong {
+      color: var(--text);
+    }
+
+    /* ═══════════════════════════════════════════
+       BUTTONS
+    ═══════════════════════════════════════════ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.875rem;
+      border-radius: 6px;
+      padding: 0 16px;
+      height: 36px;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      line-height: 1;
+    }
+    .btn-lg {
+      height: 44px;
+      padding: 0 32px;
+      font-size: 1rem;
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+      color: #0A0A0A;
+      box-shadow: 0 10px 20px -4px rgba(202,157,93,0.35);
+    }
+    .btn-gold:hover { opacity: 0.9; }
+    .btn-gold-outline {
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid var(--border-gold);
+    }
+    .btn-gold-outline:hover { background: rgba(202,157,93,0.1); }
+
+    /* ═══════════════════════════════════════════
+       ANIMATIONS & KEYFRAMES
+    ═══════════════════════════════════════════ */
+    @keyframes pulse-gold {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ═══════════════════════════════════════════
+       SCROLL REVEAL
+    ═══════════════════════════════════════════ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.15s; }
+    .reveal-delay-2 { transition-delay: 0.30s; }
+    .reveal-delay-3 { transition-delay: 0.45s; }
+    .reveal-delay-4 { transition-delay: 0.60s; }
+
+    /* ═══════════════════════════════════════════
+       1. NAVBAR
+    ═══════════════════════════════════════════ */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 50;
+      height: 64px;
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+    .navbar.scrolled {
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(43,41,37,0.5);
+    }
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .navbar-logo {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+    }
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .navbar-links a {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+    .navbar-links a:hover { color: var(--text); }
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text);
+      padding: 4px;
+    }
+    .hamburger .icon-x { display: none; }
+    .hamburger.open .icon-menu { display: none; }
+    .hamburger.open .icon-x { display: block; }
+
+    .mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(43,41,37,0.5);
+    }
+    .mobile-menu.open { max-height: 360px; }
+    .mobile-menu nav {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      gap: 20px;
+    }
+    .mobile-menu a {
+      font-size: 1rem;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+    .mobile-menu a:hover { color: var(--text); }
+    .mobile-menu .btn { align-self: flex-start; }
+
+    /* ═══════════════════════════════════════════
+       2. HERO
+    ═══════════════════════════════════════════ */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background-image: url('https://zenitcoach.com/assets/hero-bg.webp');
+      background-size: cover;
+      background-position: center;
+      background-color: #050505;
+    }
+    .hero-overlay-tb {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(to bottom,
+        rgba(10,10,10,0.6) 0%,
+        rgba(10,10,10,0.4) 50%,
+        #0A0A0A 100%);
+    }
+    .hero-overlay-lr {
+      position: absolute; inset: 0; z-index: 2;
+      background: linear-gradient(to right,
+        rgba(10,10,10,0.6) 0%,
+        transparent 50%,
+        rgba(10,10,10,0.6) 100%);
+    }
+    .hero-glow {
+      position: absolute;
+      top: 10%; left: 50%;
+      transform: translateX(-50%);
+      width: 800px; height: 600px;
+      background: radial-gradient(ellipse at center, rgba(202,157,93,0.45) 0%, transparent 70%);
+      filter: blur(60px);
+      animation: pulse-gold 4s ease infinite;
+      pointer-events: none;
+      z-index: 3;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 4;
+      text-align: center;
+      max-width: 896px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 128px 24px 96px;
+      animation: fadeInUp 0.9s ease both;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--gold);
+      border: 1px solid rgba(202,157,93,0.35);
+      background: rgba(202,157,93,0.05);
+      padding: 8px 16px;
+      border-radius: 9999px;
+      margin-bottom: 32px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+    .badge-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: pulse-dot 2s ease infinite;
+      flex-shrink: 0;
+    }
+    .hero h1 {
+      font-size: clamp(2.25rem, 6vw, 4.5rem);
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 32px;
+      letter-spacing: -0.01em;
+    }
+    .hero-subtitle {
+      font-size: clamp(1rem, 1.8vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 672px;
+      margin: 0 auto 48px;
+      line-height: 1.75;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .hero-btn-outline {
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    /* ═══════════════════════════════════════════
+       3. PROBLEM
+    ═══════════════════════════════════════════ */
+    .problem {
+      background: linear-gradient(to bottom,
+        transparent,
+        rgba(202,157,93,0.05) 50%,
+        transparent);
+    }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .problem-image-wrap {
+      position: relative;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid rgba(202,157,93,0.25);
+    }
+    .problem-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .problem-img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, rgba(10,10,10,0.4), transparent);
+    }
+    .problem-text h2 {
+      font-size: clamp(1.875rem, 4vw, 3rem);
+      margin-bottom: 40px;
+      line-height: 1.15;
+    }
+    .problem-body {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      color: var(--text-muted);
+      font-size: 1.125rem;
+      line-height: 1.75;
+    }
+    .problem-body strong { color: var(--text); font-weight: 500; }
+    .problem-body em.text-gold-accent {
+      font-style: italic;
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      background: linear-gradient(to right, var(--gold-light), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ═══════════════════════════════════════════
+       4. DIFFERENTIATORS
+    ═══════════════════════════════════════════ */
+    .diff-room-wrap {
+      position: relative;
+      max-width: 1024px;
+      margin: 0 auto 64px;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid rgba(202,157,93,0.15);
+      box-shadow: 0 0 100px -20px rgba(202,157,93,0.15);
+    }
+    .diff-room-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .diff-room-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top,
+        #0A0A0A 0%,
+        rgba(10,10,10,0.2) 50%,
+        transparent 100%);
+    }
+    .diff-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    .diff-card {
+      padding: 32px;
+      border-radius: 16px;
+      background: var(--bg-card);
+      border: 1px solid #2B2925;
+      transition: border-color 0.5s ease, box-shadow 0.5s ease;
+    }
+    .diff-card:hover {
+      border-color: rgba(202,157,93,0.3);
+      box-shadow: 0 0 80px -15px rgba(202,157,93,0.25);
+    }
+    .diff-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: rgba(202,157,93,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .diff-card h3 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.25rem, 2vw, 1.5rem);
+      line-height: 1.3;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    .diff-card p {
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+      line-height: 1.75;
+    }
+
+    /* ═══════════════════════════════════════════
+       5. METHOD E=MC²
+    ═══════════════════════════════════════════ */
+    .method {
+      background-color: var(--bg);
+    }
+    .method-bg-wrap {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      opacity: 0.2;
+    }
+    .method-bg-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .method-gradient {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(to bottom,
+        #0A0A0A 0%,
+        rgba(10,10,10,0.8) 50%,
+        #0A0A0A 100%);
+    }
+    .method-glow-bg {
+      position: absolute; inset: 0; z-index: 2;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(202,157,93,0.35) 0%, transparent 70%);
+    }
+    .method-content {
+      position: relative;
+      z-index: 3;
+    }
+    .method-formula {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 64px;
+      font-family: var(--font-serif);
+      font-size: clamp(3rem, 9vw, 5rem);
+      line-height: 1;
+    }
+    .formula-char.gold {
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .formula-char.muted {
+      color: var(--text-muted);
+    }
+    .formula-sup {
+      font-size: 0.45em;
+      vertical-align: super;
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .method-card {
+      padding: 24px;
+      border-radius: 16px;
+      background: #141414;
+      border: 1px solid rgba(43,41,37,0.5);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      transition: border-color 0.5s ease;
+    }
+    .method-card:hover { border-color: rgba(202,157,93,0.3); }
+    .method-letter {
+      font-family: var(--font-serif);
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 12px;
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .method-card-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      color: var(--gold);
+    }
+    .method-card-name span {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .method-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* ═══════════════════════════════════════════
+       6. PRODUCTS
+    ═══════════════════════════════════════════ */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1024px;
+      margin: 0 auto;
+      align-items: start;
+    }
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+      border-radius: 16px;
+      background: var(--bg-card);
+      border: 1px solid rgba(43,41,37,0.5);
+      position: relative;
+      transition: border-color 0.3s ease;
+    }
+    .product-card:hover { border-color: rgba(202,157,93,0.2); }
+    .product-card.featured {
+      border-color: rgba(202,157,93,0.4);
+      box-shadow: 0 0 80px -15px rgba(202,157,93,0.25);
+    }
+    .product-badge {
+      position: absolute;
+      top: -14px; left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: #0A0A0A;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 9999px;
+      white-space: nowrap;
+    }
+    .product-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: rgba(202,157,93,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .product-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .product-card > p {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      line-height: 1.75;
+      margin-bottom: 24px;
+      flex: 1;
+    }
+    .product-price {
+      font-size: 0.875rem;
+      font-weight: 600;
+      background: linear-gradient(to right, var(--gold-light), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px;
+    }
+
+    /* ═══════════════════════════════════════════
+       7. SOCIAL PROOF
+    ═══════════════════════════════════════════ */
+    .proof {
+      background-color: var(--bg);
+    }
+    .proof-glow-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(202,157,93,0.22) 0%, transparent 70%);
+    }
+    .proof-content { position: relative; z-index: 1; }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 896px;
+      margin: 0 auto 80px;
+    }
+    .stat-card {
+      text-align: center;
+      padding: 24px;
+      border-radius: 16px;
+      background: #111111;
+      border: 1px solid rgba(43,41,37,0.6);
+    }
+    .stat-icon {
+      color: var(--gold);
+      margin: 0 auto 12px;
+      display: flex;
+      justify-content: center;
+    }
+    .stat-value {
+      font-family: var(--font-serif);
+      font-size: 1.875rem;
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    .testimonial-card {
+      padding: 24px;
+      border-radius: 16px;
+      background: var(--bg-card);
+      border: 1px solid #2B2925;
+      position: relative;
+    }
+    .testimonial-quote-mark {
+      font-family: var(--font-serif);
+      font-size: 2.25rem;
+      color: rgba(202,157,93,0.5);
+      position: absolute;
+      top: 16px; left: 24px;
+      line-height: 1;
+    }
+    .testimonial-text {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      line-height: 1.75;
+      font-style: italic;
+      margin-top: 32px;
+      margin-bottom: 24px;
+    }
+    .testimonial-footer {
+      border-top: 1px solid rgba(43,41,37,0.5);
+      padding-top: 16px;
+    }
+    .testimonial-name {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .testimonial-role {
+      font-size: 0.75rem;
+      color: var(--gold);
+    }
+
+    /* ═══════════════════════════════════════════
+       8. PARTNERS
+    ═══════════════════════════════════════════ */
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    .partner-card {
+      padding: 24px;
+      border-radius: 16px;
+      background: #111111;
+      border: 1px solid rgba(43,41,37,0.6);
+      text-align: center;
+      transition: border-color 0.3s ease;
+    }
+    .partner-card:hover { border-color: rgba(202,157,93,0.2); }
+    .partner-name {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .partner-desc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ═══════════════════════════════════════════
+       9. FAQ
+    ═══════════════════════════════════════════ */
+    .faq-list {
+      max-width: 768px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .faq-item {
+      border-radius: 12px;
+      border: 1px solid rgba(43,41,37,0.7);
+      background: #111111;
+      overflow: hidden;
+      transition: border-color 0.3s ease;
+    }
+    .faq-item.open {
+      border-color: rgba(202,157,93,0.3);
+    }
+    .faq-trigger {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      text-align: left;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .faq-trigger:hover { color: var(--text); }
+    .faq-chevron {
+      flex-shrink: 0;
+      color: var(--text-muted);
+      transition: transform 0.3s ease;
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq-item.open .faq-body { max-height: 400px; }
+    .faq-body p {
+      padding: 0 24px 20px;
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+      line-height: 1.75;
+    }
+
+    /* ═══════════════════════════════════════════
+       10. FINAL CTA
+    ═══════════════════════════════════════════ */
+    .final-cta {
+      background-color: var(--bg);
+    }
+    .final-cta-bg-wrap {
+      position: absolute; inset: 0; z-index: 0;
+      overflow: hidden;
+      opacity: 0.55;
+    }
+    .final-cta-bg-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .final-cta-gradient {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(to top,
+        #0A0A0A 0%,
+        rgba(10,10,10,0.7) 50%,
+        #0A0A0A 100%);
+    }
+    .final-cta-glow {
+      position: absolute; inset: 0; z-index: 2;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(202,157,93,0.18) 0%, transparent 70%);
+    }
+    .final-cta-content {
+      position: relative; z-index: 3;
+      text-align: center;
+    }
+    .final-cta-content .section-header {
+      margin-bottom: 40px;
+    }
+    .final-cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ═══════════════════════════════════════════
+       11. FOOTER
+    ═══════════════════════════════════════════ */
+    .footer {
+      border-top: 1px solid rgba(43,41,37,0.5);
+      padding: 48px 0 24px;
+    }
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 0.05em;
+    }
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+    .footer-nav a {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+    .footer-nav a:hover { color: var(--text); }
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(43,41,37,0.5);
+    }
+    .footer-legal a {
+      font-size: 0.6875rem;
+      color: var(--text-muted);
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+    }
+    .footer-legal a:hover { opacity: 1; }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════ */
+    @media (min-width: 768px) {
+      .section { padding: 128px 0; }
+      .hero-content { padding: 160px 24px 128px; }
+      .footer-inner { flex-direction: row; justify-content: space-between; }
+      .final-cta-buttons { flex-direction: row; }
+    }
+
+    @media (max-width: 1023px) {
+      .method-grid { grid-template-columns: repeat(2, 1fr); }
+      .partners-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 767px) {
+      .navbar-links { display: none; }
+      .navbar-right .btn { display: none; }
+      .hamburger { display: block; }
+
+      .problem-image-wrap { display: none; }
+      .problem-grid { grid-template-columns: 1fr; }
+
+      .diff-grid { grid-template-columns: 1fr; }
+
+      .products-grid { grid-template-columns: 1fr; }
+
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+
+      .partners-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .method-grid { grid-template-columns: 1fr 1fr; }
+      .method-formula { gap: 10px; }
+    }
+
+    @media (max-width: 479px) {
+      .method-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       1. NAVBAR
+  ══════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="/" class="navbar-logo">ZENIT</a>
+      <nav class="navbar-links">
+        <a href="#differentiators">Metodo</a>
+        <a href="#prodotti">Programmi</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="navbar-right">
+        <a href="/zeta-club" class="btn btn-gold">Entra nello Zeta Club</a>
+        <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+          <!-- Icon: Menu -->
+          <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <!-- Icon: X -->
+          <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <nav>
+        <a href="#differentiators">Metodo</a>
+        <a href="#prodotti">Programmi</a>
+        <a href="#faq">FAQ</a>
+        <a href="/zeta-club" class="btn btn-gold">Entra nello Zeta Club</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════
+       2. HERO
+  ══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-overlay-tb" aria-hidden="true"></div>
+    <div class="hero-overlay-lr" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Trading Room Live — Ogni giorno
+        </div>
+        <h1>Il trading non si impara studiando. <em>Si impara operando</em> — con qualcuno accanto.</h1>
+        <p class="hero-subtitle">Zenit non è un corso. È una trading room live ogni giorno, un metodo certificato e una community di trader che lavora sui mercati in tempo reale. Mentre gli altri ti vendono contenuti, noi siamo in posizione con te.</p>
+        <div class="hero-ctas">
+          <a href="/zeta-club" class="btn btn-gold btn-lg">
+            Entra nello Zeta Club
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#differentiators" class="btn btn-gold-outline btn-lg hero-btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            Guarda come funziona una sessione
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       3. PROBLEM
+  ══════════════════════════════════════ -->
+  <section class="section problem">
+    <div class="container">
+      <div class="problem-grid">
+        <!-- Immagine sinistra -->
+        <div class="problem-image-wrap reveal">
+          <img
+            src="https://zenitcoach.com/assets/problem-bg.webp"
+            alt="Trader davanti ai grafici di mercato"
+            class="problem-img"
+            loading="lazy">
+          <div class="problem-img-overlay" aria-hidden="true"></div>
+        </div>
+        <!-- Testo destra -->
+        <div class="problem-text reveal reveal-delay-1">
+          <h2>Non ti manca un corso. <em>Ti manca un contesto</em> che ti allena ogni giorno.</h2>
+          <div class="problem-body">
+            <p>Hai studiato. Hai comprato corsi. Forse hai anche capito i concetti — supporti, resistenze, risk management, mindset. Ma quando sei davanti al grafico, da solo, con i tuoi soldi a rischio, qualcosa si inceppa.</p>
+            <p><strong>Non è colpa tua. È colpa del modello.</strong></p>
+            <p>I corsi ti consegnano conoscenza in un momento. Il mercato ti interroga ogni giorno. Tra i due c'è un vuoto che nessun video risolve: la mancanza di affiancamento reale, di un contesto operativo dove puoi sbagliare, imparare e correggere con qualcuno che sa cosa sta guardando insieme a te.</p>
+            <p>Noi lo chiamiamo <em class="text-gold-accent">anticorso</em>. Non perché siamo contro la formazione — ma perché la formazione vera è un'altra cosa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       4. DIFFERENTIATORS
+  ══════════════════════════════════════ -->
+  <section class="section" id="differentiators">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-header reveal">
+        <h2>Due volte al giorno, i mercati aprono. <em>Noi siamo già lì.</em></h2>
+        <p>Alle 08:50 sul DAX. Alle 15:15 sul NASDAQ. Ogni giorno. Non quando ci va. Non "quando ci sono aggiornamenti". <strong>Ogni giorno.</strong></p>
+      </div>
+
+      <!-- Trading room featured image -->
+      <div class="diff-room-wrap reveal">
+        <img
+          src="https://zenitcoach.com/assets/trading-room.webp"
+          alt="La Zenit Room — team di trader al lavoro in tempo reale"
+          class="diff-room-img"
+          loading="lazy">
+        <div class="diff-room-overlay" aria-hidden="true"></div>
+      </div>
+
+      <!-- 4 feature cards in 2x2 grid -->
+      <div class="diff-grid">
+        <!-- Zenit Room -->
+        <div class="diff-card reveal">
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></svg>
+          </div>
+          <h3>Zenit Room — Trading room live quotidiana</h3>
+          <p>Non è un webinar registrato. Non è una "live mensile". È una sessione operativa in tempo reale, dove i coach entrano a mercato aperto, ragionano ad alta voce e mostrano ogni decisione mentre accade. Il DAX alle 08:50, il NASDAQ alle 15:15. Puoi seguire, fare domande, portare i tuoi trade.</p>
+        </div>
+        <!-- Tradingfulness -->
+        <div class="diff-card reveal reveal-delay-1">
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+          </div>
+          <h3>Tradingfulness® — Il metodo che integra tecnica e mindset</h3>
+          <p>La maggior parte dei formatori separa le due cose: tecnica da una parte, psicologia dall'altra. Noi no. Tradingfulness® è il metodo proprietario di Zenit, sviluppato per integrare lavoro operativo e mental coaching in un unico percorso continuo. Perché un trader che non gestisce le emozioni non esegue il proprio setup, neanche se lo conosce perfettamente.</p>
+        </div>
+        <!-- Coach ICF -->
+        <div class="diff-card reveal reveal-delay-2">
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+          </div>
+          <h3>Coach ICF Certificati — Gli unici in Italia nel trading</h3>
+          <p>Iacopo, Simone ed Edoardo sono i tre fondatori di Zenit e gli unici formatori di trading in Italia con certificazione ICF (International Coaching Federation). Non è un titolo decorativo: significa che il lavoro sul mindset segue un protocollo verificabile, riconosciuto a livello internazionale. E che i coach sono trader attivi — non ex-trader che ora insegnano.</p>
+        </div>
+        <!-- Equity reale -->
+        <div class="diff-card reveal reveal-delay-3">
+          <div class="diff-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+          </div>
+          <h3>Equity reale — Condividiamo tutto, sempre</h3>
+          <p>Condividiamo l'equity delle Zenit Room in tempo reale, senza filtri. Non i momenti migliori, non gli screenshot selezionati — il risultato continuativo di chi opera ogni giorno. In un settore che vive di illusioni costruite, noi pubblichiamo il quadro completo perché è l'unico modo per guadagnarsi fiducia vera.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       5. METHOD E=MC²
+  ══════════════════════════════════════ -->
+  <section class="section method" id="metodo">
+    <!-- Background image at low opacity -->
+    <div class="method-bg-wrap" aria-hidden="true">
+      <img src="https://zenitcoach.com/assets/method-bg.webp" alt="" loading="lazy">
+    </div>
+    <div class="method-gradient" aria-hidden="true"></div>
+    <div class="method-glow-bg" aria-hidden="true"></div>
+
+    <div class="container method-content">
+      <!-- Header -->
+      <div class="section-header reveal">
+        <h2>Il Metodo <em>E=MC²</em> — Non un corso in più. Un ecosistema.</h2>
+        <p>Abbiamo preso la formula di Einstein non per fare colpo, ma perché descrive esattamente come funziona la crescita reale di un trader: non è additiva, è moltiplicativa. Se uno dei fattori manca, l'equazione crolla.</p>
+      </div>
+
+      <!-- Formula visual -->
+      <div class="method-formula reveal">
+        <span class="formula-char gold">E</span>
+        <span class="formula-char muted">=</span>
+        <span class="formula-char gold">M</span>
+        <span class="formula-char muted">·</span>
+        <span class="formula-char gold">C<sup class="formula-sup">2</sup></span>
+      </div>
+
+      <!-- 4 pillars -->
+      <div class="method-grid">
+        <!-- E = Edge -->
+        <div class="method-card reveal">
+          <div class="method-letter">E</div>
+          <div class="method-card-name">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            <span>Edge</span>
+          </div>
+          <p>Il tuo vantaggio statistico sul mercato. Strategie testate, operatività con risk/reward reale, lettura price action e volumi. Senza Edge non esiste trading — esiste solo scommessa.</p>
+        </div>
+        <!-- M = Mentorship -->
+        <div class="method-card reveal reveal-delay-1">
+          <div class="method-letter">M</div>
+          <div class="method-card-name">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Mentorship</span>
+          </div>
+          <p>Un mentore che ha già fatto il percorso riduce anni di errori a mesi. La mentorship in Zenit non è un "corso avanzato": è un rapporto continuativo con chi opera ogni giorno sugli stessi mercati che studi.</p>
+        </div>
+        <!-- C = Coaching -->
+        <div class="method-card reveal reveal-delay-2">
+          <div class="method-letter">C</div>
+          <div class="method-card-name">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>Coaching</span>
+          </div>
+          <p>Il lavoro sul mindset non è soft. È la differenza tra un trader che conosce le regole e un trader che le esegue. Il coaching ICF applicato al trading lavora su emozioni, discipline operative e comportamenti reali — non su motivazione generica.</p>
+        </div>
+        <!-- C = Consulting -->
+        <div class="method-card reveal reveal-delay-3">
+          <div class="method-letter">C</div>
+          <div class="method-card-name">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            <span>Consulting</span>
+          </div>
+          <p>Le strategie generali non bastano. La consulenza in Zenit adatta il metodo al tuo profilo: il tuo timeframe, la tua tolleranza al rischio, i tuoi obiettivi. È il ponte tra sapere e applicare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       6. PRODUCTS
+  ══════════════════════════════════════ -->
+  <section class="section" id="prodotti">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Scegli il tuo <em>punto di ingresso</em></h2>
+        <p>Zenit non è per tutti — e non vogliamo che lo sia. Se stai cercando un corso con tecniche magiche e promesse di rendite passive, non siamo la risposta giusta. Se stai cercando il posto dove fare del trading la tua carriera, con professionisti veri al tuo fianco, benvenuto.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Card 1: Telegram -->
+        <div class="product-card reveal">
+          <div class="product-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          </div>
+          <h3>Telegram — Entra gratis nella community</h3>
+          <p>Oltre 800 trader. Aggiornamenti di mercato, discussioni operative, quote giornaliere e preview delle sessioni live. Il modo migliore per capire se Zenit fa per te prima di impegnarti.</p>
+          <div class="product-price">Gratuito</div>
+          <a href="https://t.me/zenitcoaching" target="_blank" rel="noopener" class="btn btn-gold-outline" style="width:100%;justify-content:center;">Unisciti al canale gratuito</a>
+        </div>
+
+        <!-- Card 2: Zeta Club (featured) -->
+        <div class="product-card featured reveal reveal-delay-1">
+          <span class="product-badge">Più scelto</span>
+          <div class="product-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>
+          </div>
+          <h3>Zeta Club — La casa operativa del trader Zenit</h3>
+          <p>Trading room live quotidiane, classroom mensili, eventi Tradingfulness, community privata, accesso alle registrazioni. Tutto ciò che serve per operare ogni giorno con un contesto reale.</p>
+          <a href="/zeta-club" class="btn btn-gold" style="width:100%;justify-content:center;">Scopri lo Zeta Club</a>
+        </div>
+
+        <!-- Card 3: Professione Trader -->
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+          </div>
+          <h3>Professione Trader — Il percorso completo</h3>
+          <p>Il video corso che accompagna lo Zeta Club: dalle basi dell'analisi tecnica fino alle strategie avanzate, con sessioni di backtesting incluse. Incluso nello Zeta Club dal piano trimestrale in su.</p>
+          <a href="/corsi-di-trading" class="btn btn-gold-outline" style="width:100%;justify-content:center;">Scopri Professione Trader</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       7. SOCIAL PROOF
+  ══════════════════════════════════════ -->
+  <section class="section proof">
+    <div class="proof-glow-bg" aria-hidden="true"></div>
+    <div class="container proof-content">
+      <div class="section-header reveal">
+        <h2>Non promettiamo risultati. <em>Mostriamo un processo.</em></h2>
+        <p>La community Zenit conta oltre 800 trader. Non mostriamo i migliori — mostriamo i reali.</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="stat-value">800+</div>
+          <div class="stat-label">Trader attivi in community</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></svg>
+          </div>
+          <div class="stat-value">480+</div>
+          <div class="stat-label">Sessioni live all'anno</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+          </div>
+          <div class="stat-value">3</div>
+          <div class="stat-label">Anni di attività</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 0-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+          </div>
+          <div class="stat-value">4</div>
+          <div class="stat-label">Partner operativi</div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Questo successo non è solo mio, ma dimostra che chiunque può farcela, indipendentemente dalle difficoltà. Ho iniziato con tante domande e pochi strumenti, ma oggi sono qui a celebrare insieme a voi un obiettivo che sembrava lontano. Con il giusto approccio e il supporto della squadra, ogni sogno è possibile.</p>
+          <div class="testimonial-footer">
+            <p class="testimonial-name">Edoardo</p>
+            <p class="testimonial-role">Founded Traders</p>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Questo successo non è solo mio, ma dimostra che chiunque può farcela, indipendentemente dalle difficoltà. Ho iniziato con tante domande e pochi strumenti, ma oggi sono qui a celebrare insieme a voi un obiettivo che sembrava lontano. Con il giusto approccio e il supporto della squadra, ogni sogno è possibile.</p>
+          <div class="testimonial-footer">
+            <p class="testimonial-name">Edoardo</p>
+            <p class="testimonial-role">Founded Traders</p>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Questo successo non è solo mio, ma dimostra che chiunque può farcela, indipendentemente dalle difficoltà. Ho iniziato con tante domande e pochi strumenti, ma oggi sono qui a celebrare insieme a voi un obiettivo che sembrava lontano. Con il giusto approccio e il supporto della squadra, ogni sogno è possibile.</p>
+          <div class="testimonial-footer">
+            <p class="testimonial-name">Edoardo</p>
+            <p class="testimonial-role">Founded Traders</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       8. PARTNERS
+  ══════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Il nostro <em>ecosistema</em></h2>
+        <p>Zenit non lavora in isolamento. Collaboriamo con le prop firm e i provider di strumenti operativi più seri del mercato, selezionati per trasparenza e allineamento con il nostro metodo.</p>
+      </div>
+      <div class="partners-grid">
+        <div class="partner-card reveal">
+          <div class="partner-name">Fintokei</div>
+          <p class="partner-desc">Prop firm partner: finanziamento per trader verificati</p>
+        </div>
+        <div class="partner-card reveal reveal-delay-1">
+          <div class="partner-name">The5ers</div>
+          <p class="partner-desc">Prop firm internazionale, percorso di finanziamento graduale</p>
+        </div>
+        <div class="partner-card reveal reveal-delay-2">
+          <div class="partner-name">RiskGuard</div>
+          <p class="partner-desc">Expert Advisor per gestione automatizzata del rischio su MetaTrader</p>
+        </div>
+        <div class="partner-card reveal reveal-delay-3">
+          <div class="partner-name">TotalTrade</div>
+          <p class="partner-desc">Piattaforma journal e backtesting con AI integrata</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       9. FAQ
+  ══════════════════════════════════════ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Domande <em>frequenti</em></h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Zenit è un corso di trading?</span>
+            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-body"><p>No, e la differenza è sostanziale. Un corso ti consegna contenuti che studi da solo. Zenit è un contesto operativo quotidiano: trading room live ogni giorno, coaching sul mindset, community attiva e affiancamento continuo. Il modello è più vicino a una palestra che a un corso universitario.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Devo già sapere fare trading per entrare in Zenit?</span>
+            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-body"><p>No. Puoi partire da zero — anzi, spesso è meglio così. Chi arriva senza abitudini sbagliate da correggere progredisce più velocemente. Il percorso "Professione Trader" parte dalle fondamenta e accompagna ogni passaggio. E la community è il posto più sicuro dove fare le prime domande senza sentirti fuori luogo.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Cosa sono le trading room live?</span>
+            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-body"><p>Sono sessioni operative in tempo reale, non webinar pre-registrati. Ogni giorno i coach di Zenit si collegano a mercato aperto, ragionano sui setup, entrano in posizione e commentano ogni decisione mentre accade. Puoi seguire, fare domande e portare i tuoi trade.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Cosa significa certificazione ICF per un coach di trading?</span>
+            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-body"><p>ICF è l'International Coaching Federation, l'ente di certificazione del coaching più riconosciuto al mondo. Una certificazione ICF garantisce che il lavoro sul mindset segua un protocollo metodologico verificabile — non "consigli motivazionali", ma un percorso strutturato con standard etici e di qualità internazionali. I fondatori di Zenit sono gli unici formatori di trading in Italia con questa certificazione.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Come funziona lo Zeta Club?</span>
+            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-body"><p>È una membership che ti dà accesso a tutto l'ecosistema Zenit: trading room live quotidiane, classroom mensili, community privata Telegram, eventi Tradingfulness, registrazioni di tutte le sessioni.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Posso provare prima di impegnarmi?</span>
+            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-body"><p>Sì. Il Telegram gratuito ti permette di capire il livello delle conversazioni, lo stile operativo e il tono del team prima di entrare nello Zeta Club. Non ti chiediamo nessun dato, nessun pagamento, nessuna prova gratuita con scadenza nascosta.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       10. FINAL CTA
+  ══════════════════════════════════════ -->
+  <section class="section final-cta">
+    <!-- Background image at low opacity -->
+    <div class="final-cta-bg-wrap" aria-hidden="true">
+      <img src="https://zenitcoach.com/assets/cta-bg.webp" alt="" loading="lazy">
+    </div>
+    <div class="final-cta-gradient" aria-hidden="true"></div>
+    <div class="final-cta-glow" aria-hidden="true"></div>
+
+    <div class="container final-cta-content">
+      <div class="section-header" style="max-width:768px;margin-bottom:40px;">
+        <h2>Smetti di fare <em>trading da solo.</em></h2>
+        <p>Ogni giorno che passi davanti al grafico senza un contesto reale alle spalle è un giorno in cui impari meno di quanto potresti. Non perché manchi di capacità — ma perché il trading non si costruisce nell'isolamento. Il prossimo passo è semplice: entra nella community gratuita, guarda come lavoriamo, e decidi tu.</p>
+      </div>
+      <div class="final-cta-buttons">
+        <a href="/zeta-club" class="btn btn-gold btn-lg">
+          Entra nello Zeta Club
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="https://t.me/zenitcoaching" target="_blank" rel="noopener" class="btn btn-gold-outline btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          Inizia dal Telegram gratuito — zero impegno
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       11. FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="/" class="footer-logo">ZENIT</a>
+      <nav class="footer-nav">
+        <a href="/chi-siamo">Chi siamo</a>
+        <a href="/contatti">Contatti</a>
+        <a href="https://t.me/zenitcoaching" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.instagram.com/zenitcoaching" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> Zenit Coaching. Tutti i diritti riservati.</p>
+    </div>
+    <div class="container footer-legal">
+      <a href="https://trading.zenitcoach.com/privacy-policy" target="_blank">Privacy Policy</a>
+      <a href="https://trading.zenitcoach.com/cookie-policy" target="_blank">Cookie Policy</a>
+      <a href="https://trading.zenitcoach.com/preferenze-privacy" target="_blank">Preferenze Privacy</a>
+      <a href="https://trading.zenitcoach.com/note-legali" target="_blank">Note Legali</a>
+      <a href="https://trading.zenitcoach.com/disclaimer" target="_blank">Disclaimer</a>
+    </div>
+  </footer>
+
+
+  <script>
+    // ═══ YEAR ═══
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ═══ NAVBAR: scroll class ═══
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function() {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    // ═══ NAVBAR: hamburger toggle ═══
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', function() {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ═══ FAQ ACCORDION ═══
+    document.querySelectorAll('.faq-item').forEach(function(item) {
+      var trigger = item.querySelector('.faq-trigger');
+      trigger.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(function(i) {
+          i.classList.remove('open');
+          i.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+        });
+        // Toggle current
+        if (!isOpen) {
+          item.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // ═══ SCROLL REVEAL ═══
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      revealObserver.observe(el);
+    });
+  </script>
+
+</body>
+</html>
