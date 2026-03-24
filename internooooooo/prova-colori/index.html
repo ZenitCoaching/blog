@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="it" data-palette="oro-caldo">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenit — Light Mode Esplorazione Stilistica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    /* ─────────────────────────────────────────
+       PALETTE DEFINITIONS
+    ───────────────────────────────────────── */
+
+    [data-palette="oro-caldo"] {
+      --bg:            #F7F0E8;
+      --bg-secondary:  #F0E8DD;
+      --bg-card:       #FFFFFF;
+      --text:          #1A1714;
+      --text-muted:    #7D7670;
+      --text-subtle:   #A8A09A;
+      --gold:          #B08640;
+      --gold-light:    #CA9D5D;
+      --gold-dark:     #8A6A30;
+      --border:        #E8E0D8;
+      --border-hover:  #CA9D5D;
+      --shadow:        0 1px 3px rgba(26,23,20,0.06), 0 8px 24px rgba(26,23,20,0.04);
+      --shadow-hover:  0 4px 12px rgba(26,23,20,0.08), 0 16px 40px rgba(26,23,20,0.06);
+      --logo-src:      url('Colori Zenit/logo png.png');
+      --palette-label: "Oro Caldo";
+    }
+
+    [data-palette="bianco-pulito"] {
+      --bg:            #FFFFFF;
+      --bg-secondary:  #F7F7F7;
+      --bg-card:       #FFFFFF;
+      --text:          #111111;
+      --text-muted:    #6B6B6B;
+      --text-subtle:   #9B9B9B;
+      --gold:          #A67C3D;
+      --gold-light:    #CA9D5D;
+      --gold-dark:     #7A5A28;
+      --border:        #E5E5E5;
+      --border-hover:  #CA9D5D;
+      --shadow:        0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.06);
+      --shadow-hover:  0 2px 8px rgba(0,0,0,0.06), 0 8px 32px rgba(0,0,0,0.08);
+      --logo-src:      url('Colori Zenit/Z Nera sfondo bianco HD.png');
+      --palette-label: "Bianco Pulito";
+    }
+
+    [data-palette="pietra-morbida"] {
+      --bg:            #F5F3F0;
+      --bg-secondary:  #ECEAE6;
+      --bg-card:       #FAFAF8;
+      --text:          #1D1B18;
+      --text-muted:    #6E6A64;
+      --text-subtle:   #9E9890;
+      --gold:          #B58C45;
+      --gold-light:    #D4AD6A;
+      --gold-dark:     #8A6A30;
+      --border:        #DDD9D3;
+      --border-hover:  #CA9D5D;
+      --shadow:        0 2px 6px rgba(29,27,24,0.05), 0 12px 32px rgba(29,27,24,0.06);
+      --shadow-hover:  0 4px 12px rgba(29,27,24,0.07), 0 20px 48px rgba(29,27,24,0.08);
+      --logo-src:      url('Colori Zenit/logo grey.png');
+      --palette-label: "Pietra Morbida";
+    }
+
+    /* ── PALETTE AGGRESSIVE ── */
+
+    /* D: Inchiostro — carta calda, testo quasi nero, oro saturo, bordi ambra visibili */
+    [data-palette="inchiostro"] {
+      --bg:            #F5EDD6;
+      --bg-secondary:  #E8DBC0;
+      --bg-card:       #FFFFFF;
+      --text:          #0A0806;
+      --text-muted:    #2A1E0C;
+      --text-subtle:   #5A4828;
+      --gold:          #B87200;
+      --gold-light:    #D49000;
+      --gold-dark:     #8A5400;
+      --border:        #A08850;
+      --border-hover:  #B87200;
+      --shadow:        0 2px 0 rgba(10,8,6,0.22), 0 8px 32px rgba(10,8,6,0.16);
+      --shadow-hover:  0 4px 0 rgba(10,8,6,0.28), 0 16px 48px rgba(10,8,6,0.22);
+      --logo-src:      url('Colori Zenit/logo png.png');
+      --palette-label: "Inchiostro";
+    }
+
+    /* E: Acciaio — bianco/grigio, bordi forti, testo quasi nero, oro profondo */
+    [data-palette="acciaio"] {
+      --bg:            #F0F0F0;
+      --bg-secondary:  #E0E0E0;
+      --bg-card:       #FFFFFF;
+      --text:          #050505;
+      --text-muted:    #181818;
+      --text-subtle:   #3C3C3C;
+      --gold:          #9E6E00;
+      --gold-light:    #C08A00;
+      --gold-dark:     #724E00;
+      --border:        #4A4A4A;
+      --border-hover:  #9E6E00;
+      --shadow:        0 0 0 1.5px rgba(5,5,5,0.22), 0 8px 28px rgba(5,5,5,0.14);
+      --shadow-hover:  0 0 0 2px rgba(5,5,5,0.3), 0 16px 44px rgba(5,5,5,0.2);
+      --logo-src:      url('Colori Zenit/Z Nera sfondo bianco HD.png');
+      --palette-label: "Acciaio";
+    }
+
+    /* ── VARIANTI INCHIOSTRO ── */
+
+    /* G: Avorio — il più chiaro, carta fine con peso fisico */
+    [data-palette="avorio"] {
+      --bg:            #F8F2E0;
+      --bg-secondary:  #EEE4CC;
+      --bg-card:       #FFFFFF;
+      --text:          #0C0806;
+      --text-muted:    #28180A;
+      --text-subtle:   #503C18;
+      --gold:          #A86C00;
+      --gold-light:    #C88800;
+      --gold-dark:     #784E00;
+      --border:        #B09858;
+      --border-hover:  #A86C00;
+      --shadow:        0 3px 0 rgba(12,8,6,0.2), 0 10px 36px rgba(12,8,6,0.14);
+      --shadow-hover:  0 5px 0 rgba(12,8,6,0.26), 0 18px 48px rgba(12,8,6,0.18);
+      --logo-src:      url('Colori Zenit/logo png.png');
+      --palette-label: "Avorio";
+    }
+
+    /* H: Carta — paper white, testo quasi-nero, gold #CA8A04 da luxury brand */
+    [data-palette="carta"] {
+      --bg:            #FDFBF4;
+      --bg-secondary:  #F2EEE5;
+      --bg-card:       #FFFFFF;
+      --text:          #0D0B08;
+      --text-muted:    #1C1510;
+      --text-subtle:   #3C3528;
+      --gold:          #CA8A04;
+      --gold-light:    #E0A820;
+      --gold-dark:     #9A6A00;
+      --border:        #80786C;
+      --border-hover:  #CA8A04;
+      --shadow:        0 2px 0 rgba(13,11,8,0.22), 0 10px 36px rgba(13,11,8,0.13);
+      --shadow-hover:  0 4px 0 rgba(13,11,8,0.28), 0 18px 48px rgba(13,11,8,0.18);
+      --logo-src:      url('Colori Zenit/logo png.png');
+      --palette-label: "Carta";
+    }
+
+    /* I: Granito — pietra calda, muted quasi-nero, bordi definiti, struttura forte */
+    [data-palette="granito"] {
+      --bg:            #F5F3EE;
+      --bg-secondary:  #ECEAE4;
+      --bg-card:       #FFFFFF;
+      --text:          #0C0A09;
+      --text-muted:    #1C1916;
+      --text-subtle:   #44403C;
+      --gold:          #CA8A04;
+      --gold-light:    #E0A820;
+      --gold-dark:     #9A6A00;
+      --border:        #44403C;
+      --border-hover:  #CA8A04;
+      --shadow:        0 3px 0 rgba(12,10,9,0.24), 0 12px 40px rgba(12,10,9,0.15);
+      --shadow-hover:  0 5px 0 rgba(12,10,9,0.32), 0 20px 52px rgba(12,10,9,0.2);
+      --logo-src:      url('Colori Zenit/Z Nera sfondo bianco HD.png');
+      --palette-label: "Granito";
+    }
+
+    /* J: Cenere — grigio cenere, editoriale freddo, magazine/Swiss style */
+    [data-palette="cenere"] {
+      --bg:            #EEECEC;
+      --bg-secondary:  #E0DEDC;
+      --bg-card:       #FAFAF8;
+      --text:          #09090B;
+      --text-muted:    #18181B;
+      --text-subtle:   #3F3F46;
+      --gold:          #CA8A04;
+      --gold-light:    #E0A820;
+      --gold-dark:     #9A6A00;
+      --border:        #3F3F46;
+      --border-hover:  #CA8A04;
+      --shadow:        0 0 0 1.5px rgba(9,9,11,0.2), 0 8px 28px rgba(9,9,11,0.14);
+      --shadow-hover:  0 0 0 2px rgba(9,9,11,0.28), 0 16px 44px rgba(9,9,11,0.2);
+      --logo-src:      url('Colori Zenit/logo grey.png');
+      --palette-label: "Cenere";
+    }
+
+    /* ── SINTESI: warm + contrasto + layer differenziati ── */
+
+    /* K: Cuoio — inchiostro + granito: calore + contrasto + layer δ20 */
+    [data-palette="cuoio"] {
+      --bg:            #F4EAD0;
+      --bg-secondary:  #E2CFA8;
+      --bg-card:       #FFFEF6;
+      --text:          #0C0A06;
+      --text-muted:    #1E1608;
+      --text-subtle:   #42362A;
+      --gold:          #CA8A04;
+      --gold-light:    #E0A820;
+      --gold-dark:     #9A6A00;
+      --border:        #9A7840;
+      --border-hover:  #CA8A04;
+      --shadow:        0 3px 0 rgba(12,10,6,0.24), 0 12px 40px rgba(12,10,6,0.16);
+      --shadow-hover:  0 5px 0 rgba(12,10,6,0.32), 0 20px 52px rgba(12,10,6,0.2);
+      --logo-src:      url('Colori Zenit/logo png.png');
+      --palette-label: "Cuoio";
+    }
+
+    /* L: Pietra Calda — granito meno freddo: stone con warmth, layer profondi */
+    [data-palette="pietra-calda"] {
+      --bg:            #EDE7DC;
+      --bg-secondary:  #D8D0C2;
+      --bg-card:       #FAFAF6;
+      --text:          #0C0A08;
+      --text-muted:    #201A12;
+      --text-subtle:   #44403A;
+      --gold:          #CA8A04;
+      --gold-light:    #E0A820;
+      --gold-dark:     #9A6A00;
+      --border:        #68604E;
+      --border-hover:  #CA8A04;
+      --shadow:        0 2px 0 rgba(12,10,8,0.22), 0 10px 36px rgba(12,10,8,0.15);
+      --shadow-hover:  0 4px 0 rgba(12,10,8,0.3), 0 18px 48px rgba(12,10,8,0.2);
+      --logo-src:      url('Colori Zenit/logo png.png');
+      --palette-label: "Pietra Calda";
+    }
+
+    /* M: Seppia — cenere con calore: ash ma caldo, layer profondi, bordo warm */
+    [data-palette="seppia"] {
+      --bg:            #EDE8E0;
+      --bg-secondary:  #D8D0C4;
+      --bg-card:       #FAFAF8;
+      --text:          #0A0908;
+      --text-muted:    #1C1814;
+      --text-subtle:   #403C36;
+      --gold:          #CA8A04;
+      --gold-light:    #E0A820;
+      --gold-dark:     #9A6A00;
+      --border:        #5C5648;
+      --border-hover:  #CA8A04;
+      --shadow:        0 2px 0 rgba(10,9,8,0.22), 0 10px 36px rgba(10,9,8,0.14);
+      --shadow-hover:  0 4px 0 rgba(10,9,8,0.3), 0 18px 48px rgba(10,9,8,0.2);
+      --logo-src:      url('Colori Zenit/logo grey.png');
+      --palette-label: "Seppia";
+    }
+
+    /* N: Notte — sfondo nero, warmth di Inchiostro — palette ibrida */
+    [data-palette="notte"] {
+      --bg:            #0A0806;
+      --bg-secondary:  #181208;
+      --bg-card:       #201A10;
+      --text:          #F5EDD6;
+      --text-muted:    #C8A870;
+      --text-subtle:   #8A6A3A;
+      --gold:          #C07800;
+      --gold-light:    #D49000;
+      --gold-dark:     #A06000;
+      --border:        #3C2C14;
+      --border-hover:  #C07800;
+      --shadow:        0 2px 0 rgba(192,120,0,0.18), 0 10px 36px rgba(0,0,0,0.5);
+      --shadow-hover:  0 4px 0 rgba(192,120,0,0.26), 0 18px 52px rgba(0,0,0,0.6);
+      --logo-src:      url('Colori Zenit/logo png.png');
+      --palette-label: "Notte";
+    }
+
+    /* ─────────────────────────────────────────
+       RESET & BASE
+    ───────────────────────────────────────── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+    }
+
+    /* Apply transitions to all relevant elements */
+    *, *::before, *::after {
+      transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+    }
+
+    /* ─────────────────────────────────────────
+       TOP BAR (sticky palette switcher)
+    ───────────────────────────────────────── */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      height: 56px;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+    }
+
+    .topbar-inner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .topbar-brand {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.15rem;
+      color: var(--text);
+      letter-spacing: 0.08em;
+      flex-shrink: 0;
+    }
+
+    .topbar-label {
+      font-size: 0.75rem;
+      color: var(--text-subtle);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .palette-tabs {
+      display: flex;
+      gap: 6px;
+      background-color: var(--bg-secondary);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .palette-tabs::-webkit-scrollbar { display: none; }
+
+    .palette-tab {
+      padding: 6px 14px;
+      border-radius: 7px;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      letter-spacing: 0.01em;
+    }
+
+    .palette-tab.active {
+      background-color: var(--bg-card);
+      color: var(--text);
+      box-shadow: var(--shadow);
+    }
+
+    .palette-tab:hover:not(.active) {
+      color: var(--text);
+    }
+
+    /* ─────────────────────────────────────────
+       CONTAINER
+    ───────────────────────────────────────── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 0 20px; }
+    }
+
+    /* ─────────────────────────────────────────
+       SECTION BASE
+    ───────────────────────────────────────── */
+    section {
+      padding: 88px 0;
+    }
+
+    section.alt {
+      background-color: var(--bg-secondary);
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: 2rem;
+      color: var(--text);
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .section-desc {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 560px;
+    }
+
+    .section-header {
+      margin-bottom: 56px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background-color: var(--gold-light);
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    /* ─────────────────────────────────────────
+       HERO SECTION (title of the styleguide)
+    ───────────────────────────────────────── */
+    .hero-styleguide {
+      padding-top: 140px;
+      padding-bottom: 88px;
+      text-align: center;
+    }
+
+    .hero-styleguide .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      background-color: var(--bg-card);
+      margin-bottom: 32px;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-styleguide .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--gold-light);
+      flex-shrink: 0;
+    }
+
+    .hero-styleguide h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(2.4rem, 5vw, 3.75rem);
+      color: var(--text);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-styleguide .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    .palette-active-name {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .palette-active-chip {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background-color: var(--gold);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* ─────────────────────────────────────────
+       COLOR SWATCHES
+    ───────────────────────────────────────── */
+    .swatches-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .swatches-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 600px) {
+      .swatches-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .swatch-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .swatch-color {
+      width: 100%;
+      aspect-ratio: 4/3;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .swatch-hex {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .swatch-var {
+      font-size: 0.7rem;
+      color: var(--text-subtle);
+      font-family: 'DM Sans', monospace;
+    }
+
+    .swatch-name {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* ─────────────────────────────────────────
+       TYPOGRAPHY SECTION
+    ───────────────────────────────────────── */
+    .type-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .type-grid { grid-template-columns: 1fr; }
+    }
+
+    .type-col-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 28px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .type-specimen {
+      margin-bottom: 32px;
+    }
+
+    .type-specimen-label {
+      font-size: 0.65rem;
+      color: var(--text-subtle);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .type-specimen-text {
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .type-specimen-meta {
+      font-size: 0.68rem;
+      color: var(--text-subtle);
+      margin-top: 4px;
+    }
+
+    .type-accent-line {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.65;
+      padding: 20px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-top: 8px;
+    }
+
+    .type-accent-line em {
+      font-style: italic;
+      color: var(--gold-dark);
+      font-family: 'Instrument Serif', serif;
+    }
+
+    /* ─────────────────────────────────────────
+       COMPONENT GALLERY
+    ───────────────────────────────────────── */
+    .component-block {
+      margin-bottom: 64px;
+    }
+
+    .component-block-title {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .component-block-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background-color: var(--border);
+    }
+
+    /* ---- Mini Navbar ---- */
+    .mock-navbar {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow);
+    }
+
+    .mock-navbar-brand {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.1rem;
+      color: var(--text);
+      letter-spacing: 0.06em;
+    }
+
+    .mock-navbar-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .mock-navbar-links li a {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .mock-navbar-links li a:hover {
+      color: var(--text);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+      letter-spacing: 0.01em;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+      color: #FFFFFF;
+      box-shadow: 0 2px 8px rgba(176, 134, 64, 0.25);
+    }
+
+    .btn-gold:hover {
+      box-shadow: 0 4px 16px rgba(176, 134, 64, 0.35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--gold-dark);
+      border: 1.5px solid var(--gold);
+    }
+
+    .btn-outline:hover {
+      background-color: rgba(202, 157, 93, 0.06);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-muted);
+      border: 1.5px solid var(--border);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--text-muted);
+      color: var(--text);
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 0.82rem;
+    }
+
+    /* ---- Mini Hero ---- */
+    .mock-hero {
+      padding: 64px 48px;
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .mock-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border: 1px solid var(--border-hover);
+      border-radius: 100px;
+      background-color: rgba(202, 157, 93, 0.06);
+      margin-bottom: 28px;
+    }
+
+    .mock-hero-badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: var(--gold-light);
+      box-shadow: 0 0 0 2px rgba(202, 157, 93, 0.2);
+    }
+
+    .mock-hero-badge span {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--gold-dark);
+      letter-spacing: 0.03em;
+    }
+
+    .mock-hero h2 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .mock-hero p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 440px;
+      margin: 0 auto 32px;
+      line-height: 1.65;
+    }
+
+    .mock-hero-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ---- Feature Cards ---- */
+    .cards-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .cards-grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .feature-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+    }
+
+    .feature-card:hover {
+      border-color: var(--border-hover);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(202, 157, 93, 0.12) 0%, rgba(176, 134, 64, 0.08) 100%);
+      border: 1px solid rgba(202, 157, 93, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      color: var(--gold);
+    }
+
+    .feature-card h3 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ---- Product Cards ---- */
+    .cards-grid-2-product {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .cards-grid-2-product { grid-template-columns: 1fr; }
+    }
+
+    .product-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .product-card.featured {
+      border-color: var(--gold-light);
+      box-shadow: 0 0 0 1px rgba(202, 157, 93, 0.15), var(--shadow-hover);
+      position: relative;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    .product-name {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+    }
+
+    .product-price {
+      font-family: 'Instrument Serif', serif;
+      font-size: 2.2rem;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .product-price span {
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .product-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .product-features li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.4;
+    }
+
+    .product-features li::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(202, 157, 93, 0.12);
+      border: 1px solid rgba(202, 157, 93, 0.3);
+      flex-shrink: 0;
+      margin-top: 1px;
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='%23B08640' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* ---- Testimonial Card ---- */
+    .testimonial-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      position: relative;
+      padding-left: 40px;
+    }
+
+    .testimonial-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--gold-light), var(--gold));
+      border-radius: 4px 0 0 4px;
+    }
+
+    .testimonial-quote {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testimonial-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .testimonial-name {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .testimonial-role {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* ---- FAQ Accordion ---- */
+    .faq-list {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      gap: 16px;
+    }
+
+    .faq-question span {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .faq-chevron {
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 24px 20px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      display: none;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    /* ---- Button Gallery ---- */
+    .btn-gallery {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-gallery-label {
+      font-size: 0.65rem;
+      color: var(--text-subtle);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+    }
+
+    /* ---- Stat Block ---- */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background-color: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .stat-item {
+      background-color: var(--bg-card);
+      padding: 36px 28px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: 'Instrument Serif', serif;
+      font-size: 3rem;
+      color: var(--gold-dark);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    @media (max-width: 640px) {
+      .stats-row { grid-template-columns: 1fr; }
+    }
+
+    /* ─────────────────────────────────────────
+       LOGO SECTION
+    ───────────────────────────────────────── */
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .logo-grid { grid-template-columns: 1fr; }
+    }
+
+    .logo-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .logo-card.recommended {
+      border-color: var(--gold-light);
+      box-shadow: 0 0 0 1px rgba(202, 157, 93, 0.2), var(--shadow);
+    }
+
+    .logo-img-wrap {
+      width: 120px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .logo-filename {
+      font-size: 0.72rem;
+      color: var(--text-subtle);
+      font-family: 'DM Sans', monospace;
+      word-break: break-all;
+    }
+
+    .logo-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .logo-recommended-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* ─────────────────────────────────────────
+       FOOTER (styleguide only)
+    ───────────────────────────────────────── */
+    .sg-footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .sg-footer p {
+      font-size: 0.78rem;
+      color: var(--text-subtle);
+    }
+
+    /* ─────────────────────────────────────────
+       PALETTE-SPECIFIC swatch backgrounds
+       (these cannot use var() inside color: for <div style>
+       so we use data attributes on the swatch squares)
+    ───────────────────────────────────────── */
+
+    /* We use JS-generated inline styles on the swatch color divs,
+       dynamically reading computed CSS var values */
+
+    /* ─────────────────────────────────────────
+       MISC UTILITIES
+    ───────────────────────────────────────── */
+    .gold-line {
+      width: 48px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-dark));
+      border-radius: 3px;
+      margin-bottom: 24px;
+    }
+
+    .palette-preview-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .pip {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .pip-bg      { background-color: var(--bg); border: 1px solid var(--border); }
+    .pip-card    { background-color: var(--bg-card); border: 1px solid var(--border); }
+    .pip-gold    { background-color: var(--gold); }
+    .pip-text    { background-color: var(--text); }
+    .pip-muted   { background-color: var(--text-muted); }
+
+    .palette-preview-text {
+      font-size: 0.72rem;
+      color: var(--text-subtle);
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 768px) {
+      .mock-navbar-links { display: none; }
+      .mock-hero { padding: 40px 24px; }
+      .topbar-label { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .palette-tab { padding: 5px 10px; font-size: 0.72rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ──────────────────────────────
+       FIXED TOP BAR
+  ─────────────────────────────── -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-brand">ZENIT</div>
+      <div class="topbar-label">Scegli una palette →</div>
+      <nav class="palette-tabs" role="tablist" aria-label="Selettore palette">
+        <button class="palette-tab active" role="tab" data-target="oro-caldo" aria-selected="true">Oro Caldo</button>
+        <button class="palette-tab" role="tab" data-target="bianco-pulito" aria-selected="false">Bianco Pulito</button>
+        <button class="palette-tab" role="tab" data-target="pietra-morbida" aria-selected="false">Pietra Morbida</button>
+        <button class="palette-tab" role="tab" data-target="inchiostro" aria-selected="false">Inchiostro ★</button>
+        <button class="palette-tab" role="tab" data-target="acciaio" aria-selected="false">Acciaio</button>
+        <button class="palette-tab" role="tab" data-target="avorio" aria-selected="false">Avorio</button>
+        <button class="palette-tab" role="tab" data-target="carta" aria-selected="false">Carta</button>
+        <button class="palette-tab" role="tab" data-target="granito" aria-selected="false">Granito</button>
+        <button class="palette-tab" role="tab" data-target="cenere" aria-selected="false">Cenere</button>
+        <button class="palette-tab" role="tab" data-target="cuoio" aria-selected="false">Cuoio ★?</button>
+        <button class="palette-tab" role="tab" data-target="pietra-calda" aria-selected="false">Pietra Calda</button>
+        <button class="palette-tab" role="tab" data-target="seppia" aria-selected="false">Seppia</button>
+        <button class="palette-tab" role="tab" data-target="notte" aria-selected="false">Notte ◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ──────────────────────────────
+       HERO (styleguide title)
+  ─────────────────────────────── -->
+  <section class="hero-styleguide">
+    <div class="container">
+      <div class="hero-styleguide-badge badge">
+        <div class="badge-dot"></div>
+        Esplorazione interna — non destinata alla pubblicazione
+      </div>
+      <h1>Light Mode<br><em style="font-style: italic; color: var(--gold-dark);">Esplorazione Stilistica</em></h1>
+      <p class="subtitle">
+        Tre proposte di palette light per il sito Zenit. Usa i tab in alto per passare da una all'altra e confrontare token, tipografia e componenti in tempo reale.
+      </p>
+
+      <div style="display: flex; justify-content: center;">
+        <div class="palette-active-name">
+          Palette attiva:
+          <span class="palette-active-chip" id="active-palette-chip">Oro Caldo</span>
+        </div>
+      </div>
+
+      <div class="palette-preview-indicator">
+        <div class="pip pip-bg"></div>
+        <div class="pip pip-card"></div>
+        <div class="pip pip-gold"></div>
+        <div class="pip pip-text"></div>
+        <div class="pip pip-muted"></div>
+        <span class="palette-preview-text">bg · card · gold · testo · muted</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────────
+       SECTION 1 — COLOR SWATCHES
+  ─────────────────────────────── -->
+  <section class="alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Token cromatici</div>
+        <h2 class="section-title">Colori della Palette</h2>
+        <p class="section-desc">Le custom property CSS che guidano l'intera interfaccia. Ogni componente le usa tramite <code style="font-size:0.85em; background:var(--bg-card); padding:2px 6px; border-radius:4px; border:1px solid var(--border); color:var(--gold-dark);">var()</code>.</p>
+      </div>
+      <div class="swatches-grid" id="swatches-grid">
+        <!-- generated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────────
+       SECTION 2 — TYPOGRAPHY
+  ─────────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Sistema tipografico</div>
+        <h2 class="section-title">Tipografia</h2>
+        <p class="section-desc">DM Sans per il corpo del testo. Instrument Serif per le headline emotive. Entrambi caricate da Google Fonts.</p>
+      </div>
+
+      <div class="type-grid">
+        <!-- Instrument Serif -->
+        <div>
+          <div class="type-col-label">Instrument Serif — Headline Font</div>
+
+          <div class="type-specimen">
+            <div class="type-specimen-label">H1 · 3.5rem / 400</div>
+            <div class="type-specimen-text" style="font-family:'Instrument Serif',serif; font-size:3.5rem; line-height:1.05; color:var(--text);">Tradingfulness®</div>
+            <div class="type-specimen-meta">font-size: 3.5rem · line-height: 1.05</div>
+          </div>
+
+          <div class="type-specimen">
+            <div class="type-specimen-label">H2 · 2.5rem / 400</div>
+            <div class="type-specimen-text" style="font-family:'Instrument Serif',serif; font-size:2.5rem; line-height:1.15; color:var(--text);">Si impara operando,<br>non studiando.</div>
+            <div class="type-specimen-meta">font-size: 2.5rem · line-height: 1.15</div>
+          </div>
+
+          <div class="type-specimen">
+            <div class="type-specimen-label">H3 · 1.75rem / 400</div>
+            <div class="type-specimen-text" style="font-family:'Instrument Serif',serif; font-size:1.75rem; line-height:1.3; color:var(--text);">Trading Room Quotidiana</div>
+            <div class="type-specimen-meta">font-size: 1.75rem · line-height: 1.3</div>
+          </div>
+
+          <div class="type-specimen">
+            <div class="type-specimen-label">Italic serif in contesto</div>
+            <div class="type-accent-line">
+              Zenit non è un corso: è un <em>accompagnamento quotidiano</em> che funziona solo perché non è solo un corso.
+            </div>
+          </div>
+        </div>
+
+        <!-- DM Sans -->
+        <div>
+          <div class="type-col-label">DM Sans — Body Font</div>
+
+          <div class="type-specimen">
+            <div class="type-specimen-label">Body · 1.125rem / 400</div>
+            <div class="type-specimen-text" style="font-size:1.125rem; line-height:1.7; color:var(--text);">Ogni mattina e pomeriggio, live operative con i coach. Non registrazioni — operatività reale, in tempo reale.</div>
+            <div class="type-specimen-meta">font-size: 1.125rem · line-height: 1.7 · weight: 400</div>
+          </div>
+
+          <div class="type-specimen">
+            <div class="type-specimen-label">Semibold · 1rem / 600</div>
+            <div class="type-specimen-text" style="font-size:1rem; line-height:1.6; color:var(--text); font-weight:600;">Zeta Club — Abbonamento mensile, trimestrale o annuale.</div>
+            <div class="type-specimen-meta">font-size: 1rem · weight: 600</div>
+          </div>
+
+          <div class="type-specimen">
+            <div class="type-specimen-label">Small · 0.875rem / 400</div>
+            <div class="type-specimen-text" style="font-size:0.875rem; line-height:1.6; color:var(--text-muted);">Accesso immediato dopo la prenotazione. Consulta il calendario per le prossime date disponibili.</div>
+            <div class="type-specimen-meta">font-size: 0.875rem · color: --text-muted</div>
+          </div>
+
+          <div class="type-specimen">
+            <div class="type-specimen-label">Caption · 0.75rem / 500</div>
+            <div class="type-specimen-text" style="font-size:0.75rem; line-height:1.5; color:var(--text-subtle); font-weight:500; letter-spacing:0.04em; text-transform:uppercase;">Live quotidiane · Community Telegram · Coaching ICF</div>
+            <div class="type-specimen-meta">font-size: 0.75rem · uppercase · letter-spacing: 0.04em</div>
+          </div>
+
+          <div class="type-specimen">
+            <div class="type-specimen-label">Muted tones</div>
+            <div style="display:flex; flex-direction:column; gap:6px; margin-top:4px;">
+              <div style="font-size:0.9rem; color:var(--text); font-weight:500;">--text — #1A1714 / #111111 / #1D1B18</div>
+              <div style="font-size:0.9rem; color:var(--text-muted);">--text-muted — descrizioni, note, subtitle</div>
+              <div style="font-size:0.9rem; color:var(--text-subtle);">--text-subtle — label, caption, metadati</div>
+              <div style="font-size:0.9rem; color:var(--gold-dark); font-weight:500;">--gold-dark — accent serif, link, highlight</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────────
+       SECTION 3 — COMPONENT GALLERY
+  ─────────────────────────────── -->
+  <section class="alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Componenti UI</div>
+        <h2 class="section-title">Gallery Componenti</h2>
+        <p class="section-desc">Mockup reali di elementi che compongono il sito. Tutti i colori reagiscono al cambio di palette.</p>
+      </div>
+
+      <!-- a) Mini Navbar -->
+      <div class="component-block">
+        <div class="component-block-title">a · Navbar</div>
+        <div class="mock-navbar">
+          <div class="mock-navbar-brand">ZENIT</div>
+          <ul class="mock-navbar-links">
+            <li><a href="#">Chi siamo</a></li>
+            <li><a href="#">Metodo</a></li>
+            <li><a href="#">Prodotti</a></li>
+          </ul>
+          <button class="btn btn-gold btn-sm">Prenota Call</button>
+        </div>
+      </div>
+
+      <!-- b) Mini Hero -->
+      <div class="component-block">
+        <div class="component-block-title">b · Hero Section</div>
+        <div class="mock-hero">
+          <div class="mock-hero-badge">
+            <div class="mock-hero-badge-dot"></div>
+            <span>Live ogni giorno</span>
+          </div>
+          <h2>Si impara operando,<br>non studiando.</h2>
+          <p>Il primo percorso di trading che ti accompagna ogni giorno, live. Non registrazioni. Non slide. Operatività vera.</p>
+          <div class="mock-hero-actions">
+            <button class="btn btn-gold">Prenota una Call</button>
+            <button class="btn btn-outline">Scopri lo Zeta Club</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- c) Feature Cards -->
+      <div class="component-block">
+        <div class="component-block-title">c · Feature Cards</div>
+        <div class="cards-grid-2">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <!-- Monitor icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3>Trading Room Quotidiana</h3>
+            <p>Ogni mattina e pomeriggio, live operative con i coach. Analisi, setup e lettura del mercato in tempo reale.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <!-- Users icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Community & Coaching</h3>
+            <p>Oltre 800 trader nella community Telegram. Classroom 2 volte al mese, eventi Tradingfulness e ospiti esterni.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- d) Product Cards -->
+      <div class="component-block">
+        <div class="component-block-title">d · Product Cards</div>
+        <div class="cards-grid-2-product">
+          <!-- Normal -->
+          <div class="product-card">
+            <div>
+              <div class="product-name">Mensile</div>
+              <div class="product-price">119€ <span>/ mese</span></div>
+            </div>
+            <ul class="product-features">
+              <li>Live quotidiane DAX + NASDAQ</li>
+              <li>Community Telegram esclusiva</li>
+              <li>Registrazioni sempre disponibili</li>
+              <li>Classroom 2x al mese</li>
+            </ul>
+            <button class="btn btn-outline" style="width:100%; justify-content:center;">Inizia ora</button>
+          </div>
+          <!-- Featured -->
+          <div class="product-card featured" style="position:relative;">
+            <div class="product-badge">Più Scelto</div>
+            <div>
+              <div class="product-name">Trimestrale</div>
+              <div class="product-price">297€ <span>/ 3 mesi</span></div>
+            </div>
+            <ul class="product-features">
+              <li>Tutto il piano mensile incluso</li>
+              <li>Professione Trader per il periodo</li>
+              <li>Eventi Tradingfulness prioritari</li>
+              <li>Accesso multiday Telegram</li>
+            </ul>
+            <button class="btn btn-gold" style="width:100%; justify-content:center;">Scegli Trimestrale</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- e) Testimonial -->
+      <div class="component-block">
+        <div class="component-block-title">e · Testimonial Card</div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            "Prima di Zenit operavo a caso, inseguendo ogni setup che trovavo online. In tre mesi con la Trading Room ho capito cosa significa avere un metodo. Non è la tecnica — è il contesto quotidiano che fa la differenza."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Marco R.</div>
+              <div class="testimonial-role">Membro Zeta Club · Milano</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- f) FAQ Accordion -->
+      <div class="component-block">
+        <div class="component-block-title">f · FAQ Accordion</div>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-question">
+              <span>Serve esperienza pregressa di trading?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              No. Lo Zeta Club accoglie sia chi parte da zero sia chi ha già esperienza ma non riesce a essere consistente. Il metodo Tradingfulness® lavora su tre livelli: tecnica, operatività e mindset — adattandosi al tuo punto di partenza.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Quanto tempo devo dedicare ogni giorno?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Le Trading Room durano circa 70 minuti ciascuna — una la mattina sul DAX, una il pomeriggio sul NASDAQ. Puoi seguire entrambe o solo una, e le registrazioni sono sempre disponibili. Non c'è obbligo di presenza live.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Cosa succede dopo la Laser Coaching Call?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              La call dura circa 30 minuti. Analizziamo la tua situazione e capiamo insieme se Zenit fa per te. Non c'è nessuna pressione — se non è il momento giusto, te lo diciamo noi.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- g) Button Gallery -->
+      <div class="component-block">
+        <div class="component-block-title">g · Button System</div>
+        <div class="btn-gallery">
+          <div class="btn-gallery-item">
+            <button class="btn btn-gold">Gold Filled</button>
+            <span class="btn-gallery-label">Primario</span>
+          </div>
+          <div class="btn-gallery-item">
+            <button class="btn btn-outline">Gold Outline</button>
+            <span class="btn-gallery-label">Secondario</span>
+          </div>
+          <div class="btn-gallery-item">
+            <button class="btn btn-ghost">Ghost</button>
+            <span class="btn-gallery-label">Terziario</span>
+          </div>
+          <div class="btn-gallery-item">
+            <button class="btn btn-gold btn-sm">Small Gold</button>
+            <span class="btn-gallery-label">Small</span>
+          </div>
+          <div class="btn-gallery-item">
+            <button class="btn btn-outline btn-sm">Small Outline</button>
+            <span class="btn-gallery-label">Small Outline</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- h) Stat Block -->
+      <div class="component-block">
+        <div class="component-block-title">h · Stat Block</div>
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-number">800+</div>
+            <div class="stat-label">Membri community</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Coach ICF certificati</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2×</div>
+            <div class="stat-label">Live operative al giorno</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──────────────────────────────
+       SECTION 4 — LOGO
+  ─────────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Identità visiva</div>
+        <h2 class="section-title">Logo in Contesto</h2>
+        <p class="section-desc">Le tre varianti del logo Zenit su sfondo della palette attiva. Il badge indica quella consigliata per ciascuna palette.</p>
+      </div>
+
+      <div class="logo-grid">
+        <!-- Logo Oro / Gold Z -->
+        <div class="logo-card" id="logo-card-gold">
+          <div class="logo-img-wrap">
+            <img src="Colori Zenit/logo png.png" alt="Logo Zenit — Z oro" />
+          </div>
+          <div>
+            <div class="logo-filename">logo png.png</div>
+            <div class="logo-note" style="margin-top:6px;">Z dorata su sfondo trasparente.<br>Ideale su sfondi chiari con calore dorato.</div>
+          </div>
+          <span class="logo-recommended-badge" id="logo-rec-gold" style="opacity:0;">Consigliato</span>
+        </div>
+
+        <!-- Logo Nero / Black Z -->
+        <div class="logo-card" id="logo-card-black">
+          <div class="logo-img-wrap">
+            <img src="Colori Zenit/Z Nera sfondo bianco HD.png" alt="Logo Zenit — Z nera" />
+          </div>
+          <div>
+            <div class="logo-filename">Z Nera sfondo bianco HD.png</div>
+            <div class="logo-note" style="margin-top:6px;">Z nera su sfondo bianco.<br>Massimo contrasto, moderna e pulita.</div>
+          </div>
+          <span class="logo-recommended-badge" id="logo-rec-black" style="opacity:0;">Consigliato</span>
+        </div>
+
+        <!-- Logo Grigio / Grey Z -->
+        <div class="logo-card" id="logo-card-grey">
+          <div class="logo-img-wrap">
+            <img src="Colori Zenit/logo grey.png" alt="Logo Zenit — Z grigia" />
+          </div>
+          <div>
+            <div class="logo-filename">logo grey.png</div>
+            <div class="logo-note" style="margin-top:6px;">Z grigia su sfondo trasparente.<br>Perfetta su toni pietra e neutri caldi.</div>
+          </div>
+          <span class="logo-recommended-badge" id="logo-rec-grey" style="opacity:0;">Consigliato</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────────
+       FOOTER
+  ─────────────────────────────── -->
+  <footer class="sg-footer">
+    <div class="container">
+      <p>Documento interno Zenit Coaching · Esplorazione stilistica light mode · Non destinato alla pubblicazione</p>
+    </div>
+  </footer>
+
+  <!-- ──────────────────────────────
+       JAVASCRIPT
+  ─────────────────────────────── -->
+  <script>
+    // ── Palette switcher ──
+    const tabs = document.querySelectorAll('.palette-tab');
+    const html = document.documentElement;
+    const chipEl = document.getElementById('active-palette-chip');
+
+    const paletteNames = {
+      'oro-caldo':     'Oro Caldo',
+      'bianco-pulito': 'Bianco Pulito',
+      'pietra-morbida':'Pietra Morbida',
+      'inchiostro':    'Inchiostro ★',
+      'acciaio':       'Acciaio',
+      'avorio':        'Avorio',
+      'carta':         'Carta',
+      'granito':       'Granito',
+      'cenere':        'Cenere',
+      'cuoio':         'Cuoio',
+      'pietra-calda':  'Pietra Calda',
+      'seppia':        'Seppia',
+      'notte':         'Notte ◐',
+    };
+
+    // Recommended logo per palette
+    const logoRecommendations = {
+      'oro-caldo':     'logo-rec-gold',
+      'bianco-pulito': 'logo-rec-black',
+      'pietra-morbida':'logo-rec-grey',
+      'inchiostro':    'logo-rec-gold',
+      'acciaio':       'logo-rec-black',
+      'avorio':        'logo-rec-gold',
+      'carta':         'logo-rec-gold',
+      'granito':       'logo-rec-black',
+      'cenere':        'logo-rec-grey',
+      'cuoio':         'logo-rec-gold',
+      'pietra-calda':  'logo-rec-gold',
+      'seppia':        'logo-rec-grey',
+      'notte':         'logo-rec-gold',
+    };
+
+    function switchPalette(palette) {
+      html.setAttribute('data-palette', palette);
+      chipEl.textContent = paletteNames[palette];
+
+      tabs.forEach(t => {
+        const isActive = t.dataset.target === palette;
+        t.classList.toggle('active', isActive);
+        t.setAttribute('aria-selected', isActive);
+      });
+
+      // Update logo recommendations
+      ['logo-rec-gold', 'logo-rec-black', 'logo-rec-grey'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.opacity = '0';
+      });
+      const recId = logoRecommendations[palette];
+      if (recId) {
+        const el = document.getElementById(recId);
+        if (el) el.style.opacity = '1';
+      }
+
+      // Logo card highlighted border
+      ['logo-card-gold', 'logo-card-black', 'logo-card-grey'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.remove('recommended');
+      });
+      const cardMap = {
+        'oro-caldo':     'logo-card-gold',
+        'bianco-pulito': 'logo-card-black',
+        'pietra-morbida':'logo-card-grey',
+        'inchiostro':    'logo-card-gold',
+        'acciaio':       'logo-card-black',
+        'avorio':        'logo-card-gold',
+        'carta':         'logo-card-gold',
+        'granito':       'logo-card-black',
+        'cenere':        'logo-card-grey',
+        'cuoio':         'logo-card-gold',
+        'pietra-calda':  'logo-card-gold',
+        'seppia':        'logo-card-grey',
+        'notte':         'logo-card-gold',
+      };
+      const cardEl = document.getElementById(cardMap[palette]);
+      if (cardEl) cardEl.classList.add('recommended');
+
+      // Re-render swatches (values change per palette)
+      renderSwatches();
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => switchPalette(tab.dataset.target));
+    });
+
+    // ── Swatch generation ──
+    const swatchDefs = [
+      { label: 'Background',      varName: '--bg',           cssVar: '--bg' },
+      { label: 'Background Alt',  varName: '--bg-secondary',  cssVar: '--bg-secondary' },
+      { label: 'Card',            varName: '--bg-card',       cssVar: '--bg-card' },
+      { label: 'Testo',           varName: '--text',          cssVar: '--text' },
+      { label: 'Testo muted',     varName: '--text-muted',    cssVar: '--text-muted' },
+      { label: 'Testo subtle',    varName: '--text-subtle',   cssVar: '--text-subtle' },
+      { label: 'Gold',            varName: '--gold',          cssVar: '--gold' },
+      { label: 'Gold Dark',       varName: '--gold-dark',     cssVar: '--gold-dark' },
+    ];
+
+    function getCSSVar(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+
+    function renderSwatches() {
+      const grid = document.getElementById('swatches-grid');
+      grid.innerHTML = '';
+      swatchDefs.forEach(def => {
+        const val = getCSSVar(def.cssVar);
+        const item = document.createElement('div');
+        item.className = 'swatch-item';
+        item.innerHTML = `
+          <div class="swatch-color" style="background-color: ${val};"></div>
+          <div>
+            <div class="swatch-hex">${val.toUpperCase()}</div>
+            <div class="swatch-var">${def.varName}</div>
+            <div class="swatch-name">${def.label}</div>
+          </div>
+        `;
+        grid.appendChild(item);
+      });
+    }
+
+    // ── FAQ toggle ──
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        // Toggle clicked
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // ── Init ──
+    switchPalette('oro-caldo');
+  </script>
+</body>
+</html>
