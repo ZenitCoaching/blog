@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formazione Trading Professionale | Metodo E=MC² | Zenit Coaching</title>
   <meta name="description" content="Trading room live ogni giorno, mental coaching ICF e metodo operativo reale. Zenit non è un corso: è il contesto che allena il trader che sei davvero.">
-  <link rel="canonical" href="https://zenitcoach.com/">
+  <link rel="canonical" href="https://trading.zenitcoach.com/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Formazione Trading Professionale | Metodo E=MC² | Zenit Coaching">
   <meta property="og:description" content="Trading room live ogni giorno, mental coaching ICF e metodo operativo reale. Zenit non è un corso: è il contesto che allena il trader che sei davvero.">
-  <meta property="og:url" content="https://zenitcoach.com/">
+  <meta property="og:url" content="https://trading.zenitcoach.com/">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts -->
@@ -24,8 +24,8 @@
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "Zenit Coaching",
-    "url": "https://zenitcoach.com",
-    "logo": "https://zenitcoach.com/logo.png",
+    "url": "https://trading.zenitcoach.com",
+    "logo": "https://trading.zenitcoach.com/logo.png",
     "description": "Formazione trading professionale con metodo E=MC². Trading room live quotidiane, mental coaching ICF certificato e community attiva di oltre 800 trader.",
     "sameAs": ["https://t.me/zenitcoaching","https://www.instagram.com/zenitcoaching"],
     "founder": [
@@ -46,7 +46,7 @@
       {"@type":"Question","name":"Devo già sapere fare trading per entrare in Zenit?","acceptedAnswer":{"@type":"Answer","text":"No. Puoi partire da zero — anzi, spesso è meglio così. Chi arriva senza abitudini sbagliate da correggere progredisce più velocemente. Il percorso Professione Trader parte dalle fondamenta e accompagna ogni passaggio. E la community è il posto più sicuro dove fare le prime domande senza sentirti fuori luogo."}},
       {"@type":"Question","name":"Cosa sono le trading room live?","acceptedAnswer":{"@type":"Answer","text":"Sono sessioni operative in tempo reale, non webinar pre-registrati. Ogni giorno i coach di Zenit si collegano a mercato aperto, ragionano sui setup, entrano in posizione e commentano ogni decisione mentre accade. Puoi seguire, fare domande e portare i tuoi trade."}},
       {"@type":"Question","name":"Cosa significa certificazione ICF per un coach di trading?","acceptedAnswer":{"@type":"Answer","text":"ICF è l'International Coaching Federation, l'ente di certificazione del coaching più riconosciuto al mondo. Una certificazione ICF garantisce che il lavoro sul mindset segua un protocollo metodologico verificabile — non consigli motivazionali, ma un percorso strutturato con standard etici e di qualità internazionali. I fondatori di Zenit sono gli unici formatori di trading in Italia con questa certificazione."}},
-      {"@type":"Question","name":"Come funziona lo Zeta Club?","acceptedAnswer":{"@type":"Answer","text":"È una membership che ti dà accesso a tutto l'ecosistema Zenit: trading room live quotidiane, classroom mensili, community privata Telegram, eventi Tradingfulness, registrazioni di tutte le sessioni."}},
+      {"@type":"Question","name":"Come funziona lo Zeta Club?","acceptedAnswer":{"@type":"Answer","text":"È una membership che ti dà accesso a tutto l'ecosistema Zenit: trading room live quotidiane, classroom mensili, community privata Telegram, eventi TradingFulness, registrazioni di tutte le sessioni."}},
       {"@type":"Question","name":"Posso provare prima di impegnarmi?","acceptedAnswer":{"@type":"Answer","text":"Sì. Il Telegram gratuito ti permette di capire il livello delle conversazioni, lo stile operativo e il tono del team prima di entrare nello Zeta Club. Non ti chiediamo nessun dato, nessun pagamento, nessuna prova gratuita con scadenza nascosta."}}
     ]
   }
@@ -328,9 +328,10 @@
       min-height: 100vh;
       display: flex;
       align-items: center;
+      justify-content: center;
       position: relative;
       overflow: hidden;
-      background-image: url('/assets/hero-bg.webp');
+      background-image: url('https://zenitcoach.com/assets/hero-bg.webp');
       background-size: cover;
       background-position: center;
       background-color: #050505;
@@ -349,22 +350,12 @@
         transparent 50%,
         rgba(10,10,10,0.8) 100%);
     }
-    .hero-glow {
-      position: absolute;
-      top: 10%; left: 50%;
-      transform: translateX(-50%);
-      width: 800px; height: 600px;
-      background: radial-gradient(ellipse at center, rgba(202,157,93,0.3) 0%, transparent 70%);
-      filter: blur(60px);
-      animation: pulse-gold 4s ease infinite;
-      pointer-events: none;
-      z-index: 3;
-    }
     .hero-content {
       position: relative;
       z-index: 4;
       text-align: center;
       max-width: 896px;
+      width: 100%;
       margin: 0 auto;
       padding: 128px 24px 96px;
       animation: fadeInUp 0.9s ease both;
@@ -486,8 +477,7 @@
     }
     .diff-room-img {
       width: 100%;
-      aspect-ratio: 21/9;
-      object-fit: cover;
+      height: auto;
       display: block;
     }
     .diff-room-overlay {
@@ -589,6 +579,14 @@
     }
     .formula-char.muted {
       color: var(--text-muted);
+    }
+    .formula-sup {
+      font-size: 0.45em;
+      vertical-align: super;
+      background: linear-gradient(to right, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     .method-grid {
       display: grid;
@@ -896,7 +894,7 @@
     .final-cta-bg-wrap {
       position: absolute; inset: 0; z-index: 0;
       overflow: hidden;
-      opacity: 0.4;
+      opacity: 0.55;
     }
     .final-cta-bg-wrap img {
       width: 100%;
@@ -912,7 +910,7 @@
     }
     .final-cta-glow {
       position: absolute; inset: 0; z-index: 2;
-      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(202,157,93,0.3) 0%, transparent 70%);
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(202,157,93,0.06) 0%, transparent 70%);
     }
     .final-cta-content {
       position: relative; z-index: 3;
@@ -1034,14 +1032,14 @@
   ══════════════════════════════════════ -->
   <header class="navbar" id="navbar">
     <div class="container navbar-inner">
-      <a href="/" class="navbar-logo">ZENIT</a>
+      <a href="/" class="navbar-logo">ZENIT COACHING</a>
       <nav class="navbar-links">
         <a href="#differentiators">Metodo</a>
         <a href="#prodotti">Programmi</a>
         <a href="#faq">FAQ</a>
       </nav>
       <div class="navbar-right">
-        <a href="/zeta-club" class="btn btn-gold">Entra nello Zeta Club</a>
+        <a href="https://trading.zenitcoach.com/entra-ora-anticorso" class="btn btn-gold">Scopri Zeta Club</a>
         <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
           <!-- Icon: Menu -->
           <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
@@ -1055,7 +1053,7 @@
         <a href="#differentiators">Metodo</a>
         <a href="#prodotti">Programmi</a>
         <a href="#faq">FAQ</a>
-        <a href="/zeta-club" class="btn btn-gold">Entra nello Zeta Club</a>
+        <a href="https://trading.zenitcoach.com/entra-ora-anticorso" class="btn btn-gold">Scopri Zeta Club</a>
       </nav>
     </div>
   </header>
@@ -1067,7 +1065,6 @@
   <section class="hero">
     <div class="hero-overlay-tb" aria-hidden="true"></div>
     <div class="hero-overlay-lr" aria-hidden="true"></div>
-    <div class="hero-glow" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">
@@ -1077,13 +1074,9 @@
         <h1>Il trading non si impara studiando. <em>Si impara operando</em> — con qualcuno accanto.</h1>
         <p class="hero-subtitle">Zenit non è un corso. È una trading room live ogni giorno, un metodo certificato e una community di trader che lavora sui mercati in tempo reale. Mentre gli altri ti vendono contenuti, noi siamo in posizione con te.</p>
         <div class="hero-ctas">
-          <a href="/zeta-club" class="btn btn-gold btn-lg">
-            Entra nello Zeta Club
+          <a href="https://trading.zenitcoach.com/entra-ora-anticorso" class="btn btn-gold btn-lg">
+            Scopri Zeta Club
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-          <a href="#differentiators" class="btn btn-gold-outline btn-lg hero-btn-outline">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg>
-            Guarda come funziona una sessione
           </a>
         </div>
       </div>
@@ -1100,7 +1093,7 @@
         <!-- Immagine sinistra -->
         <div class="problem-image-wrap reveal">
           <img
-            src="/assets/problem-bg.webp"
+            src="https://zenitcoach.com/assets/problem-bg.webp"
             alt="Trader davanti ai grafici di mercato"
             class="problem-img"
             loading="lazy">
@@ -1128,14 +1121,14 @@
     <div class="container">
       <!-- Header -->
       <div class="section-header reveal">
-        <h2>Due volte al giorno, i mercati aprono. <em>Noi siamo già lì.</em></h2>
+        <h2>Due volte al giorno, i mercati aprono.<br><em>Noi siamo già lì.</em></h2>
         <p>Alle 08:50 sul DAX. Alle 15:15 sul NASDAQ. Ogni giorno. Non quando ci va. Non "quando ci sono aggiornamenti". <strong>Ogni giorno.</strong></p>
       </div>
 
       <!-- Trading room featured image -->
       <div class="diff-room-wrap reveal">
         <img
-          src="/assets/trading-room.webp"
+          src="https://zenitcoach.com/assets/trading-room.webp"
           alt="La Zenit Room — team di trader al lavoro in tempo reale"
           class="diff-room-img"
           loading="lazy">
@@ -1152,13 +1145,13 @@
           <h3>Zenit Room — Trading room live quotidiana</h3>
           <p>Non è un webinar registrato. Non è una "live mensile". È una sessione operativa in tempo reale, dove i coach entrano a mercato aperto, ragionano ad alta voce e mostrano ogni decisione mentre accade. Il DAX alle 08:50, il NASDAQ alle 15:15. Puoi seguire, fare domande, portare i tuoi trade.</p>
         </div>
-        <!-- Tradingfulness -->
+        <!-- TradingFulness -->
         <div class="diff-card reveal reveal-delay-1">
           <div class="diff-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
           </div>
-          <h3>Tradingfulness® — Il metodo che integra tecnica e mindset</h3>
-          <p>La maggior parte dei formatori separa le due cose: tecnica da una parte, psicologia dall'altra. Noi no. Tradingfulness® è il metodo proprietario di Zenit, sviluppato per integrare lavoro operativo e mental coaching in un unico percorso continuo. Perché un trader che non gestisce le emozioni non esegue il proprio setup, neanche se lo conosce perfettamente.</p>
+          <h3>TradingFulness® — Il metodo che integra tecnica e mindset</h3>
+          <p>La maggior parte dei formatori separa le due cose: tecnica da una parte, psicologia dall'altra. Noi no. TradingFulness® è il metodo proprietario di Zenit, sviluppato per integrare lavoro operativo e mental coaching in un unico percorso continuo. Perché un trader che non gestisce le emozioni non esegue il proprio setup, neanche se lo conosce perfettamente.</p>
         </div>
         <!-- Coach ICF -->
         <div class="diff-card reveal reveal-delay-2">
@@ -1187,7 +1180,7 @@
   <section class="section method" id="metodo">
     <!-- Background image at low opacity -->
     <div class="method-bg-wrap" aria-hidden="true">
-      <img src="/assets/method-bg.webp" alt="" loading="lazy">
+      <img src="https://zenitcoach.com/assets/method-bg.webp" alt="" loading="lazy">
     </div>
     <div class="method-gradient" aria-hidden="true"></div>
     <div class="method-glow-bg" aria-hidden="true"></div>
@@ -1205,9 +1198,7 @@
         <span class="formula-char muted">=</span>
         <span class="formula-char gold">M</span>
         <span class="formula-char muted">·</span>
-        <span class="formula-char gold">C</span>
-        <span class="formula-char muted">·</span>
-        <span class="formula-char gold">C</span>
+        <span class="formula-char gold">C<sup class="formula-sup">2</sup></span>
       </div>
 
       <!-- 4 pillars -->
@@ -1282,7 +1273,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>
           </div>
           <h3>Zeta Club — La casa operativa del trader Zenit</h3>
-          <p>Trading room live quotidiane, classroom mensili, eventi Tradingfulness, community privata, accesso alle registrazioni. Tutto ciò che serve per operare ogni giorno con un contesto reale.</p>
+          <p>Trading room live quotidiane, classroom mensili, eventi TradingFulness, community privata, accesso alle registrazioni. Tutto ciò che serve per operare ogni giorno con un contesto reale.</p>
           <a href="/zeta-club" class="btn btn-gold" style="width:100%;justify-content:center;">Scopri lo Zeta Club</a>
         </div>
 
@@ -1292,7 +1283,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
           </div>
           <h3>Professione Trader — Il percorso completo</h3>
-          <p>Il video corso che accompagna lo Zeta Club: dalle basi dell'analisi tecnica fino alle strategie avanzate, con sessioni di backtesting incluse. Incluso nello Zeta Club dal piano trimestrale in su.</p>
+          <p>Il video corso che accompagna lo Zeta Club: dalle basi dell'analisi tecnica fino alle strategie avanzate, con sessioni di backtesting incluse. Incluso nello Zeta Club.</p>
           <a href="/corsi-di-trading" class="btn btn-gold-outline" style="width:100%;justify-content:center;">Scopri Professione Trader</a>
         </div>
       </div>
@@ -1307,7 +1298,7 @@
     <div class="proof-glow-bg" aria-hidden="true"></div>
     <div class="container proof-content">
       <div class="section-header reveal">
-        <h2>Non promettiamo risultati. <em>Mostriamo un processo.</em></h2>
+        <h2>Non promettiamo risultati. <em>Promettiamo di insegnarti un processo.</em></h2>
         <p>La community Zenit conta oltre 800 trader. Non mostriamo i migliori — mostriamo i reali.</p>
       </div>
 
@@ -1344,29 +1335,54 @@
       </div>
 
       <!-- Testimonials -->
-      <div class="testimonials-grid">
+      <!-- Changed to 6 testimonials - grid adjusted to auto-fit -->
+      <div class="testimonials-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Grandioso Simo..... Ti ringrazio, per tutto quello che fai... che fate. E' vero che la vostra è un'attività, siete quindi anche imprenditori, ma l'attenzione e la cura che mettete nel considerare le persone come  tali (e non come numeri) è evidente. Volevo solamente ringraziare.</p>
+          <div class="testimonial-footer">
+            <p class="testimonial-name">Patty</p>
+            <p class="testimonial-role">Trader Professionista</p>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Mi aggiungo anche io. Questo gruppo è prezioso. Chi l'ha creato e lo porta avanti sono persone con un cuore d'oro, infinita pazienza e moltissima professionalità/ esperienza. Fatene tesoro.</p>
+          <div class="testimonial-footer">
+            <p class="testimonial-name">Joel</p>
+            <p class="testimonial-role">Studente</p>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Te l'ho già detto e te lo ripeto per me tu sei un riferimento un modello sano da seguire. Anche se riesco a singhiozzo a seguire nella quotidianità le varie lezioni però come posso ci sono. Tu e la tua community siete il prodotto più genuino che c'è in questo mondo e chi vi incontra è fortunato</p>
+          <div class="testimonial-footer">
+            <p class="testimonial-name">Adriano</p>
+            <p class="testimonial-role">Studente founders</p>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Ma Voi mi avete veramente preso per mano con immensa umiltà e grande competenza e, al di là di tutto, la Vostra conoscenza mi arricchisce e mi rafforza la capacità che stavo perdendo di credere in altre persone. Anche per questo non smetterò mai di ringraziarVi. 💝</p>
+          <div class="testimonial-footer">
+            <p class="testimonial-name">Michele</p>
+            <p class="testimonial-role">Studente e Coachee</p>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">Questo è stato il mio Buongiornocarissimi Colleghi 🤩 Ho passato la prima fase challenge della mia prima prop firm. Ci tengo a dirvi una cosa molto importante che tanti di Voi già sanno... Poco più di un anno fa volevo lasciare il mondo del trading, poi Zenit mi ha preso per mano, ed eccomi qui! Si può fare 💪🏼💪🏼💪🏼</p>
+          <div class="testimonial-footer">
+            <p class="testimonial-name">Stefania</p>
+            <p class="testimonial-role">Studente</p>
+          </div>
+        </div>
         <div class="testimonial-card reveal">
           <div class="testimonial-quote-mark">"</div>
           <p class="testimonial-text">Questo successo non è solo mio, ma dimostra che chiunque può farcela, indipendentemente dalle difficoltà. Ho iniziato con tante domande e pochi strumenti, ma oggi sono qui a celebrare insieme a voi un obiettivo che sembrava lontano. Con il giusto approccio e il supporto della squadra, ogni sogno è possibile.</p>
           <div class="testimonial-footer">
             <p class="testimonial-name">Edoardo</p>
-            <p class="testimonial-role">Founded Traders</p>
-          </div>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-1">
-          <div class="testimonial-quote-mark">"</div>
-          <p class="testimonial-text">Questo successo non è solo mio, ma dimostra che chiunque può farcela, indipendentemente dalle difficoltà. Ho iniziato con tante domande e pochi strumenti, ma oggi sono qui a celebrare insieme a voi un obiettivo che sembrava lontano. Con il giusto approccio e il supporto della squadra, ogni sogno è possibile.</p>
-          <div class="testimonial-footer">
-            <p class="testimonial-name">Edoardo</p>
-            <p class="testimonial-role">Founded Traders</p>
-          </div>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-2">
-          <div class="testimonial-quote-mark">"</div>
-          <p class="testimonial-text">Questo successo non è solo mio, ma dimostra che chiunque può farcela, indipendentemente dalle difficoltà. Ho iniziato con tante domande e pochi strumenti, ma oggi sono qui a celebrare insieme a voi un obiettivo che sembrava lontano. Con il giusto approccio e il supporto della squadra, ogni sogno è possibile.</p>
-          <div class="testimonial-footer">
-            <p class="testimonial-name">Edoardo</p>
-            <p class="testimonial-role">Founded Traders</p>
+            <p class="testimonial-role">Founded Trader</p>
           </div>
         </div>
       </div>
@@ -1452,7 +1468,7 @@
             <span>Come funziona lo Zeta Club?</span>
             <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-body"><p>È una membership che ti dà accesso a tutto l'ecosistema Zenit: trading room live quotidiane, classroom mensili, community privata Telegram, eventi Tradingfulness, registrazioni di tutte le sessioni.</p></div>
+          <div class="faq-body"><p>È una membership che ti dà accesso a tutto l'ecosistema Zenit: trading room live quotidiane, classroom mensili, community privata Telegram, eventi TradingFulness, registrazioni di tutte le sessioni.</p></div>
         </div>
 
         <div class="faq-item">
@@ -1473,7 +1489,7 @@
   <section class="section final-cta">
     <!-- Background image at low opacity -->
     <div class="final-cta-bg-wrap" aria-hidden="true">
-      <img src="/assets/cta-bg.webp" alt="" loading="lazy">
+      <img src="https://zenitcoach.com/assets/cta-bg.webp" alt="" loading="lazy">
     </div>
     <div class="final-cta-gradient" aria-hidden="true"></div>
     <div class="final-cta-glow" aria-hidden="true"></div>
@@ -1484,13 +1500,9 @@
         <p>Ogni giorno che passi davanti al grafico senza un contesto reale alle spalle è un giorno in cui impari meno di quanto potresti. Non perché manchi di capacità — ma perché il trading non si costruisce nell'isolamento. Il prossimo passo è semplice: entra nella community gratuita, guarda come lavoriamo, e decidi tu.</p>
       </div>
       <div class="final-cta-buttons">
-        <a href="/zeta-club" class="btn btn-gold btn-lg">
-          Entra nello Zeta Club
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-        <a href="https://t.me/zenitcoaching" target="_blank" rel="noopener" class="btn btn-gold-outline btn-lg">
+        <a href="https://t.me/zenitcoaching" target="_blank" rel="noopener" class="btn btn-gold btn-lg">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
-          Inizia dal Telegram gratuito — zero impegno
+          Entra nel gruppo Telegram
         </a>
       </div>
     </div>
@@ -1502,7 +1514,7 @@
   ══════════════════════════════════════ -->
   <footer class="footer">
     <div class="container footer-inner">
-      <a href="/" class="footer-logo">ZENIT</a>
+      <a href="/" class="footer-logo">ZENIT COACHING</a>
       <nav class="footer-nav">
         <a href="/chi-siamo">Chi siamo</a>
         <a href="/contatti">Contatti</a>
@@ -1512,11 +1524,11 @@
       <p class="footer-copy">© <span id="year"></span> Zenit Coaching. Tutti i diritti riservati.</p>
     </div>
     <div class="container footer-legal">
-      <a href="https://zenitcoach.com/privacy-policy" target="_blank">Privacy Policy</a>
-      <a href="https://zenitcoach.com/cookie-policy" target="_blank">Cookie Policy</a>
-      <a href="https://zenitcoach.com/preferenze-privacy" target="_blank">Preferenze Privacy</a>
-      <a href="https://zenitcoach.com/note-legali" target="_blank">Note Legali</a>
-      <a href="https://zenitcoach.com/disclaimer" target="_blank">Disclaimer</a>
+      <a href="https://trading.zenitcoach.com/privacy-policy" target="_blank">Privacy Policy</a>
+      <a href="https://trading.zenitcoach.com/cookie-policy" target="_blank">Cookie Policy</a>
+      <a href="https://trading.zenitcoach.com/preferenze-privacy" target="_blank">Preferenze Privacy</a>
+      <a href="https://trading.zenitcoach.com/note-legali" target="_blank">Note Legali</a>
+      <a href="https://trading.zenitcoach.com/disclaimer" target="_blank">Disclaimer</a>
     </div>
   </footer>
 
