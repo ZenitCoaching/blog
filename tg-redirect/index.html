@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenit Coaching — Accesso Telegram</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      background: #0b0b0b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var fbclid = params.get('fbclid') || '';
+      var ts = Date.now();
+      var fbc = fbclid ? ('fb.1.' + ts + '.' + fbclid) : '';
+
+      if (fbclid) {
+        var payload = JSON.stringify({
+          fbclid: fbclid,
+          fbc: fbc,
+          timestamp: new Date().toISOString(),
+          usato: false
+        });
+        try {
+          navigator.sendBeacon(
+            'https://hook.eu2.make.com/iy5o51kbj68at6v2ai111xed1wz2o8hr',
+            new Blob([payload], { type: 'application/json' })
+          );
+        } catch (e) {}
+      }
+
+      window.location.replace('https://t.me/+1gMqv0s0OAU1MDU0');
+    })();
+  </script>
+</body>
+</html>
