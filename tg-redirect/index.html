@@ -18,12 +18,30 @@
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1081781553259306');
-    fbq('track', 'Lead');
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1081781553259306&ev=Lead&noscript=1"/></noscript>
   <!-- End Meta Pixel Code -->
 </head>
 <body>
+  <script>
+    var redirected = false;
+
+    function goToTelegram() {
+      if (redirected) return;
+      redirected = true;
+      window.location.replace('https://t.me/+1gMqv0s0OAU1MDU0');
+    }
+
+    fbq('track', 'Lead', {}, {
+      event_callback: function() {
+        goToTelegram();
+      }
+    });
+
+    setTimeout(function() {
+      goToTelegram();
+    }, 500);
+  </script>
   <script>
     (function () {
       var params = new URLSearchParams(window.location.search);
@@ -45,8 +63,6 @@
           );
         } catch (e) {}
       }
-
-      window.location.replace('https://t.me/+1gMqv0s0OAU1MDU0');
     })();
   </script>
 </body>
