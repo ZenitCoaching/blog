@@ -2,18 +2,12 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Zenit Coaching — Accesso Telegram</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body {
-      height: 100%;
-      background: #0b0b0b;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -21,8 +15,253 @@
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1081781553259306&ev=Lead&noscript=1"/></noscript>
   <!-- End Meta Pixel Code -->
+
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --gold: #ca9d5d;
+      --gold-light: #e0be82;
+      --gold-dark: #9a7540;
+      --gold-glow-strong: rgba(202, 157, 93, 0.38);
+      --white: #ecebe9;
+      --white-pure: #ffffff;
+      --gray: #888888;
+      --gray-light: #aaaaaa;
+      --gray-dark: #444444;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      background: var(--black);
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--white);
+      background: var(--black);
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(202, 157, 93, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(202, 157, 93, 0.04) 1px, transparent 1px);
+      background-size: 56px 56px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .bg-glow-main {
+      position: fixed;
+      bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 500px;
+      background: radial-gradient(ellipse at center, rgba(202, 157, 93, 0.18) 0%, rgba(202, 157, 93, 0.05) 50%, transparent 75%);
+      pointer-events: none;
+      z-index: 2;
+      animation: glowBreath 6s ease-in-out infinite;
+    }
+
+    .bg-noise {
+      position: fixed;
+      inset: 0;
+      opacity: 0.035;
+      pointer-events: none;
+      z-index: 3;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 200px 200px;
+    }
+
+    .bg-vignette {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.6) 100%);
+      pointer-events: none;
+      z-index: 4;
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      object-fit: contain;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp 0.5s ease 0.1s forwards;
+    }
+
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 3px solid rgba(202, 157, 93, 0.2);
+      border-top-color: var(--gold);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp 0.5s ease 0.2s forwards, spin 0.8s linear infinite 0.2s;
+    }
+
+    .headline {
+      font-family: 'Instrument Serif', serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--white-pure);
+      margin-bottom: 12px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.3s forwards;
+    }
+
+    .subline {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.6;
+      margin-bottom: 36px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.4s forwards;
+    }
+
+    .fallback-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      max-width: 280px;
+      padding: 16px 24px;
+      background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 48%, var(--gold-light) 100%);
+      color: #0b0b0b;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow:
+        0 0 0 1px rgba(202, 157, 93, 0.2),
+        0 4px 24px var(--gold-glow-strong),
+        0 12px 40px rgba(202, 157, 93, 0.15);
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.6s forwards;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .fallback-btn:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 0 0 1px rgba(202, 157, 93, 0.35),
+        0 8px 32px var(--gold-glow-strong),
+        0 20px 60px rgba(202, 157, 93, 0.2);
+    }
+
+    .fallback-btn:active {
+      transform: translateY(0) scale(0.99);
+    }
+
+    .fallback-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: #0b0b0b;
+      flex-shrink: 0;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes glowBreath {
+      0%, 100% {
+        opacity: 0.85;
+        transform: translateX(-50%) scale(1);
+      }
+      50% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.08);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
 </head>
 <body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-glow-main"></div>
+  <div class="bg-noise"></div>
+  <div class="bg-vignette"></div>
+
+  <div class="content">
+    <img
+      class="logo"
+      src="https://storage.googleapis.com/msgsndr/35opU1g13gqLiscdcXiS/media/6995eb6a3fd42012833e9d90.webp"
+      alt="Zenit Coaching"
+    >
+    <div class="spinner"></div>
+    <h1 class="headline">Ti stiamo portando su Telegram...</h1>
+    <p class="subline">Se non vieni reindirizzato automaticamente, clicca il bottone qui sotto.</p>
+    <a href="https://t.me/+1gMqv0s0OAU1MDU0" class="fallback-btn" id="tg-fallback-btn">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+      </svg>
+      Clicca qui se non vieni reindirizzato
+    </a>
+  </div>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1081781553259306');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1081781553259306&ev=Lead&noscript=1"/></noscript>
+  <!-- End Meta Pixel Code -->
+
   <script>
     var redirected = false;
 
@@ -42,6 +281,7 @@
       goToTelegram();
     }, 500);
   </script>
+
   <script>
     (function () {
       var params = new URLSearchParams(window.location.search);
@@ -65,5 +305,6 @@
       }
     })();
   </script>
+
 </body>
 </html>
