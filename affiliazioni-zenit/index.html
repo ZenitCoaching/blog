@@ -366,9 +366,9 @@ h1, h2, h3 {
 
 .card-actions {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  margin-top: auto;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
 .card-btn {
@@ -385,7 +385,8 @@ h1, h2, h3 {
   transition: all 0.25s ease;
   cursor: pointer;
   border: none;
-  flex: 1;
+  flex: 1 1 auto;
+  min-width: 0;
   white-space: nowrap;
 }
 
@@ -562,10 +563,6 @@ h1, h2, h3 {
         <div class="card-icon">🏆</div>
         <h3 class="card-title">The5ers</h3>
         <p class="card-desc">Una delle principali prop firm del settore. Accedi a capitali fino a 4 milioni di dollari in condizioni di mercato reali. Regole trasparenti, payout veloci, senza sorprese nascoste.</p>
-        <div class="card-coupon">
-          <span class="card-coupon-label">Codice sconto:</span>
-          <span class="card-coupon-code">ZENIT</span>
-        </div>
         <div class="card-actions">
           <a href="https://www.youtube.com/watch?v=UifkCPut5DI" target="_blank" rel="noopener noreferrer" class="card-btn btn-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -576,6 +573,10 @@ h1, h2, h3 {
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
           </a>
         </div>
+        <div class="card-coupon">
+          <span class="card-coupon-label">Codice sconto:</span>
+          <span class="card-coupon-code">ZENIT</span>
+        </div>
       </div>
 
       <!-- Fintokei -->
@@ -584,10 +585,6 @@ h1, h2, h3 {
         <div class="card-icon">📊</div>
         <h3 class="card-title">Fintokei</h3>
         <p class="card-desc">Accedi a capitali significativi e opportunità di trading come trader professionista attraverso una delle principali prop firm del settore. Condizioni competitive e supporto dedicato.</p>
-        <div class="card-coupon">
-          <span class="card-coupon-label">Codice sconto:</span>
-          <span class="card-coupon-code">ZENIT15</span>
-        </div>
         <div class="card-actions">
           <a href="https://youtu.be/7dbpRPrlIqc" target="_blank" rel="noopener noreferrer" class="card-btn btn-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -598,6 +595,10 @@ h1, h2, h3 {
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
           </a>
         </div>
+        <div class="card-coupon">
+          <span class="card-coupon-label">Codice sconto:</span>
+          <span class="card-coupon-code">ZENIT15</span>
+        </div>
       </div>
 
       <!-- RiskGuard -->
@@ -605,11 +606,7 @@ h1, h2, h3 {
         <div class="card-badge">Risk Management</div>
         <div class="card-icon">🛡️</div>
         <h3 class="card-title">RiskGuard</h3>
-        <p class="card-desc">Expert advisor dedicato al risk management automatico. Proteggi il tuo capitale e gestisci l'esposizione in modo sistematico, senza intervento manuale durante le sessioni.</p>
-        <div class="card-coupon">
-          <span class="card-coupon-label">Codice sconto:</span>
-          <span class="card-coupon-code">ZENITRG</span>
-        </div>
+<p class="card-desc">Expert advisor dedicato al risk management automatico. Proteggi il tuo capitale e gestisci l'esposizione in modo sistematico, senza intervento manuale durante le sessioni.</p>
         <div class="card-actions">
           <a href="https://youtube.com/live/ww-hY3NC9VA" target="_blank" rel="noopener noreferrer" class="card-btn btn-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -621,8 +618,12 @@ h1, h2, h3 {
           </a>
           <a href="https://www.riskguardmanagement.com/category/all-products?ref=ZENITRG15" target="_blank" rel="noopener noreferrer" class="card-btn btn-primary">
             Ottieni Sconto
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1-2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
           </a>
+        </div>
+        <div class="card-coupon">
+          <span class="card-coupon-label">Codice sconto:</span>
+          <span class="card-coupon-code">ZENITRG</span>
         </div>
       </div>
 
@@ -631,11 +632,7 @@ h1, h2, h3 {
         <div class="card-badge">Analytics Platform</div>
         <div class="card-icon">📈</div>
         <h3 class="card-title">TotalTrade</h3>
-        <p class="card-desc">Piattaforma AI-driven per backtest, analisi di volatilità, stagionalità e sentiment in un'unica dashboard. Piano gratuito disponibile per iniziare subito.</p>
-        <div class="card-coupon">
-          <span class="card-coupon-label">Codice sconto:</span>
-          <span class="card-coupon-code">ZENIT10</span>
-        </div>
+<p class="card-desc">Piattaforma AI-driven per backtest, analisi di volatilità, stagionalità e sentiment in un'unica dashboard. Piano gratuito disponibile per iniziare subito.</p>
         <div class="card-actions">
           <a href="https://youtu.be/p0sh6gn0fB4" target="_blank" rel="noopener noreferrer" class="card-btn btn-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -647,8 +644,12 @@ h1, h2, h3 {
           </a>
           <a href="https://totaltrade.ai/" target="_blank" rel="noopener noreferrer" class="card-btn btn-primary">
             Ottieni Sconto
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1-2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
           </a>
+        </div>
+        <div class="card-coupon">
+          <span class="card-coupon-label">Codice sconto:</span>
+          <span class="card-coupon-code">ZENIT10</span>
         </div>
       </div>
 
@@ -657,11 +658,21 @@ h1, h2, h3 {
         <div class="card-badge">Charting Platform</div>
         <div class="card-icon">📉</div>
         <h3 class="card-title">TradingView</h3>
-        <p class="card-desc">La piattaforma preferita dai trader di tutto il mondo per analisi tecnica avanzata, grafici interattivi e strumenti di screening. Integrata nativamente nel workflow Zenit.</p>
+<p class="card-desc">La piattaforma preferita dai trader di tutto il mondo per analisi tecnica avanzata, grafici interattivi e strumenti di screening. Integrata nativamente nel workflow Zenit.</p>
+        <div class="card-actions">
+          <a href="https://www.tradingview.com/?aff_id=149522" target="_blank" rel="noopener noreferrer" class="card-btn btn-primary btn-wide">
+            Ottieni Sconto
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1-2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+          </a>
+        </div>
         <div class="card-coupon">
           <span class="card-coupon-label">Codice sconto:</span>
           <span class="card-coupon-code">ZENIT</span>
         </div>
+      </div>
+
+    </div>
+  </div>
         <div class="card-actions">
           <a href="https://www.tradingview.com/?aff_id=149522" target="_blank" rel="noopener noreferrer" class="card-btn btn-primary btn-wide">
             Ottieni Sconto
