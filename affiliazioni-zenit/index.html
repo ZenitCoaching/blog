@@ -176,20 +176,20 @@ h1, h2, h3 {
 
 .hero {
   min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(5,5,5,.32) 0%, rgba(5,5,5,.72) 76%, #070707 100%),
     url('https://zenitcoach.com/assets/hero-bg.webp') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .hero::before,
 .hero::after {
   content: "";
   position: absolute;
-  inset: auto;
   border-radius: 50%;
   pointer-events: none;
   filter: blur(18px);
@@ -207,12 +207,12 @@ h1, h2, h3 {
   background: radial-gradient(circle, rgba(202,157,93,0.12), transparent 70%);
 }
 
-.hero-content {
+.hero-inner {
   position: relative;
   z-index: 2;
   width: 100%;
   max-width: 1080px;
-  padding: 140px 0 80px;
+  padding: 140px 24px 80px;
 }
 .hero-badge {
   display: inline-flex;
@@ -234,19 +234,18 @@ h1, h2, h3 {
   background: var(--gold);
 }
 .hero h1 {
-  max-width: 900px;
-  margin: 0 auto 22px;
   font-size: clamp(2.8rem, 7vw, 5.5rem);
   line-height: .96;
   text-align: center;
+  margin: 0 auto 22px;
 }
 .hero-subtitle {
   max-width: 720px;
-  margin: 0 auto 32px;
   font-size: clamp(1rem, 1.4vw, 1.2rem);
   line-height: 1.85;
   color: var(--text-soft);
   text-align: center;
+  margin: 0 auto;
 }
 
 .intro-section {
@@ -426,18 +425,10 @@ h1, h2, h3 {
   font-size: 1.25rem;
   letter-spacing: 0.05em;
 }
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-.footer-nav a { font-size: 0.875rem; color: var(--text-muted); transition: color 0.2s ease; }
-.footer-nav a:hover { color: var(--text); }
 .footer-copy {
   font-size: 0.75rem;
   color: var(--text-muted);
+  text-align: center;
 }
 .footer-legal {
   display: flex;
@@ -464,7 +455,7 @@ h1, h2, h3 {
   .navbar-inner { height: 64px; }
   .navbar-links, .navbar-right > .btn { display: none; }
   .hamburger { display: block; }
-  .hero-content { padding: 120px 0 70px; }
+  .hero-inner { padding: 120px 24px 70px; }
   .partners-grid { grid-template-columns: 1fr; }
 }
 
@@ -475,10 +466,6 @@ h1, h2, h3 {
   .partner-card { padding: 24px 20px 20px; }
 }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(28px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -496,12 +483,11 @@ h1, h2, h3 {
 
   <header class="navbar" id="navbar">
     <div class="container navbar-inner">
-      <a href="/" class="navbar-logo">ZENIT COACHING</a>
+      <a href="https://zenitcoach.com" class="navbar-logo">ZENIT COACHING</a>
       <nav class="navbar-links">
         <a href="#partner">Partner</a>
       </nav>
       <div class="navbar-right">
-        <a href="https://trading.zenitcoach.com/entra-ora-anticorso" class="btn btn-gold">Entra nello Zeta Club</a>
         <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
           <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
           <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -511,21 +497,19 @@ h1, h2, h3 {
     <div class="mobile-menu" id="mobile-menu">
       <nav>
         <a href="#partner">Partner</a>
-        <a href="https://trading.zenitcoach.com/entra-ora-anticorso" class="btn btn-gold">Entra nello Zeta Club</a>
+        <a href="https://zenitcoach.com">Zenit Coaching</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="badge-dot" aria-hidden="true"></span>
-          Sconti riservati alla community
-        </div>
-        <h1>I nostri partner — <em>vantaggi esclusivi</em> per chi opera con Zenit</h1>
-        <p class="hero-subtitle">Accedi a condizioni preferenziali sulle piattaforme e strumenti che usiamo ogni giorno. Ogni sconto è riservato a chi fa parte della community Zenit.</p>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Sconti riservati alla community
       </div>
+      <h1>I nostri partner — <em>vantaggi esclusivi</em> per chi opera con Zenit</h1>
+      <p class="hero-subtitle">Accedi a condizioni preferenziali sulle piattaforme e strumenti che usiamo ogni giorno. Ogni sconto è riservato a chi fa parte della community Zenit.</p>
     </div>
   </section>
 
@@ -651,12 +635,7 @@ h1, h2, h3 {
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <a href="/" class="footer-logo">ZENIT COACHING</a>
-        <nav class="footer-nav">
-          <a href="https://trading.zenitcoach.com/entra-ora-anticorso">Entra nello Zeta Club</a>
-          <a href="https://trading.zenitcoach.com/zeta-club">Zeta Club</a>
-          <a href="https://trading.zenitcoach.com/trading/corsi-di-trading">Professione Trader</a>
-        </nav>
+        <a href="https://zenitcoach.com" class="footer-logo">ZENIT COACHING</a>
       </div>
       <div class="footer-legal">
         <a href="https://trading.zenitcoach.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
@@ -665,7 +644,7 @@ h1, h2, h3 {
         <a href="https://trading.zenitcoach.com/note-legali" target="_blank" rel="noopener noreferrer">Note Legali</a>
         <a href="https://trading.zenitcoach.com/disclaimer" target="_blank" rel="noopener noreferrer">Disclaimer</a>
       </div>
-      <p class="footer-copy" style="margin-top: 24px; text-align: center;">© 2026 Zenit Coaching. Tutti i diritti riservati.</p>
+      <p class="footer-copy">© 2026 Zenit Coaching. Tutti i diritti riservati.</p>
     </div>
   </footer>
 
