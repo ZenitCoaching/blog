@@ -366,7 +366,7 @@ h1, h2, h3 {
 
 .card-actions {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
   margin-top: auto;
 }
@@ -375,17 +375,22 @@ h1, h2, h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 13px 18px;
+  gap: 6px;
+  padding: 11px 14px;
   border-radius: 10px;
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: .88rem;
+  font-size: .82rem;
   text-decoration: none;
   transition: all 0.25s ease;
   cursor: pointer;
   border: none;
-  width: 100%;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.card-btn.btn-wide {
+  flex: 1.4;
 }
 
 .btn-primary {
@@ -477,6 +482,33 @@ h1, h2, h3 {
 .reveal-delay-3 { transition-delay: .36s; }
 .reveal-delay-4 { transition-delay: .48s; }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  padding: 0 16px;
+  height: 36px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+  color: #0A0A0A;
+  box-shadow: 0 10px 15px -3px rgba(202,157,93,0.2);
+}
+
+.btn-gold:hover { opacity: 0.9; }
+
   </style>
 </head>
 <body>
@@ -488,6 +520,7 @@ h1, h2, h3 {
         <a href="#partner">Partner</a>
       </nav>
       <div class="navbar-right">
+        <a href="https://trading.zenitcoach.com/entra-ora-anticorso" class="btn btn-gold">Entra nello Zeta Club</a>
         <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
           <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
           <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -534,7 +567,7 @@ h1, h2, h3 {
           <span class="card-coupon-code">ZENIT</span>
         </div>
         <div class="card-actions">
-          <a href="https://www.the5ers.com/?afmc=15vt" target="_blank" rel="noopener noreferrer" class="card-btn btn-primary">
+          <a href="https://www.the5ers.com/?afmc=15vt" target="_blank" rel="noopener noreferrer" class="card-btn btn-primary btn-wide">
             Ottieni Sconto
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
           </a>
@@ -622,7 +655,7 @@ h1, h2, h3 {
           <span class="card-coupon-code">ZENIT</span>
         </div>
         <div class="card-actions">
-          <a href="https://www.tradingview.com/?aff_id=149522" target="_blank" rel="noopener noreferrer" class="card-btn btn-primary">
+          <a href="https://www.tradingview.com/?aff_id=149522" target="_blank" rel="noopener noreferrer" class="card-btn btn-primary btn-wide">
             Ottieni Sconto
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
           </a>
