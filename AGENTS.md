@@ -10,7 +10,10 @@ Ogni volta che viene creato o modificato un file HTML in `blog/` o in `trading/b
    ```
    Questo sincronizza automaticamente `trading/blog/index.html` con tutti gli articoli presenti nella repo.
 
-2. **Verificare il dominio**
+2. **Verificare GTM (Google Tag Manager)**
+   Lo script sopra segnala se manca GTM in qualche pagina. In caso, incolla in **<head>** e subito dopo **<body>** di ogni nuovo file HTML gli snippet forniti da Google Tag Manager (ID `GTM-MCBW9JTG`).
+
+3. **Verificare il dominio**
    Tutti i link, i canonical e gli Open Graph devono usare `zenitcoach.com`, **mai** `zenitcoaching.it`.
 
 3. **Committare e pushare**

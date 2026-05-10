@@ -151,6 +151,23 @@ def main():
     print(f"✅ Blog index aggiornato: {INDEX_PATH}")
     print(f"   Articoli trovati: {len(all_articles)}")
 
+    # 6. Verifica GTM su tutte le pagine HTML
+    gtm_missing = []
+    for html_path in glob.glob(os.path.join(BASE_DIR, "**", "*.html"), recursive=True):
+        with open(html_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        if "GTM-MCBW9JTG" not in content:
+            rel = os.path.relpath(html_path, BASE_DIR)
+            gtm_missing.append(rel)
+
+    if gtm_missing:
+        print("\n⚠️  WARNING: GTM mancante nelle seguenti pagine:")
+        for p in gtm_missing:
+            print(f"   - {p}")
+        print("   → Ricorda di inserire gli snippet GTM in <head> e subito dopo <body>.\n")
+    else:
+        print("   ✅ GTM presente su tutte le pagine.")
+
 
 if __name__ == "__main__":
     main()
