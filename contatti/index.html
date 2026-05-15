@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | Zenit Coaching</title>
+  <link rel="icon" href="https://storage.googleapis.com/msgsndr/35opU1g13gqLiscdcXiS/media/6995eb6a3fd42012833e9d90.webp" type="image/webp">
+  <meta name="description" content="Contatta Zenit Coaching via email, WhatsApp o Instagram per informazioni su Zeta Club, corsi di trading e percorsi operativi.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://zenitcoach.com/contatti/">
+
+  <meta property="og:title" content="Contatti | Zenit Coaching">
+  <meta property="og:description" content="Scrivi a Zenit Coaching via email, WhatsApp o Instagram.">
+  <meta property="og:url" content="https://zenitcoach.com/contatti/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zenitcoach.com/assets/trading-room.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://zenitcoach.com/#organization",
+    "name": "Zenit Coaching",
+    "url": "https://zenitcoach.com/",
+    "email": "info@zenitcoach.com",
+    "telephone": "+393519218205",
+    "sameAs": [
+      "https://www.instagram.com/zenit_coaching"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "info@zenitcoach.com",
+      "telephone": "+393519218205",
+      "availableLanguage": "it"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #070707;
+      --gold: #ca9d5d;
+      --gold-light: #efd09a;
+      --gold-dark: #8e6836;
+      --text: #f2ede7;
+      --text-soft: #d2cbc3;
+      --text-muted: #9b948d;
+      --border: rgba(255,255,255,0.08);
+      --shadow-card: 0 20px 60px rgba(0,0,0,0.35);
+      --shadow-gold: 0 30px 80px rgba(202,157,93,0.10);
+      --radius: 28px;
+      --container: 1120px;
+      --font-body: "DM Sans", system-ui, sans-serif;
+      --font-serif: "Instrument Serif", Georgia, serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: clip; }
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(202,157,93,0.10), transparent 28%),
+        radial-gradient(circle at 90% 20%, rgba(202,157,93,0.07), transparent 30%),
+        linear-gradient(180deg, #060606 0%, #090909 42%, #070707 100%);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .34;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 120px 120px;
+      mask-image: radial-gradient(circle at center, black 25%, transparent 85%);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(100% - 32px, var(--container)); margin-inline: auto; }
+
+    .text-gradient-gold,
+    .navbar-logo,
+    .footer-logo,
+    h1 em,
+    .contact-card h2 {
+      background: linear-gradient(135deg, #f5ddb0 0%, #d7aa68 40%, #a7783d 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h1, h2 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 1.04;
+    }
+
+    .navbar {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 20;
+      height: 64px;
+      background: rgba(10,10,10,0.72);
+      border-bottom: 1px solid rgba(43,41,37,0.35);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .navbar-inner {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .navbar-logo {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .navbar-links a:hover { color: var(--text); }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 132px 0 84px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 11% auto auto 50%;
+      transform: translateX(-50%);
+      width: min(92vw, 860px);
+      height: clamp(320px, 44vw, 500px);
+      border-radius: 999px;
+      background: radial-gradient(circle at center, rgba(202,157,93,0.13), rgba(202,157,93,0.05) 34%, transparent 72%);
+      filter: blur(8px);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 940px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(202,157,93,0.22);
+      background: rgba(255,255,255,0.04);
+      color: var(--gold-light);
+      font-size: .82rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 6.1rem);
+      margin-bottom: 28px;
+    }
+
+    .hero-lead {
+      max-width: 760px;
+      margin: 0 auto 42px;
+      color: var(--text-soft);
+      font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+      line-height: 1.9;
+    }
+
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 18px;
+      text-align: left;
+    }
+
+    .contact-card {
+      min-height: 220px;
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02)),
+        rgba(10,10,10,0.82);
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(202,157,93,0.28);
+      box-shadow: var(--shadow-card), var(--shadow-gold);
+    }
+
+    .contact-card h2 {
+      font-size: clamp(1.55rem, 2.3vw, 2rem);
+      margin-bottom: 12px;
+    }
+
+    .contact-card p {
+      color: var(--text-muted);
+      font-size: .96rem;
+      line-height: 1.78;
+      margin-bottom: 24px;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+      color: #0A0A0A;
+      font-weight: 700;
+      font-size: .92rem;
+      text-align: center;
+    }
+
+    .note {
+      max-width: 760px;
+      margin: 36px auto 0;
+      color: var(--text-muted);
+      font-size: .96rem;
+      line-height: 1.8;
+    }
+
+    .footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid rgba(43,41,37,0.3);
+      padding: 34px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      color: var(--text-muted);
+      font-size: .85rem;
+    }
+
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 820px) {
+      .navbar-links { display: none; }
+      .contacts-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 112px; }
+      .contact-card { min-height: 190px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="/" class="navbar-logo">ZENIT COACHING</a>
+      <nav class="navbar-links" aria-label="Navigazione principale">
+        <a href="/corsi-di-trading/">Corsi</a>
+        <a href="/zeta-club/">Zeta Club</a>
+        <a href="/trading/blog/">Blog</a>
+        <a href="/chi-siamo/">Chi siamo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="badge-dot"></span> Contatti Zenit</div>
+        <h1>Parliamo solo se ha senso <em>per il tuo percorso.</em></h1>
+        <p class="hero-lead">
+          Se vuoi informazioni su Zeta Club, sui corsi di trading o sul modo in cui lavoriamo, scrivici dal canale piu' comodo. Ti rispondiamo senza automatismi e senza girarci troppo intorno.
+        </p>
+
+        <div class="contacts-grid">
+          <article class="contact-card">
+            <div>
+              <h2>Email</h2>
+              <p>Per richieste più strutturate, domande sui percorsi o informazioni amministrative.</p>
+            </div>
+            <a class="contact-link" href="mailto:info@zenitcoach.com">info@zenitcoach.com</a>
+          </article>
+
+          <article class="contact-card">
+            <div>
+              <h2>WhatsApp</h2>
+              <p>Per un contatto diretto e rapido, soprattutto se hai già visto il percorso e vuoi capire il passo successivo.</p>
+            </div>
+            <a class="contact-link" href="https://wa.me/393519218205" target="_blank" rel="noopener">+39 351 921 8205</a>
+          </article>
+
+          <article class="contact-card">
+            <div>
+              <h2>Instagram</h2>
+              <p>Per seguirci, scriverci in DM e vedere contenuti, aggiornamenti e comunicazioni della community.</p>
+            </div>
+            <a class="contact-link" href="https://www.instagram.com/zenit_coaching?igsh=ZWRueW91NWpmOHlj" target="_blank" rel="noopener">Apri Instagram</a>
+          </article>
+        </div>
+
+        <p class="note">
+          Non abbiamo inserito un form apposta: preferiamo ricevere messaggi veri, con un minimo di contesto. Se ci scrivi, dimmi da dove parti e cosa stai cercando.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="/" class="footer-logo">ZENIT COACHING</a>
+      <span>© 2026 Zenit Coaching. Tutti i diritti riservati.</span>
+    </div>
+  </footer>
+</body>
+</html>
