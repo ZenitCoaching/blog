@@ -62,14 +62,26 @@ def page_url(rel: str) -> str | None:
     return f"{BASE_URL}/{directory}"
 
 
+def attr_value(tag: str, attr: str) -> str | None:
+    match = re.search(attr + r'\s*=\s*(["\\'])(.*?)\\1', tag, re.I)
+    return html.unescape(match.group(2)) if match else None
+
+
 def has_noindex(text: str) -> bool:
-    match = re.search(r'<meta[^>]+name=["\\']robots["\\'][^>]+content=["\\']([^"\\']+)["\\']', text, re.I)
-    return bool(match and "noindex" in match.group(1).lower())
+    for tag in re.findall(r'<meta\b[^>]*>', text, re.I):
+        name = attr_value(tag, "name")
+        if name and name.lower() == "robots":
+            content = attr_value(tag, "content") or ""
+            return "noindex" in content.lower()
+    return False
 
 
 def canonical(text: str) -> str | None:
-    match = re.search(r'<link[^>]+rel=["\\']canonical["\\'][^>]+href=["\\']([^"\\']+)["\\']', text, re.I)
-    return html.unescape(match.group(1)) if match else None
+    for tag in re.findall(r'<link\b[^>]*>', text, re.I):
+        rel = attr_value(tag, "rel")
+        if rel and rel.lower() == "canonical":
+            return attr_value(tag, "href")
+    return None
 
 
 def lastmod(rel: str) -> str:
