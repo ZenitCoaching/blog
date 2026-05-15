@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeta Club | Trading Room Live Quotidiana | Zenit Coaching</title>
+  <link rel="icon" href="https://storage.googleapis.com/msgsndr/35opU1g13gqLiscdcXiS/media/6995eb6a3fd42012833e9d90.webp" type="image/webp">
+  <meta name="description" content="Zeta Club è la membership operativa di Zenit: trading room live su DAX e NASDAQ, community privata, coaching e formazione continua.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://zenitcoach.com/zeta-club/">
+
+  <meta property="og:title" content="Zeta Club | Trading Room Live Quotidiana">
+  <meta property="og:description" content="Trading room quotidiane, coach presenti a mercato aperto, community privata e metodo Zenit. Non un corso da guardare, ma un contesto operativo.">
+  <meta property="og:url" content="https://zenitcoach.com/zeta-club/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zenitcoach.com/assets/trading-room.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zeta Club | Trading Room Live Quotidiana">
+  <meta name="twitter:description" content="Trading room quotidiane, metodo E=MC2, community privata e coaching continuo per chi vuole smettere di fare trading da solo.">
+  <meta name="twitter:image" content="https://zenitcoach.com/assets/trading-room.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://zenitcoach.com/#organization",
+        "name": "Zenit Coaching",
+        "url": "https://zenitcoach.com/",
+        "sameAs": [
+          "https://www.instagram.com/zenitcoaching",
+          "https://t.me/Zenit_Coaching"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://zenitcoach.com/zeta-club/#service",
+        "name": "Zeta Club",
+        "serviceType": "Membership di trading operativo",
+        "provider": {"@id": "https://zenitcoach.com/#organization"},
+        "url": "https://zenitcoach.com/zeta-club/",
+        "description": "Membership operativa con trading room live quotidiane su DAX e NASDAQ, community privata, coaching e formazione continua.",
+        "inLanguage": "it"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://zenitcoach.com/zeta-club/#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenitcoach.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Zeta Club", "item": "https://zenitcoach.com/zeta-club/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://zenitcoach.com/zeta-club/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Zeta Club è un corso di trading?",
+            "acceptedAnswer": {"@type": "Answer", "text": "No. Zeta Club è una membership operativa: include room live, community, coaching e formazione continua. I corsi sono una parte del percorso, non il centro dell'esperienza."}
+          },
+          {
+            "@type": "Question",
+            "name": "Devo essere già esperto per entrare?",
+            "acceptedAnswer": {"@type": "Answer", "text": "No. Serve serietà nel lavoro, non esperienza avanzata. La membership è pensata per chi vuole costruire metodo, disciplina e presenza operativa."}
+          },
+          {
+            "@type": "Question",
+            "name": "Le room sono segnali da copiare?",
+            "acceptedAnswer": {"@type": "Answer", "text": "No. La room serve a imparare il processo decisionale: contesto, livelli, scenari, gestione e revisione. L'obiettivo non è renderti dipendente da un segnale."}
+          },
+          {
+            "@type": "Question",
+            "name": "Cosa succede se non posso seguire sempre dal vivo?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Puoi usare registrazioni e materiale di recupero quando previsto dal percorso. Il live resta il cuore della membership, ma il lavoro continua anche fuori dalla sessione."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #070707;
+      --bg-soft: #0d0d0d;
+      --bg-card: rgba(18,18,18,0.82);
+      --panel: rgba(255,255,255,0.02);
+      --gold: #ca9d5d;
+      --gold-light: #efd09a;
+      --gold-dark: #8e6836;
+      --text: #f2ede7;
+      --text-soft: #d2cbc3;
+      --text-muted: #9b948d;
+      --border: rgba(255,255,255,0.08);
+      --border-strong: rgba(202,157,93,0.28);
+      --shadow-gold: 0 30px 80px rgba(202,157,93,0.10);
+      --shadow-card: 0 20px 60px rgba(0,0,0,0.35);
+      --radius: 28px;
+      --radius-md: 20px;
+      --radius-sm: 14px;
+      --container: 1240px;
+      --font-body: "DM Sans", system-ui, sans-serif;
+      --font-serif: "Instrument Serif", Georgia, serif;
+    }
+
+    *,
+    *::before,
+    *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; overflow-x: clip; }
+
+    body {
+      background:
+        radial-gradient(circle at 20% 0%, rgba(202,157,93,0.08), transparent 28%),
+        radial-gradient(circle at 100% 20%, rgba(202,157,93,0.06), transparent 26%),
+        linear-gradient(180deg, #060606 0%, #090909 30%, #070707 100%);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: .38;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 120px 120px;
+      mask-image: radial-gradient(circle at center, black 25%, transparent 85%);
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    section, footer, header { position: relative; z-index: 1; }
+
+    .container {
+      width: min(100% - 32px, var(--container));
+      margin-inline: auto;
+    }
+
+    .text-gradient-gold,
+    .navbar-logo,
+    .footer-logo,
+    .module-number,
+    .stat-value,
+    .method-letter,
+    h1 em,
+    h2 em,
+    .coach-card h3 {
+      background: linear-gradient(135deg, #f5ddb0 0%, #d7aa68 40%, #a7783d 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 1.04;
+    }
+
+    .section { padding: 112px 0; }
+
+    .section-header {
+      max-width: 820px;
+      margin: 0 auto 56px;
+      text-align: center;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2.2rem, 5vw, 4.15rem);
+      margin-bottom: 18px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: clamp(1rem, 1.45vw, 1.15rem);
+      line-height: 1.85;
+    }
+
+    .section-header p strong { color: var(--text-soft); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.875rem;
+      border-radius: 6px;
+      padding: 0 16px;
+      height: 36px;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: opacity 0.3s ease, background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-lg {
+      height: 44px;
+      padding: 0 32px;
+      font-size: 1rem;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+      color: #0A0A0A;
+      box-shadow: 0 10px 15px -3px rgba(202,157,93,0.2);
+    }
+
+    .btn-gold:hover { opacity: 0.9; }
+
+    .btn-gold-outline {
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid rgba(202,157,93,0.30);
+    }
+
+    .btn-gold-outline:hover { background: rgba(202,157,93,0.1); }
+
+    @keyframes pulse-dot {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .55; transform: scale(.8); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .75s ease, transform .75s ease;
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: .12s; }
+    .reveal-delay-2 { transition-delay: .24s; }
+    .reveal-delay-3 { transition-delay: .36s; }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      height: 64px;
+      background: rgba(10,10,10,0.46);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(43,41,37,0.26);
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(43,41,37,0.5);
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .navbar-logo {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .navbar-links a {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .navbar-links a:hover { color: var(--text); }
+
+    .navbar-right { display: flex; align-items: center; gap: 16px; }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text);
+      padding: 4px;
+    }
+
+    .hamburger .icon-x { display: none; }
+    .hamburger.open .icon-menu { display: none; }
+    .hamburger.open .icon-x { display: block; }
+
+    .mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(43,41,37,0.5);
+    }
+
+    .mobile-menu.open { max-height: 360px; }
+
+    .mobile-menu nav {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      gap: 20px;
+    }
+
+    .mobile-menu a {
+      font-size: 1rem;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .mobile-menu a:hover { color: var(--text); }
+    .mobile-menu .btn { align-self: flex-start; }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(5,5,5,.66) 0%, rgba(5,5,5,.78) 48%, rgba(5,5,5,.88) 78%, #070707 100%),
+        url("https://zenitcoach.com/assets/trading-room.webp") center/cover no-repeat;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto;
+      border-radius: 50%;
+      pointer-events: none;
+      filter: blur(18px);
+    }
+
+    .hero::before {
+      width: 42vw;
+      height: 42vw;
+      min-width: 340px;
+      min-height: 340px;
+      top: 9%;
+      left: -10%;
+      background: radial-gradient(circle, rgba(202,157,93,0.16), transparent 68%);
+    }
+
+    .hero::after {
+      width: 32vw;
+      height: 32vw;
+      min-width: 260px;
+      min-height: 260px;
+      right: -6%;
+      bottom: 7%;
+      background: radial-gradient(circle, rgba(202,157,93,0.12), transparent 70%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 1080px);
+      padding: 160px 0 110px;
+      text-align: center;
+      animation: fadeInUp .9s ease both;
+    }
+
+    .hero-content::before {
+      content: "";
+      position: absolute;
+      inset: 96px auto auto 50%;
+      transform: translateX(-50%);
+      width: min(92vw, 880px);
+      height: clamp(320px, 48vw, 500px);
+      border-radius: 999px;
+      background: radial-gradient(circle at center, rgba(202,157,93,0.14), rgba(202,157,93,0.05) 34%, transparent 72%);
+      filter: blur(6px);
+      z-index: -1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(202,157,93,0.22);
+      background: rgba(255,255,255,0.04);
+      color: var(--gold-light);
+      font-size: .82rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: pulse-dot 2s ease infinite;
+    }
+
+    .hero h1 {
+      max-width: 1040px;
+      margin: 0 auto 26px;
+      font-size: clamp(3rem, 6.8vw, 5.65rem);
+      line-height: .98;
+    }
+
+    .hero-subtitle {
+      max-width: 820px;
+      margin: 0 auto 36px;
+      font-size: clamp(1.05rem, 1.55vw, 1.28rem);
+      line-height: 1.9;
+      color: var(--text-soft);
+    }
+
+    .hero-ctas {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .problem { padding-top: 72px; }
+
+    .problem::before {
+      content: "01";
+      position: absolute;
+      top: 28px;
+      left: max(16px, calc((100vw - var(--container)) / 2));
+      font: 400 clamp(5rem, 9vw, 8rem)/1 var(--font-serif);
+      color: rgba(202,157,93,0.08);
+      letter-spacing: -.06em;
+      pointer-events: none;
+    }
+
+    .problem-prose-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: clamp(26px, 4vw, 42px);
+      border-radius: calc(var(--radius) + 4px);
+      border: 1px solid rgba(255,255,255,0.06);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)),
+        radial-gradient(circle at top right, rgba(202,157,93,0.09), transparent 28%);
+      box-shadow: var(--shadow-card);
+    }
+
+    .problem-prose-wrap h2 {
+      max-width: 760px;
+      margin-bottom: 30px;
+      font-size: clamp(2rem, 4.7vw, 3.8rem);
+    }
+
+    .problem-prose {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px 34px;
+      color: var(--text-muted);
+      font-size: 1.03rem;
+    }
+
+    .problem-prose p:nth-child(3),
+    .problem-prose p:nth-child(4) {
+      padding-left: 20px;
+      border-left: 1px solid rgba(202,157,93,0.18);
+    }
+
+    .problem-prose strong { color: var(--text); font-weight: 600; }
+
+    .schedule-section::before,
+    .inside-section::before,
+    .method::before,
+    .coaches-section::before,
+    .proof::before,
+    .final-cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(180deg, transparent, rgba(255,255,255,0.01), transparent);
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 22px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .schedule-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 290px;
+      padding: 32px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.07);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015)),
+        rgba(9,9,9,0.9);
+      box-shadow: var(--shadow-card);
+    }
+
+    .schedule-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -10% -35% auto;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(202,157,93,0.16), transparent 70%);
+    }
+
+    .schedule-time {
+      font-family: var(--font-serif);
+      font-size: clamp(3.5rem, 7vw, 5.6rem);
+      line-height: .9;
+      margin-bottom: 16px;
+    }
+
+    .schedule-card h3 {
+      max-width: 86%;
+      margin-bottom: 14px;
+      font-size: clamp(1.55rem, 2.4vw, 2.15rem);
+    }
+
+    .schedule-card p {
+      max-width: 92%;
+      color: var(--text-muted);
+      font-size: .98rem;
+      line-height: 1.82;
+    }
+
+    .modules-story {
+      max-width: 920px;
+      margin: 0 auto 44px;
+      padding: 28px 30px 28px 74px;
+      border-radius: 22px;
+      border: 1px solid rgba(202,157,93,0.16);
+      background:
+        linear-gradient(180deg, rgba(202,157,93,0.06), rgba(255,255,255,0.02)),
+        rgba(10,10,10,0.72);
+      color: var(--text-soft);
+      font-size: 1rem;
+      line-height: 1.85;
+      position: relative;
+    }
+
+    .modules-story::before {
+      content: "“";
+      position: absolute;
+      left: 24px;
+      top: 6px;
+      font: 400 4.8rem/1 var(--font-serif);
+      color: rgba(202,157,93,0.26);
+    }
+
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 22px;
+    }
+
+    .module-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 260px;
+      padding: 28px 28px 28px 30px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.07);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015)),
+        rgba(9,9,9,0.9);
+      box-shadow: var(--shadow-card);
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+
+    .module-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -10% -35% auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(202,157,93,0.16), transparent 70%);
+    }
+
+    .module-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(202,157,93,0.25);
+      box-shadow: var(--shadow-card), var(--shadow-gold);
+    }
+
+    .module-number {
+      font-size: clamp(3rem, 5vw, 4.1rem);
+      line-height: .9;
+      opacity: .95;
+      margin-bottom: 10px;
+    }
+
+    .module-card h3 {
+      max-width: 88%;
+      margin-bottom: 14px;
+      font-size: clamp(1.4rem, 2vw, 1.9rem);
+      line-height: 1.05;
+    }
+
+    .module-card p {
+      max-width: 92%;
+      color: var(--text-muted);
+      font-size: .98rem;
+      line-height: 1.82;
+    }
+
+    .method {
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 28%, rgba(202,157,93,0.16), transparent 34%),
+        radial-gradient(circle at 10% 80%, rgba(202,157,93,0.09), transparent 26%),
+        radial-gradient(circle at 90% 75%, rgba(202,157,93,0.09), transparent 26%);
+    }
+
+    .method-formula {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(10px, 2vw, 20px);
+      font: 400 clamp(3.5rem, 11vw, 7rem)/1 var(--font-serif);
+      margin-bottom: 44px;
+    }
+
+    .formula-char.muted { color: rgba(255,255,255,0.26); }
+    .formula-char.gold { color: var(--gold-light); }
+    .formula-sup { font-size: .44em; vertical-align: super; }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 18px;
+    }
+
+    .method-card {
+      min-height: 100%;
+      padding: 24px;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.025)),
+        rgba(8,8,8,0.62);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow-card);
+      transition: border-color .25s ease, box-shadow .25s ease;
+    }
+
+    .method-card:hover {
+      border-color: rgba(202,157,93,0.28);
+      box-shadow: var(--shadow-card), var(--shadow-gold);
+    }
+
+    .method-letter {
+      font-size: clamp(2.8rem, 5vw, 4rem);
+      margin-bottom: 12px;
+      line-height: 1;
+    }
+
+    .method-card-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .method-card-name span {
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .method-card p {
+      color: var(--text-muted);
+      font-size: .93rem;
+      line-height: 1.78;
+    }
+
+    .coaches-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .coach-card {
+      padding: 26px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.07);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015)),
+        rgba(10,10,10,0.86);
+      box-shadow: var(--shadow-card);
+      min-height: 100%;
+    }
+
+    .coach-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      margin-bottom: 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(202,157,93,0.18);
+      background: rgba(202,157,93,0.06);
+      color: var(--gold-light);
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .coach-card h3 {
+      font-size: clamp(1.45rem, 2vw, 1.9rem);
+      margin-bottom: 12px;
+    }
+
+    .coach-card p {
+      color: var(--text-muted);
+      font-size: .95rem;
+      line-height: 1.8;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 16px;
+      max-width: 980px;
+      margin: 0 auto 44px;
+    }
+
+    .stat-card {
+      position: relative;
+      overflow: hidden;
+      padding: 26px 18px;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02)),
+        rgba(10,10,10,0.82);
+      box-shadow: var(--shadow-card);
+      text-align: center;
+    }
+
+    .stat-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -20% -46% auto;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(202,157,93,0.16), transparent 70%);
+    }
+
+    .stat-value {
+      font-size: clamp(1.9rem, 3vw, 2.7rem);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: .8rem;
+      line-height: 1.5;
+    }
+
+    .faq-list {
+      max-width: 980px;
+      margin: 0 auto;
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.02)),
+        rgba(10,10,10,0.82);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: border-color .25s ease, background .25s ease;
+    }
+
+    .faq-item.open {
+      border-color: rgba(202,157,93,0.22);
+      background:
+        linear-gradient(180deg, rgba(202,157,93,0.06), rgba(255,255,255,0.02)),
+        rgba(10,10,10,0.88);
+    }
+
+    .faq-trigger {
+      width: 100%;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: none;
+      border: none;
+      text-align: left;
+      color: var(--text);
+      font: 600 1.02rem/1.5 var(--font-body);
+      cursor: pointer;
+    }
+
+    .faq-chevron {
+      flex: 0 0 auto;
+      color: var(--gold-light);
+      transition: transform .3s ease;
+    }
+
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .faq-item.open .faq-body { max-height: 460px; }
+
+    .faq-body p {
+      padding: 0 24px 22px;
+      color: var(--text-muted);
+      line-height: 1.82;
+    }
+
+    .final-cta {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .final-cta-bg-wrap {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      opacity: 0.55;
+    }
+
+    .final-cta-bg-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .final-cta-gradient {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(to top, #0A0A0A 0%, rgba(10,10,10,0.7) 50%, #0A0A0A 100%);
+    }
+
+    .final-cta-glow {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(202,157,93,0.06) 0%, transparent 70%);
+    }
+
+    .final-cta-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+    }
+
+    .final-cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(43,41,37,0.3);
+      padding: 48px 0 24px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .footer-nav a {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .footer-nav a:hover { color: var(--text); }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      font-size: 0.75rem;
+    }
+
+    .footer-legal a {
+      color: var(--text-muted);
+      opacity: .8;
+      transition: opacity .2s ease;
+    }
+
+    .footer-legal a:hover { opacity: 1; }
+
+    @media (min-width: 768px) {
+      .footer-inner { flex-direction: row; justify-content: space-between; }
+      .final-cta-buttons { flex-direction: row; }
+    }
+
+    @media (max-width: 1024px) {
+      .schedule-grid,
+      .method-grid,
+      .coaches-grid,
+      .stats-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 88px 0; }
+      .navbar-links, .navbar-right > .btn { display: none; }
+      .hamburger { display: block; }
+      .hero-content { padding: 132px 0 82px; }
+      .hero h1 { font-size: clamp(2.45rem, 14vw, 4rem); }
+      .hero-subtitle { font-size: 1rem; }
+      .btn-lg { width: 100%; }
+      .hero-ctas, .final-cta-buttons { flex-direction: column; }
+      .problem-prose,
+      .schedule-grid,
+      .modules-grid,
+      .method-grid,
+      .coaches-grid,
+      .stats-grid { grid-template-columns: 1fr; }
+      .problem-prose p:nth-child(3),
+      .problem-prose p:nth-child(4) {
+        padding-left: 0;
+        border-left: 0;
+      }
+      .problem-prose-wrap,
+      .module-card,
+      .schedule-card,
+      .coach-card,
+      .stat-card { border-radius: 20px; }
+      .modules-story { padding: 24px 20px 24px 54px; }
+      .modules-story::before { left: 14px; top: 10px; font-size: 3.6rem; }
+    }
+
+    @media (max-width: 480px) {
+      .container { width: min(100% - 24px, var(--container)); }
+      .navbar-logo { font-size: 1.25rem; }
+      .hero-badge { font-size: .72rem; padding: 9px 12px; }
+      .schedule-card,
+      .module-card { padding: 24px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="/" class="navbar-logo">ZENIT COACHING</a>
+      <nav class="navbar-links" aria-label="Navigazione principale">
+        <a href="#room">Room</a>
+        <a href="#dentro">Dentro Zeta</a>
+        <a href="#metodo">Metodo</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="navbar-right">
+        <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+          <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="icon-x" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <nav aria-label="Navigazione mobile">
+        <a href="#room">Room</a>
+        <a href="#dentro">Dentro Zeta</a>
+        <a href="#metodo">Metodo</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge"><span class="badge-dot"></span> Membership operativa Zenit</div>
+          <h1>Zeta Club è l'anticorso per chi vuole fare trading <em>nel mercato reale.</em></h1>
+          <p class="hero-subtitle">
+            Due trading room al giorno, coach presenti mentre DAX e NASDAQ si muovono, una community privata e un metodo che non resta chiuso in un video. Qui non guardi il trading: ci lavori.
+          </p>
+          <div class="hero-ctas">
+            <a href="#room" class="btn btn-gold btn-lg">Guarda cosa succede ogni giorno</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem">
+      <div class="container">
+        <div class="problem-prose-wrap reveal">
+          <h2>Hai già studiato abbastanza. Il punto è cosa fai quando il mercato apre.</h2>
+          <div class="problem-prose">
+            <p>Il problema di molti trader non è la mancanza di informazioni. È l'assenza di un contesto che trasformi quelle informazioni in processo.</p>
+            <p>Guardare un altro video può darti un'idea in più. Ma non ti allena a gestire attesa, paura, fretta, overtrading, stop, size e giornate storte.</p>
+            <p><strong>Zeta Club nasce per questo:</strong> stare vicino al mercato con persone che ci lavorano ogni giorno, senza trasformare il trading in intrattenimento.</p>
+            <p>Non vendiamo l'illusione che basti copiare un segnale. Ti mettiamo dentro un ambiente in cui tecnica, disciplina e confronto smettono di restare teoria.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule-section" id="room">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>La giornata non parte da un PDF. Parte dalla room.</h2>
+          <p>Ogni sessione rende visibile il ragionamento: contesto, livelli, scenari, entrate, non entrate, gestione e revisione. Il valore non è il singolo trade. È il processo che impari a riconoscere.</p>
+        </div>
+        <div class="schedule-grid">
+          <article class="schedule-card reveal">
+            <div class="schedule-time text-gradient-gold">08:50</div>
+            <h3>DAX con Iacopo</h3>
+            <p>Preparazione della sessione europea, scenari, livelli e gestione dell'operatività del mattino. Non esempi scelti dopo: mercato aperto, decisioni vere.</p>
+          </article>
+          <article class="schedule-card reveal reveal-delay-1">
+            <div class="schedule-time text-gradient-gold">15:15</div>
+            <h3>NASDAQ con Simone</h3>
+            <p>Apertura americana, setup, pazienza, gestione della posizione e lettura del contesto. Il focus è imparare a decidere, non inseguire adrenalina.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section inside-section" id="dentro">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Dentro Zeta Club non trovi una libreria di video. Trovi un ecosistema.</h2>
+          <p>La membership mette insieme presenza quotidiana, formazione continua, coaching e community. Il valore non è avere più contenuti, ma avere un posto in cui usarli meglio.</p>
+        </div>
+
+        <blockquote class="modules-story reveal">
+          Zeta è pensato per chi vuole uscire dal ciclo: compro un corso, studio da solo, mi perdo appena il prezzo accelera. Qui il percorso continua ogni giorno, perché il trading non si risolve con l'ultimo modulo.
+        </blockquote>
+
+        <div class="modules-grid">
+          <article class="module-card reveal">
+            <div class="module-number">01</div>
+            <h3>Zenit Room</h3>
+            <p>Sessioni live su DAX e NASDAQ per osservare il mercato con una guida e imparare a costruire decisioni più pulite.</p>
+          </article>
+          <article class="module-card reveal reveal-delay-1">
+            <div class="module-number">02</div>
+            <h3>Community privata</h3>
+            <p>Un gruppo dove portare domande, dubbi, revisioni, spunti operativi e confronto con altri trader che lavorano sullo stesso percorso.</p>
+          </article>
+          <article class="module-card reveal reveal-delay-2">
+            <div class="module-number">03</div>
+            <h3>Classroom e registrazioni</h3>
+            <p>Approfondimenti su tecnica, processo, strumenti e casi concreti emersi dall'operatività. Le registrazioni ti permettono di recuperare il lavoro chiave.</p>
+          </article>
+          <article class="module-card reveal reveal-delay-3">
+            <div class="module-number">04</div>
+            <h3>Tradingfulness</h3>
+            <p>Il lavoro sulla parte mentale: presenza, gestione emotiva, disciplina e rapporto con perdita, fretta e aspettative.</p>
+          </article>
+          <article class="module-card reveal">
+            <div class="module-number">05</div>
+            <h3>Professione Trader</h3>
+            <p>Nel percorso trimestrale e annuale hai accesso anche al programma strutturato per costruire basi, metodo, backtesting e gestione.</p>
+          </article>
+          <article class="module-card reveal reveal-delay-1">
+            <div class="module-number">06</div>
+            <h3>Partner e strumenti</h3>
+            <p>Risorse e convenzioni selezionate per dare più ordine al percorso operativo, senza aggiungere rumore al tuo modo di lavorare.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method" id="metodo">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>La tecnica da sola non basta. Serve un sistema che la tenga in piedi.</h2>
+          <p>Il metodo Zenit unisce edge, mentorship, coaching e consulting. Perché nel trading il risultato non dipende solo da cosa sai, ma da come lavori quando sei esposto al mercato.</p>
+        </div>
+        <div class="method-formula reveal">
+          <span class="formula-char gold">E</span>
+          <span class="formula-char muted">=</span>
+          <span class="formula-char gold">M</span>
+          <span class="formula-char gold">C<span class="formula-sup">2</span></span>
+        </div>
+        <div class="method-grid">
+          <article class="method-card reveal">
+            <div class="method-letter">E</div>
+            <div class="method-card-name"><span>Edge</span></div>
+            <p>Strategia, lettura del contesto, setup e gestione del rischio.</p>
+          </article>
+          <article class="method-card reveal reveal-delay-1">
+            <div class="method-letter">M</div>
+            <div class="method-card-name"><span>Mentorship</span></div>
+            <p>Confronto costante con chi opera e insegna sul mercato ogni giorno.</p>
+          </article>
+          <article class="method-card reveal reveal-delay-2">
+            <div class="method-letter">C</div>
+            <div class="method-card-name"><span>Coaching</span></div>
+            <p>Lavoro sulla persona che prende decisioni, non solo sulla strategia.</p>
+          </article>
+          <article class="method-card reveal reveal-delay-3">
+            <div class="method-letter">C</div>
+            <div class="method-card-name"><span>Consulting</span></div>
+            <p>Strumenti, struttura e direzione per rendere il percorso più sostenibile.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section coaches-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Chi ti accompagna non commenta il mercato da lontano.</h2>
+          <p>I coach Zenit lavorano ogni giorno sugli stessi mercati che portano in room. Questo cambia il tipo di domande, di esempi e di responsabilità.</p>
+        </div>
+        <div class="coaches-grid">
+          <article class="coach-card reveal">
+            <div class="coach-badge">DAX</div>
+            <h3>Iacopo</h3>
+            <p>Conduce la sessione europea e porta il lavoro su contesto, livelli, preparazione e gestione dell'operatività del mattino.</p>
+          </article>
+          <article class="coach-card reveal reveal-delay-1">
+            <div class="coach-badge">NASDAQ</div>
+            <h3>Simone</h3>
+            <p>Segue l'apertura americana e integra tecnica, pazienza e mindset nelle decisioni prese mentre il mercato si muove.</p>
+          </article>
+          <article class="coach-card reveal reveal-delay-2">
+            <div class="coach-badge">Macro e metodo</div>
+            <h3>Edoardo</h3>
+            <p>Porta il lavoro su scenario, consapevolezza, posizionamento e costruzione del percorso professionale attorno al trading.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section proof">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Per chi vuole smettere di trattare il trading come un hobby nervoso.</h2>
+          <p>Non serve arrivare già pronti. Serve essere disposti a lavorare con metodo, presenza e responsabilità.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <div class="stat-value">2</div>
+            <div class="stat-label">room operative ogni giorno</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-value">DAX</div>
+            <div class="stat-label">focus sulla sessione europea</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-value">NASDAQ</div>
+            <div class="stat-label">focus sull'apertura americana</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-3">
+            <div class="stat-value">800+</div>
+            <div class="stat-label">persone nella community Zenit</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Prima di entrare, chiarisci bene cosa stai comprando.</h2>
+          <p>Zeta Club non è una promessa di risultato e non è un gruppo segnali. È un ambiente di lavoro quotidiano.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal open">
+            <button class="faq-trigger" type="button">
+              <span>Zeta Club è un corso di trading?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-body"><p>No. È una membership operativa. Dentro trovi anche formazione, ma il centro è la presenza quotidiana: room live, community, coaching e applicazione del metodo.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-trigger" type="button">
+              <span>Posso entrare anche se sono principiante?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-body"><p>Sì, se sei disposto a lavorare seriamente. Non devi arrivare già esperto, ma devi accettare che il trading richiede tempo, metodo e responsabilità.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-trigger" type="button">
+              <span>Le room sono segnali da copiare?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-body"><p>No. La room serve a imparare il processo decisionale. Vedi come vengono costruiti scenari, livelli e gestione, ma l'obiettivo non è renderti dipendente da un segnale.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-trigger" type="button">
+              <span>Cosa succede se non posso seguire sempre dal vivo?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-body"><p>Puoi usare registrazioni e materiale di recupero quando previsto dal percorso. Il live resta il cuore della membership, ma il lavoro continua anche fuori dalla sessione.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-trigger" type="button">
+              <span>Professione Trader è incluso?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-body"><p>È incluso nei percorsi trimestrale e annuale. Se vuoi partire in modo più leggero, puoi entrare dalla membership e poi scegliere se strutturare il percorso.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="final-cta-bg-wrap" aria-hidden="true">
+        <img src="https://zenitcoach.com/assets/cta-bg.webp" alt="" loading="lazy">
+      </div>
+      <div class="final-cta-gradient" aria-hidden="true"></div>
+      <div class="final-cta-glow" aria-hidden="true"></div>
+      <div class="container final-cta-content">
+        <div class="section-header" style="max-width:768px;margin-bottom:40px;">
+          <h2>Se vuoi fare trading da solo, Zeta Club non serve.</h2>
+          <p>Se vuoi lavorarci davvero, entra in un ambiente che ti riporta ogni giorno al processo, anche quando il mercato ti spinge nella direzione opposta.</p>
+        </div>
+        <div class="final-cta-buttons">
+          <a href="https://trading.zenitcoach.com/entra-ora-anticorso" class="btn btn-gold btn-lg">Entra nello Zeta Club</a>
+          <a href="https://t.me/Zenit_Coaching" target="_blank" rel="noopener" class="btn btn-gold-outline btn-lg">Scrivici su Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="/" class="footer-logo">ZENIT COACHING</a>
+      <nav class="footer-nav" aria-label="Link footer">
+        <a href="https://zenitcoach.com/chi-siamo/">Chi siamo</a>
+        <a href="https://zenitcoach.com/corsi-di-trading/">Corsi</a>
+        <a href="https://t.me/Zenit_Coaching" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.instagram.com/zenitcoaching" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> Zenit Coaching. Tutti i diritti riservati.</p>
+    </div>
+    <div class="container footer-legal">
+      <a href="https://trading.zenitcoach.com/privacy-policy" target="_blank">Privacy Policy</a>
+      <a href="https://trading.zenitcoach.com/cookie-policy" target="_blank">Cookie Policy</a>
+      <a href="https://trading.zenitcoach.com/preferenze-privacy" target="_blank">Preferenze Privacy</a>
+      <a href="https://trading.zenitcoach.com/note-legali" target="_blank">Note Legali</a>
+      <a href="https://trading.zenitcoach.com/disclaimer" target="_blank">Disclaimer</a>
+    </div>
+  </footer>
+
+  <script>
+    var navbar = document.getElementById("navbar");
+    var hamburger = document.getElementById("hamburger");
+    var mobileMenu = document.getElementById("mobileMenu");
+
+    function updateNavbar() {
+      if (window.scrollY > 10) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    }
+
+    window.addEventListener("scroll", updateNavbar, { passive: true });
+    updateNavbar();
+
+    hamburger.addEventListener("click", function() {
+      var isOpen = hamburger.classList.toggle("open");
+      mobileMenu.classList.toggle("open", isOpen);
+      hamburger.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        hamburger.classList.remove("open");
+        mobileMenu.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.querySelectorAll(".faq-trigger").forEach(function(trigger) {
+      trigger.addEventListener("click", function() {
+        var item = trigger.closest(".faq-item");
+        item.classList.toggle("open");
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach(function(el) {
+      revealObserver.observe(el);
+    });
+  </script>
+</body>
+</html>
