@@ -63,7 +63,7 @@ def page_url(rel: str) -> str | None:
 
 
 def attr_value(tag: str, attr: str) -> str | None:
-    match = re.search(attr + r'\s*=\s*(["\\'])(.*?)\\1', tag, re.I)
+    match = re.search(attr + r"\s*=\s*(['\"])(.*?)\\1", tag, re.I)
     return html.unescape(match.group(2)) if match else None
 
 
