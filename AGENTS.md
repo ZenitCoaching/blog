@@ -1,25 +1,33 @@
 # Istruzioni per l'agente — Zenit Blog
 
-## Quando si pubblica un nuovo articolo
+## Struttura URL obbligatoria
 
-Ogni volta che viene creato o modificato un file HTML in `blog/` o in `trading/blog/*/`, **devi** eseguire questi passaggi prima di committare:
+- Ogni nuovo articolo deve essere creato in `trading/blog/<slug>/index.html`.
+- L'URL pubblico deve essere `https://zenitcoach.com/trading/blog/<slug>/`, con trailing slash e senza estensione `.html`.
+- La cartella `blog/` contiene esclusivamente pagine ponte legacy con `noindex, follow`, canonical e redirect verso il nuovo URL.
+- Non pubblicare mai nuovi articoli completi in `blog/*.html`.
+- L'autore degli articoli è `Edoardo` (`Person` nello schema Article); il publisher rimane `Zenit Coaching` (`Organization`).
+
+## Quando si pubblica o modifica un articolo
+
+Ogni volta che viene creato o modificato un file in `trading/blog/*/index.html`, **devi** eseguire questi passaggi prima di committare:
 
 1. **Aggiornare il blog index**
    ```bash
    python3 scripts/update-blog-index.py
    ```
-   Questo sincronizza automaticamente `trading/blog/index.html` con tutti gli articoli presenti nella repo.
+   Questo sincronizza `trading/blog/index.html` esclusivamente con gli articoli presenti in `trading/blog/*/index.html`.
 
 2. **Verificare GTM (Google Tag Manager)**
    Lo script sopra segnala se manca GTM in qualche pagina. In caso, incolla in **<head>** e subito dopo **<body>** di ogni nuovo file HTML gli snippet forniti da Google Tag Manager (ID `GTM-MCBW9JTG`).
 
-3. **Verificare il dominio**
-   Tutti i link, i canonical e gli Open Graph devono usare `zenitcoach.com`, **mai** `zenitcoaching.it`.
+3. **Rigenerare sitemap e robots**
+   ```bash
+   python3 scripts/generate-seo-files.py
+   ```
 
-3. **Committare e pushare**
-   Includi sempre sia il nuovo articolo sia l'index aggiornato nello stesso commit.
+4. **Verificare URL e dominio**
+   Tutti i link, canonical, Open Graph e schema devono usare `https://zenitcoach.com/trading/blog/<slug>/`, **mai** `zenitcoaching.it`, `/blog/*.html` o URL senza trailing slash.
 
-## Struttura URL
-
-- Articoli in `blog/*.html` → URL pubblico: `/blog/nome-file.html`
-- Articoli in `trading/blog/*/index.html` → URL pubblico: `/trading/blog/nome-cartella/`
+5. **Committare e pushare**
+   Includi sempre articolo, blog index e sitemap aggiornati nello stesso commit.
