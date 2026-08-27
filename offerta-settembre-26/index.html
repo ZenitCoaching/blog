@@ -108,6 +108,7 @@ body{
           mask-image:radial-gradient(ellipse at 50% 4%, #000 6%, transparent 66%);
   pointer-events:none;
 }
+.reticolo.alto{ display:none }
 
 .testata{
   position:relative; z-index:3;
@@ -371,12 +372,22 @@ h1{ font-size:clamp(2.8rem,5.5vw,4.9rem); color:var(--puro) }
   .bolla{ max-width:94% }
   .reticolo{ height:46% }
 
-  /* su schermo stretto la luce in alto a destra diventava una macchia */
+  /* su schermo stretto la luce forte piu' la grana sgranava tutto:
+     luce diffusa e bassa, e la struttura la da' la griglia, sopra e sotto */
   .scena::before{
-    inset:-12% -10% auto -10%; height:66%;
+    inset:-10% -10% auto -10%; height:74%;
     background:
-      radial-gradient(84% 28% at 66% 4%, rgba(202,157,93,.20), transparent 70%),
-      radial-gradient(64% 24% at 18% 0%, rgba(202,157,93,.09), transparent 72%);
+      radial-gradient(96% 30% at 50% 0%, rgba(202,157,93,.26), transparent 72%),
+      radial-gradient(70% 22% at 78% 4%, rgba(232,200,146,.13), transparent 74%);
+  }
+  .scena::after{ opacity:.26 }
+
+  .reticolo.alto{
+    display:block;
+    top:-16%; bottom:auto; height:52%;
+    transform:translateX(-50%) perspective(460px) rotateX(-64deg);
+    -webkit-mask-image:radial-gradient(ellipse at 50% 98%, #000 6%, transparent 64%);
+            mask-image:radial-gradient(ellipse at 50% 98%, #000 6%, transparent 64%);
   }
 
   /* pulsanti compatti, non a tutta larghezza */
@@ -397,6 +408,7 @@ h1{ font-size:clamp(2.8rem,5.5vw,4.9rem); color:var(--puro) }
 
 <!-- ═════ APERTURA ═════ -->
 <section class="scena">
+  <div class="reticolo alto" aria-hidden="true"></div>
   <div class="reticolo" aria-hidden="true"></div>
 
   <header class="testata dentro">
