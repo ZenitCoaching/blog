@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="description" content="Zenit Coaching: il corso è la base, il coach è la differenza. Trading live, classroom, multiday e affiancamento personale in un percorso trimestrale.">
+<title>Il Percorso Zenit | Zenit Coaching</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="https://storage.googleapis.com/msgsndr/35opU1g13gqLiscdcXiS/media/6995eb6a3fd42012833e9d90.webp" type="image/webp">
+<style>
+/* ═══ GHL CONTAINER OVERRIDES ═══ */
+body { margin: 0 !important; padding: 0 !important; }
+.fullSection { padding: 0 !important; }
+.fullSection > .inner,
+.c-row > .inner,
+.c-column > .vertical.inner { max-width: 100% !important; width: 100% !important; padding: 0 !important; }
+.c-custom-code,
+.custom-code-container { width: 100% !important; max-width: 100% !important; padding: 0 !important; overflow: visible !important; }
+
+:root{
+  --nero:#0A0A0A; --nero-2:#101010; --nero-3:#161616; --nero-4:#1E1E1E;
+  --osso:#F2EFEA; --puro:#FCFCFA; --crema:#F4F2ED;
+  --oro:#CA9D5D; --oro-chiaro:#E8C892; --oro-scuro:#7C5E2E;
+  --su-nero:rgba(242,239,234,.62);
+  --su-crema:#57534B;
+  --largo:1200px;
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0; min-width:320px; overflow-x:hidden;
+  background:var(--nero); color:var(--osso);
+  font-family:"Archivo",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{ background:var(--oro); color:var(--nero); }
+:where(a,button):focus-visible{ outline:2px solid var(--oro); outline-offset:4px; border-radius:999px; }
+*{ scrollbar-color:var(--oro-scuro) var(--nero-2); scrollbar-width:thin; }
+::-webkit-scrollbar{ width:11px }
+::-webkit-scrollbar-track{ background:var(--nero-2) }
+::-webkit-scrollbar-thumb{ background:var(--oro-scuro); border:3px solid var(--nero-2); border-radius:99px }
+
+.dentro{ width:min(100% - 40px, var(--largo)); margin-inline:auto; }
+
+.anton{
+  margin:0; font-family:"Anton",Impact,sans-serif; font-weight:400;
+  line-height:.94; letter-spacing:.004em; text-transform:uppercase; text-wrap:balance;
+}
+.oro{ color:var(--oro) }
+/* sul chiaro l'oro come testo diventa fango: qui diventa un blocco */
+.blocco{
+  display:inline-block; white-space:nowrap;
+  background:var(--oro); color:#12100C;
+  padding:.02em .16em .07em; margin-inline:-.04em;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;
+}
+
+/* ── pillole ─────────────────────────────────── */
+.pill{
+  display:inline-flex; align-items:center; justify-content:center; gap:9px;
+  min-height:50px; padding:0 24px;
+  border:none; border-radius:999px;
+  background:linear-gradient(180deg,var(--oro-chiaro),var(--oro));
+  color:#191207;
+  font-family:inherit; font-size:.76rem; font-weight:700;
+  letter-spacing:.05em; text-decoration:none; cursor:pointer;
+  box-shadow:0 8px 20px -10px rgba(202,157,93,.55), 0 1px 0 rgba(255,255,255,.4) inset;
+  transition:transform 170ms cubic-bezier(.2,.8,.3,1), filter 170ms ease, box-shadow 170ms ease;
+}
+.pill:hover{ transform:translateY(-2px); filter:brightness(1.05); box-shadow:0 13px 26px -11px rgba(202,157,93,.6), 0 1px 0 rgba(255,255,255,.45) inset }
+.pill:active{ transform:translateY(0) }
+.pill svg{ width:17px; height:17px; flex:0 0 auto }
+.pill.grande{ min-height:56px; padding:0 30px; font-size:.82rem }
+.pill.fantasma{ background:transparent; color:var(--osso); border:1px solid rgba(242,239,234,.24); box-shadow:none }
+.pill.fantasma:hover{ border-color:var(--oro); color:var(--oro-chiaro); box-shadow:none }
+.pill.lineare{
+  background:transparent; color:var(--nero);
+  border:1px solid rgba(10,10,10,.24); box-shadow:none;
+}
+.pill.lineare:hover{ background:var(--nero); color:var(--osso); border-color:var(--nero) }
+.pill.piccola{ min-height:44px; padding:0 20px; font-size:.72rem }
+
+/* ═══ SCENA ═════════════════════════════════════ */
+.scena{ position:relative; isolation:isolate; overflow:hidden; }
+.scena::before{
+  content:""; position:absolute; z-index:-3; inset:-30% -10% auto -10%; height:120%;
+  background:
+    radial-gradient(46% 38% at 72% 14%, rgba(232,200,146,.30), transparent 58%),
+    radial-gradient(70% 56% at 76% 20%, rgba(202,157,93,.46), transparent 66%),
+    radial-gradient(44% 38% at 14% 4%,  rgba(202,157,93,.18), transparent 68%);
+}
+.scena::after{
+  content:""; position:absolute; z-index:-2; inset:0; opacity:.5; pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay;
+}
+.reticolo{
+  position:absolute; z-index:-1; left:50%; bottom:-14%; width:230%; height:70%;
+  transform:translateX(-50%) perspective(460px) rotateX(64deg);
+  background-image:
+    linear-gradient(rgba(202,157,93,.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(202,157,93,.22) 1px, transparent 1px);
+  background-size:72px 72px;
+  -webkit-mask-image:radial-gradient(ellipse at 50% 4%, #000 6%, transparent 66%);
+          mask-image:radial-gradient(ellipse at 50% 4%, #000 6%, transparent 66%);
+  pointer-events:none;
+}
+
+.testata{
+  position:relative; z-index:3;
+  display:flex; align-items:center; justify-content:space-between; gap:18px;
+  padding:20px 0;
+}
+.marchio{ display:inline-flex; align-items:center; gap:11px; text-decoration:none; color:inherit }
+.marchio img{ width:32px; height:32px; object-fit:contain }
+.marchio span{ font-size:.68rem; font-weight:600; letter-spacing:.28em; text-transform:uppercase; color:var(--su-nero) }
+.testata .pill{ min-height:42px; padding:0 19px; font-size:.7rem }
+
+.apertura{
+  position:relative; z-index:2;
+  display:grid; grid-template-columns:minmax(0,1.02fr) minmax(392px,.98fr);
+  gap:clamp(36px,4.6vw,72px); align-items:center;
+  padding:clamp(30px,4vw,54px) 0 clamp(48px,5.6vw,80px);
+}
+.colonna-testo{ align-self:center }
+h1{ font-size:clamp(2.8rem,5.5vw,4.9rem); color:var(--puro) }
+.sottotitolo{
+  margin:clamp(18px,2vw,24px) 0 0; max-width:40ch;
+  font-size:clamp(1.02rem,1.15vw,1.14rem); line-height:1.66; color:var(--su-nero);
+}
+.sottotitolo b{ color:var(--osso); font-weight:600 }
+.colonna-testo .pill{ margin-top:clamp(22px,2.6vw,30px) }
+
+.gettoni{
+  display:flex; flex-wrap:wrap; gap:9px;
+  margin:clamp(22px,2.4vw,28px) 0 0; padding:0; list-style:none;
+}
+.gettoni li{
+  display:flex; align-items:center; gap:8px;
+  padding:9px 15px; border-radius:999px;
+  background:rgba(242,239,234,.05); border:1px solid rgba(242,239,234,.13);
+  font-size:.76rem; font-weight:600; color:var(--osso);
+}
+.gettoni li svg{ width:14px; height:14px; flex:0 0 auto }
+
+/* ── pannello chat ───────────────────────────── */
+.pannello{
+  position:relative;
+  border-radius:26px;
+  background:linear-gradient(168deg,#1A1A1A 0%,#0E0E0E 58%);
+  border:1px solid rgba(202,157,93,.26);
+  box-shadow:0 46px 90px -38px rgba(0,0,0,.95), 0 0 0 1px rgba(255,255,255,.03) inset, 0 1px 0 rgba(232,200,146,.22) inset;
+}
+.pannello::before{
+  content:""; position:absolute; z-index:-1; inset:14% -6% -12% -6%;
+  border-radius:40px; background:rgba(202,157,93,.22); filter:blur(58px);
+}
+.pannello-testa{ display:flex; align-items:center; gap:12px; padding:17px 20px; border-bottom:1px solid rgba(242,239,234,.09) }
+.faccia{
+  position:relative; width:40px; height:40px; flex:0 0 auto;
+  border-radius:50%; background:#000; border:1px solid rgba(202,157,93,.45);
+  display:grid; place-items:center; overflow:hidden;
+}
+.faccia img{ width:24px; height:24px; object-fit:contain }
+.faccia::after{ content:""; position:absolute; right:-1px; bottom:-1px; width:11px; height:11px; border-radius:50%; background:#4ADE80; border:2px solid #131313 }
+.chi{ display:flex; flex-direction:column; gap:2px; min-width:0 }
+.chi strong{ font-size:.92rem; font-weight:600; color:var(--puro) }
+.chi span{ font-size:.7rem; color:#7FCF9B }
+.pannello-testa .menu{ margin-left:auto; display:flex; gap:4px }
+.pannello-testa .menu i{ width:4px; height:4px; border-radius:50%; background:rgba(242,239,234,.34) }
+
+.filo{ display:flex; flex-direction:column; gap:11px; padding:22px 20px }
+.bolla{ max-width:87%; padding:13px 17px; font-size:.94rem; line-height:1.54 }
+.bolla p{ margin:0 }
+.bolla.lui{ align-self:flex-end; border-radius:20px 20px 6px 20px; background:var(--nero-4); color:var(--osso) }
+.bolla.lui .spunte{ display:flex; justify-content:flex-end; margin-top:5px }
+.bolla.lui .spunte svg{ width:16px; height:16px; color:var(--oro) }
+.bolla.lei{
+  align-self:flex-start; border-radius:20px 20px 20px 6px;
+  background:linear-gradient(160deg,#241C10,#171208);
+  border:1px solid rgba(202,157,93,.4); color:var(--puro);
+}
+.scrive{ align-self:flex-start; display:inline-flex; align-items:center; gap:6px; padding:14px 18px; border-radius:20px 20px 20px 6px; background:var(--nero-4) }
+.scrive i{ width:7px; height:7px; border-radius:50%; background:var(--su-nero); animation:pulsa 1.3s ease-in-out infinite }
+.scrive i:nth-child(2){ animation-delay:.18s } .scrive i:nth-child(3){ animation-delay:.36s }
+@keyframes pulsa{ 0%,60%,100%{ opacity:.3; transform:translateY(0) } 30%{ opacity:1; transform:translateY(-3px) } }
+
+.campo{
+  display:flex; align-items:center; gap:12px;
+  margin:0 14px 14px; padding:11px 11px 11px 18px;
+  border-radius:999px; background:rgba(242,239,234,.055); border:1px solid rgba(242,239,234,.1);
+}
+.campo span{ flex:1; font-size:.86rem; color:rgba(242,239,234,.36) }
+.campo b{ display:grid; place-items:center; width:34px; height:34px; flex:0 0 auto; border-radius:50%; background:var(--oro); color:#191207 }
+.campo b svg{ width:16px; height:16px }
+.didascalia{ margin:12px 0 0; font-size:.72rem; color:rgba(242,239,234,.35); text-align:right }
+
+/* ── nastro ──────────────────────────────────── */
+.nastro{
+  position:relative; z-index:2; padding:16px 0;
+  border-top:1px solid rgba(242,239,234,.1); border-bottom:1px solid rgba(242,239,234,.1);
+  background:rgba(10,10,10,.55); overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
+}
+.nastro-pista{ display:flex; width:max-content; animation:scorri 38s linear infinite }
+.nastro-pista ul{ display:flex; align-items:center; gap:38px; margin:0; padding:0 19px; list-style:none }
+.nastro-pista li{ display:flex; align-items:center; gap:11px; white-space:nowrap; font-size:.75rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--su-nero) }
+.nastro-pista li::before{ content:""; width:5px; height:5px; transform:rotate(45deg); background:var(--oro) }
+.nastro-pista li b{ color:var(--osso); font-weight:700 }
+@keyframes scorri{ to{ transform:translateX(-50%) } }
+
+/* ═══ SEZIONI CHIARE ════════════════════════════ */
+.chiara{ position:relative; background:var(--crema); color:var(--nero) }
+.chiara.luce{ background:radial-gradient(72% 50% at 50% -6%, rgba(202,157,93,.20), transparent 62%), var(--crema) }
+.testa-sez{ max-width:52ch; margin:0 0 clamp(34px,4vw,52px) }
+.testa-sez.centro{ margin-inline:auto; text-align:center }
+.testa-sez h2{ font-size:clamp(2.1rem,4.2vw,3.5rem) }
+.chiara .testa-sez h2{ color:var(--nero) }
+.scura-sez .testa-sez h2{ color:var(--puro) }
+.testa-sez p{ margin:16px 0 0; font-size:1.02rem; line-height:1.68 }
+.chiara .testa-sez p{ color:var(--su-crema) }
+.scura-sez .testa-sez p{ color:var(--su-nero) }
+.testa-sez.centro p{ margin-inline:auto }
+
+/* ── cosa facciamo insieme ───────────────────── */
+.insieme{ padding:clamp(58px,6.8vw,100px) 0 }
+.attivita{ display:grid; grid-template-columns:repeat(auto-fit,minmax(228px,1fr)); gap:clamp(13px,1.3vw,17px) }
+.attivo{
+  display:flex; flex-direction:column; gap:12px;
+  padding:clamp(22px,2vw,26px);
+  border-radius:22px; background:#FFFFFF;
+  box-shadow:0 2px 4px rgba(10,10,10,.05), 0 22px 44px -30px rgba(10,10,10,.4);
+}
+.simbolo{
+  display:grid; place-items:center; width:44px; height:44px;
+  border-radius:14px; background:#12100C; color:var(--oro);
+}
+.simbolo svg{ width:22px; height:22px }
+.attivo h3{ margin:0; font-family:"Anton",Impact,sans-serif; font-weight:400; font-size:1.32rem; letter-spacing:.02em; text-transform:uppercase; line-height:1 }
+.attivo p{ margin:0; font-size:.9rem; line-height:1.62; color:var(--su-crema) }
+.attivo .quando{
+  margin-top:auto; padding-top:4px;
+  font-size:.68rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--oro-scuro);
+}
+
+/* ── Z Club (scura) ──────────────────────────── */
+.scura-sez{ position:relative; isolation:isolate; overflow:hidden; padding:clamp(58px,6.8vw,100px) 0; background:var(--nero) }
+.scura-sez::before{
+  content:""; position:absolute; z-index:-3; inset:-28% -10% auto -10%; height:130%;
+  background:
+    radial-gradient(42% 36% at 26% 20%, rgba(232,200,146,.24), transparent 58%),
+    radial-gradient(66% 54% at 22% 26%, rgba(202,157,93,.40), transparent 66%);
+}
+.scura-sez::after{
+  content:""; position:absolute; z-index:-2; inset:0; opacity:.5; pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay;
+}
+.scura-sez .reticolo{ bottom:-26%; height:76%; opacity:.85 }
+.club{ display:grid; grid-template-columns:minmax(0,1fr) minmax(360px,.92fr); gap:clamp(34px,4.6vw,68px); align-items:center }
+.club .testa-sez{ margin-bottom:0 }
+.club .pill{ margin-top:clamp(22px,2.4vw,28px); min-height:48px; padding:0 22px; font-size:.84rem; letter-spacing:.03em }
+
+.gruppo{
+  border-radius:24px; overflow:hidden;
+  background:linear-gradient(170deg,#17191C,#0D0E10);
+  border:1px solid rgba(242,239,234,.12);
+  box-shadow:0 40px 80px -36px rgba(0,0,0,.9);
+}
+.gruppo-testa{ display:flex; align-items:center; gap:13px; padding:16px 19px; background:rgba(242,239,234,.04); border-bottom:1px solid rgba(242,239,234,.09) }
+.mucchio{ display:flex; flex:0 0 auto }
+.mucchio i{
+  display:block; width:30px; height:30px; border-radius:50%;
+  border:2px solid #14161A; margin-left:-10px;
+  background:linear-gradient(140deg,var(--oro-chiaro),var(--oro-scuro));
+}
+.mucchio i:first-child{ margin-left:0 }
+.mucchio i:nth-child(2){ background:linear-gradient(140deg,#8FA3B8,#3E4C5C) }
+.mucchio i:nth-child(3){ background:linear-gradient(140deg,#A9BFA4,#4A5C48) }
+.gruppo-testa .chi span{ color:var(--su-nero) }
+.messaggi{ display:flex; flex-direction:column; gap:10px; padding:20px 18px 24px }
+.msg{ display:flex; flex-direction:column; gap:4px; max-width:88% }
+.msg.loro{ align-self:flex-start }
+.msg.mio{ align-self:flex-end; align-items:flex-end }
+.msg strong{ padding-left:15px; font-size:.74rem; font-weight:700; letter-spacing:.03em }
+.bollina{ padding:11px 15px; font-size:.9rem; line-height:1.5 }
+.bollina p{ margin:0 }
+.msg.loro .bollina{ border-radius:16px 16px 16px 5px; background:#1F2226; color:var(--osso) }
+.msg.mio .bollina{ border-radius:16px 16px 5px 16px; background:linear-gradient(160deg,#241C10,#171208); border:1px solid rgba(202,157,93,.34); color:var(--puro) }
+.n1{ color:var(--oro) } .n2{ color:#9DB6CE } .n3{ color:#A9C9A4 }
+
+/* ═══ OFFERTA ═══════════════════════════════════ */
+.offerta{ padding:clamp(58px,6.8vw,100px) 0 clamp(56px,6.4vw,94px) }
+.carte{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(16px,1.8vw,22px); align-items:center }
+
+.carta{
+  display:flex; flex-direction:column; gap:14px;
+  padding:clamp(26px,2.4vw,32px) clamp(22px,2.1vw,26px) clamp(26px,2.4vw,30px);
+  border-radius:22px; background:#FFFFFF;
+  box-shadow:0 2px 4px rgba(10,10,10,.05), 0 22px 44px -30px rgba(10,10,10,.4);
+}
+.carta h3{ margin:0; font-family:"Anton",Impact,sans-serif; font-weight:400; font-size:clamp(1.5rem,2vw,1.9rem); letter-spacing:.02em; text-transform:uppercase; line-height:1 }
+.carta > p{ margin:0; font-size:.93rem; line-height:1.58; color:var(--su-crema) }
+.carta ul{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:9px }
+.carta.punta ul{ gap:11px }
+.carta li{ display:grid; grid-template-columns:17px 1fr; gap:10px; align-items:start; font-size:.89rem; line-height:1.48; color:var(--su-crema) }
+.carta li svg{ width:17px; height:17px; margin-top:2px; flex:0 0 auto }
+.carta li.nuova{ color:var(--nero); font-weight:600 }
+.carta .pill{ margin-top:auto; align-self:stretch }
+.divisorio{ height:1px; background:rgba(10,10,10,.1); margin:2px 0 }
+
+.carta.punta{
+  position:relative;
+  gap:17px;
+  padding:clamp(34px,3.2vw,44px) clamp(26px,2.4vw,32px) clamp(32px,3vw,40px);
+  background:linear-gradient(168deg,#181818,#0A0A0A); color:var(--osso);
+  box-shadow:0 34px 74px -32px rgba(10,10,10,.7), 0 0 0 1px rgba(202,157,93,.3) inset;
+}
+.carta.punta::after{ content:""; position:absolute; z-index:-1; inset:12% 4% -8%; border-radius:34px; background:rgba(202,157,93,.4); filter:blur(46px) }
+.carta.punta h3{ color:var(--oro) }
+.carta.punta > p{ color:var(--osso); font-size:1rem; line-height:1.6 }
+.carta.punta li{ color:rgba(242,239,234,.6); font-size:.93rem; line-height:1.52 }
+.carta.punta li.nuova{ color:var(--puro); font-weight:600 }
+.carta.punta .divisorio{ background:rgba(242,239,234,.14) }
+
+/* ═══ CHIUSURA ══════════════════════════════════ */
+.chiusura{ position:relative; isolation:isolate; overflow:hidden; padding:clamp(58px,6.8vw,96px) 0; text-align:center }
+.chiusura::before{ content:""; position:absolute; z-index:-1; inset:auto -10% -60% -10%; height:150%; background:radial-gradient(50% 46% at 50% 78%, rgba(202,157,93,.34), transparent 64%) }
+.chiusura h2{ font-size:clamp(2.1rem,4.4vw,3.6rem); color:var(--puro) }
+.chiusura p{ margin:18px auto 0; max-width:48ch; font-size:1.04rem; line-height:1.68; color:var(--su-nero) }
+.chiusura .pill{ margin-top:clamp(24px,2.8vw,32px); margin-bottom:28px }
+
+.legale{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:12px 22px;
+  padding:24px 0 32px; border-top:1px solid rgba(242,239,234,.1);
+  font-size:.7rem; color:rgba(242,239,234,.42);
+}
+.legale a{ color:inherit; text-decoration:none; transition:color 150ms ease }
+.legale a:hover{ color:var(--osso); text-decoration:underline; text-underline-offset:.2em }
+
+/* ── movimento ───────────────────────────────── */
+@media (prefers-reduced-motion:no-preference){
+  .filo.pronto > *{ opacity:0; transform:translateY(12px) }
+  .filo.pronto.arriva > *{ animation:entra 500ms cubic-bezier(.16,1,.3,1) forwards }
+  .filo.pronto.arriva > *:nth-child(1){ animation-delay:.1s }
+  .filo.pronto.arriva > *:nth-child(2){ animation-delay:.7s }
+  .filo.pronto.arriva > *:nth-child(3){ animation-delay:1.32s }
+  .filo.pronto.arriva > *:nth-child(4){ animation-delay:1.8s }
+  .filo.pronto.arriva > *:nth-child(5){ animation-delay:2.3s }
+  @keyframes entra{ to{ opacity:1; transform:none } }
+}
+@media (prefers-reduced-motion:reduce){ .nastro-pista{ animation:none } .scrive i{ animation:none } }
+
+/* ── adattamento ─────────────────────────────── */
+@media (max-width:1000px){
+  .apertura{ grid-template-columns:1fr; gap:clamp(32px,5vw,44px) }
+  .carte{ grid-template-columns:1fr; gap:18px }
+  .club{ grid-template-columns:1fr; gap:32px }
+  .didascalia{ text-align:left }
+  .testa-sez{ max-width:none }
+}
+@media (max-width:640px){
+  .dentro{ width:min(100% - 28px, var(--largo)) }
+  .marchio span{ display:none }
+  .attivita{ grid-template-columns:1fr }
+  .apertura{ padding-top:22px }
+  .colonna-testo .pill,.chiusura .pill,.club .pill{ width:100%; justify-content:center }
+  .bolla{ max-width:94% }
+  .reticolo{ height:46% }
+}
+</style>
+</head>
+<body>
+
+<!-- ═════ APERTURA ═════ -->
+<section class="scena">
+  <div class="reticolo" aria-hidden="true"></div>
+
+  <header class="testata dentro">
+    <a class="marchio" href="https://zenitcoach.com">
+      <img src="https://storage.googleapis.com/msgsndr/35opU1g13gqLiscdcXiS/media/6995eb6a3fd42012833e9d90.webp" alt="Zenit Coaching">
+      <span>Zenit Coaching</span>
+    </a>
+    <a class="pill fantasma" href="https://wa.me/393519218205?text=Ciao%2C%20vorrei%20capire%20quale%20livello%20del%20percorso%20Zenit%20%C3%A8%20pi%C3%B9%20adatto%20a%20me." target="_blank" rel="noopener">Parla con noi</a>
+  </header>
+
+  <div class="apertura dentro">
+    <div class="colonna-testo">
+      <h1 class="anton">Non ti serve un altro corso.<br><span class="oro">Ti serve qualcuno che risponde.</span></h1>
+      <p class="sottotitolo">Il corso completo è incluso e resta tuo a vita.<br><b>Il coach è la differenza.</b></p>
+
+      <a class="pill grande" href="https://wa.me/393519218205?text=Ciao%2C%20vorrei%20capire%20quale%20livello%20del%20percorso%20Zenit%20%C3%A8%20pi%C3%B9%20adatto%20a%20me." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        Scrivici subito
+      </a>
+
+      <ul class="gettoni">
+        <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.8 8.4 6.1 11.6 13.2 4.6" stroke="#CA9D5D" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Corso a vita</li>
+        <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.8 8.4 6.1 11.6 13.2 4.6" stroke="#CA9D5D" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Telegram per sempre</li>
+        <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.8 8.4 6.1 11.6 13.2 4.6" stroke="#CA9D5D" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>3 mesi di live</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="pannello">
+        <div class="pannello-testa">
+          <span class="faccia"><img src="https://storage.googleapis.com/msgsndr/35opU1g13gqLiscdcXiS/media/6995eb6a3fd42012833e9d90.webp" alt=""></span>
+          <span class="chi"><strong>Il tuo coach</strong><span>online</span></span>
+          <span class="menu" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+
+        <div class="filo" id="filo" aria-label="Esempio di conversazione con il coach">
+          <div class="bolla lui">
+            <p>Le regole le so a memoria. Poi apro la piattaforma e faccio il contrario.</p>
+            <span class="spunte"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 13.2 6 17l7.2-9M10.4 13.6 12.6 16l7.4-9.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+          <div class="bolla lei"><p>Normale, e non è un problema di regole. Mandami gli ultimi dieci trade: guardiamo dove salta il processo.</p></div>
+          <div class="bolla lui">
+            <p>Te li mando stasera.</p>
+            <span class="spunte"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 13.2 6 17l7.2-9M10.4 13.6 12.6 16l7.4-9.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+          <div class="bolla lei"><p>Perfetto. Domani sera ne portiamo due in classroom come caso studio, senza nomi: voglio che lo vedano tutti.</p></div>
+          <div class="scrive" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="campo" aria-hidden="true">
+          <span>Scrivi un messaggio…</span>
+          <b><svg viewBox="0 0 24 24" fill="none"><path d="M4 12 20 4l-3.4 16-4.2-5.4L4 12Zm8.4 2.6L20 4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nastro">
+    <div class="nastro-pista">
+      <ul><li><b>DAX</b></li><li><b>NASDAQ</b></li><li>Multiday Lab</li><li>Classroom</li><li>Zeta Club</li><li>Tradingfulness®</li><li>Fintokei</li><li>The5ers</li><li>Total Trade</li><li>RiskGuard</li></ul>
+      <ul aria-hidden="true"><li><b>DAX</b></li><li><b>NASDAQ</b></li><li>Multiday Lab</li><li>Classroom</li><li>Zeta Club</li><li>Tradingfulness®</li><li>Fintokei</li><li>The5ers</li><li>Total Trade</li><li>RiskGuard</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ QUELLO CHE FACCIAMO INSIEME (chiara) ═════ -->
+<section class="chiara luce insieme">
+  <div class="dentro">
+
+    <div class="testa-sez">
+      <h2 class="anton">Il corso te lo diamo tutto.<br><span class="blocco">Poi si comincia.</span></h2>
+      <p>Le lezioni ce le hai il primo giorno e restano tue per sempre. Quello che succede dopo, ogni settimana, è la parte che non puoi scaricare.</p>
+    </div>
+
+    <div class="attivita">
+
+      <article class="attivo">
+        <span class="simbolo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 17.5 8.5 11l3.6 3.4L21 5.5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.5 5.5H21v5.4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 21h18" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+        <h3>Trading live</h3>
+        <p>Zenit Room DAX e Zenit Room NASDAQ. Si opera davanti a te, in tempo reale, dicendo ad alta voce cosa si sta guardando: perché si entra, perché molto più spesso si sta fermi, dove si esce.</p>
+        <span class="quando">In diretta, con un coach</span>
+      </article>
+
+      <article class="attivo">
+        <span class="simbolo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5h7a2.5 2.5 0 0 1 2.5 2.5v11A2 2 0 0 0 11.5 17H4V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M20 5.5h-7A2.5 2.5 0 0 0 10.5 8v11A2 2 0 0 1 12.5 17H20V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <h3>Classroom</h3>
+        <p>Il corso smontato pezzo per pezzo, le tue domande con una risposta vera, e i backtest fatti insieme invece che spiegati. È il posto dove si capisce, non dove si prendono appunti.</p>
+        <span class="quando">Ogni settimana</span>
+      </article>
+
+      <article class="attivo">
+        <span class="simbolo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.2" y="4.8" width="17.6" height="15.4" rx="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M3.2 9.4h17.6M8.2 3.2v3.4M15.8 3.2v3.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M7.6 13.4h3.2M7.6 16.6h8.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <h3>Multiday Lab</h3>
+        <p>L'operatività che non muore alla chiusura della sessione: posizioni che restano aperte per giorni, con Davide. L'abbiamo rimesso in piedi perché ce lo avete chiesto in troppi.</p>
+        <span class="quando">Appuntamenti settimanali</span>
+      </article>
+
+      <article class="attivo">
+        <span class="simbolo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20.8c3.9 0 6.6-2.8 6.6-6.3 0-2.3-1.2-3.9-2.5-5.4-1.2-1.3-1.9-2.6-2.1-4-1.5.9-2.4 2.4-2.7 4.1-.9-.6-1.5-1.5-1.8-2.5-1.8 1.5-2.9 3.7-3.1 6-.3.6-.4 1.2-.4 1.8 0 3.5 2.1 6.3 6 6.3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 20.8c1.6 0 2.9-1.2 2.9-2.7 0-1.4-1.3-2.3-1.7-3.6-1 .8-1.8 1.8-2.2 3-.7.4-1.1 1.1-1.1 1.9 0 .8 1 1.4 2.1 1.4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+        <h3>Tradingfulness®</h3>
+        <p>Il metodo che tiene insieme la tecnica e la testa. Come si decide quando il mercato ti sta contro, come si smette di rincorrere, come si costruisce una disciplina che regge anche nelle settimane storte.</p>
+        <span class="quando">Dentro ogni attività</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═════ ZETA CLUB (scura) ═════ -->
+<section class="scura-sez">
+  <div class="reticolo" aria-hidden="true"></div>
+  <div class="dentro club">
+
+    <div>
+      <div class="testa-sez">
+        <h2 class="anton">Dentro lo <span class="oro">Zeta Club.</span></h2>
+        <p>
+          È il gruppo Telegram dove vive la community. I coach ci scrivono dentro ogni giorno:
+          commentano quello che sta facendo il mercato mentre lo sta facendo, ti avvisano quando
+          parte una diretta, rispondono alle domande di chi le fa. Se ti blocchi su un'operazione
+          mentre il mercato è aperto, lo scrivi lì e qualcuno ti risponde.
+        </p>
+      </div>
+      <a class="pill" href="https://wa.me/393519218205?text=Ciao%2C%20voglio%20entrare%20nello%20Zeta%20Club%20di%20Zenit." target="_blank" rel="noopener">Voglio entrare</a>
+    </div>
+
+    <div>
+      <div class="gruppo">
+        <div class="gruppo-testa">
+          <span class="mucchio" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="chi"><strong>Zeta Club</strong><span>La community Zenit</span></span>
+        </div>
+
+        <div class="messaggi">
+          <div class="msg loro">
+            <strong class="n1">Iacopo</strong>
+            <div class="bollina"><p>DAX di nuovo esatto sul livello di ieri. Chi è dentro, alza lo stop adesso, non dopo.</p></div>
+          </div>
+          <div class="msg mio">
+            <div class="bollina"><p>Ma se il ritracciamento supera metà candela io l'ingresso lo salto, giusto?</p></div>
+          </div>
+          <div class="msg loro">
+            <strong class="n2">Andrea</strong>
+            <div class="bollina"><p>Giusto. E se ti sei perso il perché, stasera in classroom rifacciamo proprio quel caso.</p></div>
+          </div>
+          <div class="msg loro">
+            <strong class="n3">Davide</strong>
+            <div class="bollina"><p>Sul multiday io intanto resto aperto: il livello settimanale non è stato rotto.</p></div>
+          </div>
+          <div class="msg mio">
+            <div class="bollina"><p>Io avevo chiuso in anticipo, per la paura.</p></div>
+          </div>
+          <div class="msg loro">
+            <strong class="n1">Iacopo</strong>
+            <div class="bollina"><p>Capita a tutti. Portalo in coaching questa settimana e guardiamo perché è successo.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═════ OFFERTA (chiara, in fondo) ═════ -->
+<section class="chiara luce offerta" id="offerta">
+  <div class="dentro">
+
+    <div class="testa-sez centro">
+      <h2 class="anton">In gruppo, seguito,<br><span class="blocco">o affiancato.</span></h2>
+      <p>Corso, community e attività live sono identiche in tutti e tre i livelli. Cambia soltanto quanto un coach entra nel tuo lavoro.</p>
+    </div>
+
+    <div class="carte">
+
+      <article class="carta">
+        <h3>Entry</h3>
+        <p>Il percorso completo, dentro il gruppo.</p>
+        <div class="divisorio"></div>
+        <ul>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Professione Trader completo, a vita</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Basi, strategie DAX e NASDAQ, metodo Tradingfulness®</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zeta Club su Telegram, per sempre</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zenit Room DAX e Zenit Room NASDAQ</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Classroom con backtest e Q&amp;A</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Multiday Lab con Davide</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tre mesi di accesso a tutte le live</span></li>
+        </ul>
+        <a class="pill lineare" href="https://wa.me/393519218205?text=Ciao%2C%20vorrei%20informazioni%20sul%20livello%20Entry%20del%20percorso%20Zenit." target="_blank" rel="noopener">Chiedi info</a>
+      </article>
+
+      <article class="carta punta">
+        <h3>Premium</h3>
+        <p>Smetti di studiare da solo: qualcuno guarda come decidi.</p>
+        <div class="divisorio"></div>
+        <ul>
+          <li class="nuova"><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#CA9D5D"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#191207" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Chat privata con il tuo coach, sette giorni su sette</span></li>
+          <li class="nuova"><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#CA9D5D"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#191207" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Una coaching one-to-one ogni mese</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="rgba(242,239,234,.16)"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#CA9D5D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Professione Trader completo, a vita</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="rgba(242,239,234,.16)"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#CA9D5D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zeta Club su Telegram, per sempre</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="rgba(242,239,234,.16)"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#CA9D5D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zenit Room, Classroom, Multiday Lab, Tradingfulness®</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="rgba(242,239,234,.16)"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#CA9D5D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tre mesi di accesso a tutte le live</span></li>
+        </ul>
+        <a class="pill" href="https://wa.me/393519218205?text=Ciao%2C%20vorrei%20informazioni%20sul%20livello%20Premium%20del%20percorso%20Zenit." target="_blank" rel="noopener">Chiedi info</a>
+      </article>
+
+      <article class="carta">
+        <h3>Coaching</h3>
+        <p>Il grado massimo: il tuo processo rivisto ogni settimana.</p>
+        <div class="divisorio"></div>
+        <ul>
+          <li class="nuova"><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#12100C"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#CA9D5D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Una coaching one-to-one ogni settimana</span></li>
+          <li class="nuova"><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#12100C"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#CA9D5D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Revisione personalizzata dei tuoi backtest</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Chat privata con il tuo coach, sette giorni su sette</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Professione Trader completo, a vita</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zeta Club su Telegram, per sempre</span></li>
+          <li><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7.6" fill="#EFEAE0"/><path d="M5.1 8.8 7.4 11l4.6-5.1" stroke="#0A0A0A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zenit Room, Classroom, Multiday Lab, Tradingfulness®</span></li>
+        </ul>
+        <a class="pill lineare" href="https://wa.me/393519218205?text=Ciao%2C%20vorrei%20informazioni%20sul%20livello%20Coaching%20del%20percorso%20Zenit." target="_blank" rel="noopener">Chiedi info</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═════ CHIUSURA ═════ -->
+<section class="chiusura">
+  <div class="dentro">
+    <h2 class="anton">Da dove <span class="oro">parti?</span></h2>
+    <p>Scrivici com'è la tua situazione oggi. Ti diciamo quale livello ha senso, anche quando la risposta è quello più basso.</p>
+    <a class="pill grande" href="https://wa.me/393519218205?text=Ciao%2C%20vorrei%20capire%20quale%20livello%20del%20percorso%20Zenit%20%C3%A8%20pi%C3%B9%20adatto%20a%20me." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+      Scrivici subito
+    </a>
+  </div>
+  <div class="legale dentro">
+    <span>© Zenit Coaching LLC</span>
+    <a href="https://trading.zenitcoach.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+    <a href="https://trading.zenitcoach.com/cookie-policy" target="_blank" rel="noopener">Cookie Policy</a>
+    <a href="https://trading.zenitcoach.com/preferenze-privacy" target="_blank" rel="noopener">Preferenze privacy</a>
+    <a href="https://trading.zenitcoach.com/note-legali" target="_blank" rel="noopener">Termini e condizioni</a>
+    <a href="https://trading.zenitcoach.com/disclaimer" target="_blank" rel="noopener">Disclaimer</a>
+  </div>
+</section>
+
+<script>
+(() => {
+  "use strict";
+  const filo = document.getElementById("filo");
+  if (!filo || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!("IntersectionObserver" in window)) return;
+  filo.classList.add("pronto");
+  let fatto = false;
+  const mostra = () => {
+    if (fatto) return;
+    fatto = true;
+    filo.classList.add("arriva");
+    occhio.disconnect();
+    setTimeout(() => filo.classList.remove("pronto"), 3000);
+  };
+  const occhio = new IntersectionObserver(v => v.forEach(x => { if (x.isIntersecting) mostra(); }),
+    { threshold:.12, rootMargin:"0px 0px -8% 0px" });
+  occhio.observe(filo);
+  setTimeout(mostra, 4000);
+})();
+</script>
+</body>
+</html>
