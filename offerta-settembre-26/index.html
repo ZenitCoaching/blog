@@ -368,9 +368,28 @@ h1{ font-size:clamp(2.8rem,5.5vw,4.9rem); color:var(--puro) }
   .marchio span{ display:none }
   .attivita{ grid-template-columns:1fr }
   .apertura{ padding-top:22px }
-  .colonna-testo .pill,.chiusura .pill,.club .pill{ width:100%; justify-content:center }
   .bolla{ max-width:94% }
   .reticolo{ height:46% }
+
+  /* su schermo stretto la luce in alto a destra diventava una macchia */
+  .scena::before{
+    inset:-12% -10% auto -10%; height:66%;
+    background:
+      radial-gradient(84% 28% at 66% 4%, rgba(202,157,93,.20), transparent 70%),
+      radial-gradient(64% 24% at 18% 0%, rgba(202,157,93,.09), transparent 72%);
+  }
+
+  /* pulsanti compatti, non a tutta larghezza */
+  .colonna-testo .pill,
+  .chiusura .pill,
+  .club .pill,
+  .pill.grande{ width:auto; min-height:46px; padding:0 20px; font-size:.76rem }
+  .pill svg{ width:16px; height:16px }
+
+  /* i tre fatti stanno su una riga sola */
+  .gettoni{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px }
+  .gettoni li{ justify-content:center; padding:8px 5px; font-size:.6rem; letter-spacing:0; text-align:center; line-height:1.2 }
+  .gettoni li svg{ display:none }
 }
 </style>
 </head>
@@ -400,7 +419,7 @@ h1{ font-size:clamp(2.8rem,5.5vw,4.9rem); color:var(--puro) }
 
       <ul class="gettoni">
         <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.8 8.4 6.1 11.6 13.2 4.6" stroke="#CA9D5D" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Corso a vita</li>
-        <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.8 8.4 6.1 11.6 13.2 4.6" stroke="#CA9D5D" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Telegram per sempre</li>
+        <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.8 8.4 6.1 11.6 13.2 4.6" stroke="#CA9D5D" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Gruppo Telegram</li>
         <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.8 8.4 6.1 11.6 13.2 4.6" stroke="#CA9D5D" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>3 mesi di live</li>
       </ul>
     </div>
